@@ -30,7 +30,7 @@ const columns: { heading: string; links: { label: string; href: string }[] }[] =
       heading: "SEO Services",
       links: [
         { label: "SEO Services", href: "/seo-services" },
-        { label: "SEO Audit", href: "/seo-audit" },
+        { label: "SEO Audit", href: "/seo-audits" },
         { label: "Local SEO", href: "/local-seo" },
         { label: "Keyword Research", href: "/keyword-research" },
         { label: "On-Page SEO", href: "/on-page-seo" },

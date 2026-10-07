@@ -1,5 +1,7 @@
 import Image from "next/image"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
+import { coverOf, formatDate, listPosts, plain } from "@/lib/wp"
 
 interface Post {
   title: string
@@ -9,59 +11,15 @@ interface Post {
   href: string
 }
 
-const FEED = "https://growfore.com/wp-json/wp/v2/posts?per_page=3&_embed"
-
-// WordPress hands back escaped HTML — strip tags, then numeric/named entities.
-function plain(html: string) {
-  return html
-    .replace(/<[^>]*>/g, "")
-    .replace(/&#(\d+);/g, (_, code: string) => String.fromCharCode(+code))
-    .replace(
-      /&(amp|nbsp|quot|apos|lt|gt|hellip|rsquo|lsquo|rdquo|ldquo|mdash|ndash);/g,
-      (_, name: string) =>
-        ({
-          amp: "&",
-          nbsp: " ",
-          quot: '"',
-          apos: "'",
-          lt: "<",
-          gt: ">",
-          hellip: "…",
-          rsquo: "’",
-          lsquo: "‘",
-          rdquo: "”",
-          ldquo: "“",
-          mdash: "—",
-          ndash: "–",
-        })[name] ?? ""
-    )
-    .trim()
-}
-
-// ponytail: live WordPress feed, revalidated hourly. At launch this app
-// replaces growfore.com, so /wp-json will 404 — the catch keeps the build
-// green and the section simply hides. Swap FEED for your own CMS then.
 async function getPosts(): Promise<Post[]> {
-  try {
-    const res = await fetch(FEED, { next: { revalidate: 3600 } })
-    if (!res.ok) return []
-    const raw = (await res.json()) as {
-      title: { rendered: string }
-      date: string
-      excerpt: { rendered: string }
-      link: string
-      _embedded?: Record<string, { source_url?: string }[]>
-    }[]
-    return raw.map((p) => ({
-      title: p.title.rendered,
-      date: p.date,
-      excerpt: plain(p.excerpt.rendered),
-      image: p._embedded?.["wp:featuredmedia"]?.[0]?.source_url,
-      href: p.link,
-    }))
-  } catch {
-    return []
-  }
+  const rows = await listPosts(3)
+  return (rows ?? []).map((p) => ({
+    title: plain(p.title.rendered),
+    date: p.date,
+    excerpt: plain(p.excerpt.rendered),
+    image: coverOf(p),
+    href: `/blog/${p.slug}`,
+  }))
 }
 
 export default async function PostsSection() {
@@ -84,12 +42,7 @@ export default async function PostsSection() {
             className="group flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
           >
             View all posts
-            <span
-              aria-hidden="true"
-              className="transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none"
-            >
-              →
-            </span>
+            <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none" />
           </Link>
         </div>
 
@@ -124,11 +77,7 @@ export default async function PostsSection() {
                       dateTime={post.date}
                       className="font-mono text-xs tracking-[0.15em] text-muted-foreground uppercase"
                     >
-                      {new Date(post.date).toLocaleDateString("en-GB", {
-                        day: "numeric",
-                        month: "short",
-                        year: "numeric",
-                      })}
+                      {formatDate(post.date)}
                     </time>
                     <h3 className="mt-4 text-xl leading-snug text-balance">
                       {post.title}

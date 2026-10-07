@@ -42,7 +42,7 @@ const clients: { src: string; alt: string }[] = [
   { src: "/clients/silk-cosmetics.webp", alt: "Silk Cosmetics" },
   { src: "/clients/summit-luxury-logo-white.webp", alt: "Summit Luxury Treks" },
   { src: "/clients/suikhet-valley-resort.webp", alt: "Suikhet Valley Resort" },
-  { src: "/clients/swift_academy_logo.webp", alt: "Swift Academy" },
+  { src: "/clients/swift_academy_logo-sm.webp", alt: "Swift Academy" },
   { src: "/clients/taj-chicken-biryani.webp", alt: "Taj Chicken Biryani" },
   { src: "/clients/tieUpOne-logo.webp", alt: "TieUpOne" },
   { src: "/clients/wow-fashion.webp", alt: "Wow Fashion" },
@@ -58,25 +58,25 @@ const services: {
     eyebrow: "Web development",
     title: "A site built around your brand, not a template",
     cta: "Explore web development",
-    media: "/mockups/web-development.png",
+    media: "/mockups/web-development.webp",
   },
   {
     eyebrow: "SEO",
     title: "Climb the ranks for the searches that convert",
     cta: "Explore SEO",
-    media: "/mockups/seo.png",
+    media: "/mockups/seo.webp",
   },
   {
     eyebrow: "WordPress + SEO",
     title: "Tailored to your brand, optimized for your audience",
     cta: "Explore WordPress + SEO",
-    media: "/mockups/service-3-website-and-audience.png",
+    media: "/mockups/service-3-website-and-audience.webp",
   },
   {
     eyebrow: "Ads management",
     title: "Turn clicks into revenue, not just impressions",
     cta: "Explore ads management",
-    media: "/mockups/ads-management.png",
+    media: "/mockups/ads-management.webp",
   },
 ]
 
@@ -89,7 +89,7 @@ const testimonials = [
     name: "Arjun",
     role: "Founder",
     company: "Into Nepal Treks",
-    image: "/testimonials/Arjun_IntoNepal.png",
+    image: "/testimonials/Arjun_IntoNepal.webp",
   },
   {
     quote:
@@ -105,7 +105,7 @@ const testimonials = [
     name: "Yam",
     role: "Founder",
     company: "Limestone Treks",
-    image: "/testimonials/yam-prasad-poudel.webp",
+    image: "/testimonials/yam-prasad-poudel-sm.webp",
   },
   {
     quote:
@@ -120,7 +120,7 @@ const testimonials = [
     name: "Kumar",
     role: "Founder",
     company: "Lovely Trips",
-    image: "/testimonials/lovely-trips.jpg",
+    image: "/testimonials/lovely-trips.webp",
   },
 ]
 

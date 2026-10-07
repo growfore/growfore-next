@@ -5,6 +5,7 @@ import Image from "next/image"
 import { NavigationMenuDemo } from "../molecules/navigation-menu"
 import { Button } from "../ui/button"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -24,14 +25,16 @@ const Navbar = () => {
       )}
     >
       <div className="container-page flex h-20 items-center justify-between gap-4">
-        <Image
-          src="/growfore-logo-full.png"
-          alt="Growfore"
-          width={150}
-          height={40}
-          className="h-10 w-auto"
-          priority
-        />
+        <Link href={"/"}>
+          <Image
+            src="/growfore-logo-full.png"
+            alt="Growfore"
+            width={150}
+            height={40}
+            className="h-10 w-auto"
+            priority
+          />
+        </Link>
         <NavigationMenuDemo />
         <div className="flex gap-2">
           <Button className={"p-4 px-6"}>Get Started</Button>

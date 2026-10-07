@@ -3,12 +3,6 @@
 import * as React from "react"
 import Link from "next/link"
 import {
-  CircleAlertIcon,
-  CircleCheckIcon,
-  CircleDashedIcon,
-} from "lucide-react"
-
-import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
@@ -48,7 +42,7 @@ const services: { group: string; items: { label: string; href: string }[] }[] =
       group: "SEO Services",
       items: [
         { label: "SEO Services", href: "/seo-services" },
-        { label: "SEO Audit", href: "/seo-audit" },
+        { label: "SEO Audit", href: "/seo-audits" },
         { label: "Local SEO", href: "/local-seo" },
         { label: "Keyword Research", href: "/keyword-research" },
         { label: "On-Page SEO", href: "/on-page-seo" },
@@ -78,14 +72,8 @@ export function NavigationMenuDemo() {
           <NavigationMenuTrigger>Product</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="w-96">
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built with Tailwind CSS.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="https://tripeleven.com" title="TripEleven">
+                Build, manage and sell trips online
               </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -119,7 +107,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuLink
             className={navigationMenuTriggerStyle()}
-            render={<Link href="/docs">Docs</Link>}
+            render={<Link href="/about-us">About us</Link>}
           />
         </NavigationMenuItem>
       </NavigationMenuList>
