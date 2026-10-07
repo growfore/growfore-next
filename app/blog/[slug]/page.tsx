@@ -80,7 +80,7 @@ export default async function BlogPostPage({
           </div>
         )}
 
-        <WpContent html={post.content.rendered} />
+        <WpContent html={post.content.rendered} toc />
 
         <div className="mt-20 max-w-3xl border-t border-border pt-10">
           <p className="text-lg">

@@ -103,6 +103,30 @@ export function sanitize(html: string) {
     .replace(/javascript:/gi, "")
 }
 
+export function tocOf(html: string) {
+  const headings: { id: string; title: string; nested: boolean }[] = []
+  const used = new Set<string>()
+  const content = sanitize(html).replace(
+    /<(h[23])>([\s\S]*?)<\/\1>/gi,
+    (_, tag: string, inner: string) => {
+      const title = plain(inner)
+      const base =
+        title
+          .normalize("NFKD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-|-$/g, "") || "section"
+      let id = base
+      for (let n = 2; used.has(id); n++) id = `${base}-${n}`
+      used.add(id)
+      headings.push({ id, title, nested: tag.toLowerCase() === "h3" })
+      return `<${tag} id="${id}">${inner}</${tag}>`
+    }
+  )
+  return { content, headings }
+}
+
 // WordPress serves service/blog bodies as Elementor output: ~90KB of divs
 // whose classes only resolve against the old theme's stylesheet. Porting that
 // markup verbatim gives broken layout, so strip the skin and keep the words —
