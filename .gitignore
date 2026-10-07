@@ -37,3 +37,16 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# playwright mcp output
+/.playwright-mcp/
+
+# design reference + scratch images (local only)
+/cta-inspiration.png
+/faq-reference.png
+/footer-reference.png
+/hero-section-reference.png
+/services-section-reference.png
+/testimonial-reference.png
+/testi-*.png
+/why-*.png

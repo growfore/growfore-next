@@ -7,6 +7,7 @@
 @theme inline {
     --font-heading: var(--font-sans);
     --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -125,5 +126,83 @@
     }
   html {
     @apply font-sans;
+    scrollbar-width: none;
     }
+  body {
+    scrollbar-width: none;
+    }
+}
+
+/* Hide the scrollbar chrome but keep scrolling and keyboard/trackpad intact.
+   Firefox uses scrollbar-width; WebKit needs the pseudo-elements removed. */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Single page container: full-bleed with generous gutters on both axes.
+   Every section inner wrapper uses this so width is tunable in one place. */
+.container-page {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 90rem;
+    padding-inline: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .container-page {
+        padding-inline: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container-page {
+        padding-inline: 4rem;
+    }
+}
+
+/* ---- micro-interactions -------------------------------------------------
+   Scroll reveals plus a few hover affordances. Content stays visible until
+   RevealInit adds `.reveal-ready`, so a failed script never hides the page. */
+.reveal-ready [data-reveal] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal-ready [data-reveal].is-revealed {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-ready [data-reveal] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Cards and media lift a touch on hover. */
+.lift {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lift:hover {
+    transform: translateY(-3px);
+}
+
+/* Underline that draws in from the left on link hover. */
+.link-sweep {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    transition: background-size 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.link-sweep:hover {
+    background-size: 100% 1px;
 }
