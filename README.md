@@ -1,6 +1,6 @@
 # growfore.com
 
-Redesign of growfore.com — Next.js 16 (App Router, Cache Components) + Tailwind CSS v4. Visual direction follows v7labs.com: charcoal statement sections, warm off-white content, editorial serif headlines (Newsreader) over Inter, hairline "ledger" grids, one accent (Growfore sky blue).
+Redesign of growfore.com — Next.js 16 (App Router, Cache Components) + Tailwind CSS v4. Visual direction follows v7labs.com: charcoal statement sections, warm off-white content, editorial serif headlines (Newsreader) over Hanken Grotesk, hairline "ledger" grids, one accent (Growfore sky blue).
 
 ```bash
 pnpm install

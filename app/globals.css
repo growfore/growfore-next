@@ -24,7 +24,7 @@
   --color-brand-ink: #0874ad;
   --color-brand-soft: #e6f6fe;
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
 
   --text-display: clamp(2.5rem, 2rem + 1.6vw, 3.375rem);
@@ -65,7 +65,6 @@
     background: var(--color-paper);
     color: var(--color-text);
     font-family: var(--font-sans);
-    font-feature-settings: "cv11", "ss01";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

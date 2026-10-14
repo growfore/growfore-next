@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import { Hanken_Grotesk, Newsreader } from "next/font/google";
 import Link from "next/link";
 import { Footer } from "@/components/site/footer";
-import { Header, type NavGroup } from "@/components/site/header";
-import { HUB_META, HUBS, hubChildren, posts, reviews } from "@/lib/content";
+import { Header, type NavGroup, type NavPost } from "@/components/site/header";
+import { formatDate, HUB_META, HUBS, hubChildren, posts, reviews } from "@/lib/content";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
+const body = Hanken_Grotesk({ variable: "--font-body", subsets: ["latin"], display: "swap" });
 const newsreader = Newsreader({
   variable: "--font-newsreader",
   subsets: ["latin"],
@@ -36,6 +36,8 @@ const nav: NavGroup[] = HUBS.map((hub) => ({
   items: hubChildren(hub).map((s) => ({ label: s.title, href: `/${s.slug}/` })),
 }));
 
+const navPosts: NavPost[] = posts.slice(0, 3).map((p) => ({ title: p.title, href: `/${p.slug}/`, date: formatDate(p.date) }));
+
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
@@ -58,7 +60,7 @@ const orgJsonLd = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   const latest = posts[0];
   return (
-    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
+    <html lang="en" className={`${body.variable} ${newsreader.variable}`}>
       <body className="min-h-dvh">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-ink">
           Skip to content
@@ -69,7 +71,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <span className="hidden text-ink-muted sm:inline">Read the guide →</span>
           </Link>
         </div>
-        <Header services={nav} />
+        <Header services={nav} posts={navPosts} />
         <main id="main">{children}</main>
         <Footer />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd).replace(/</g, "\\u003c") }} />

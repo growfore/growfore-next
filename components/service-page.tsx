@@ -127,7 +127,7 @@ export function ServicePage({ service }: { service: Service }) {
               );
             })}
             {service.deliverables.length % 3 !== 0 && (
-              <Link href="/contact-us/" className="group hidden flex-col justify-between bg-ink p-6 text-white xl:flex lg:p-8">
+              <Link href="/contact-us/" className={`group hidden flex-col justify-between bg-ink p-6 text-white xl:flex lg:p-8 ${service.deliverables.length % 3 === 1 ? "xl:col-span-2" : ""}`}>
                 <p className="font-serif text-h3 text-balance">Not sure which you need? Talk to a strategist.</p>
                 <span className="flex items-center gap-2 pt-8 text-[0.875rem] font-medium">
                   Get a free consultation <ArrowCircle dark />

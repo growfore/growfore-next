@@ -3,28 +3,34 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { ButtonLink, cx } from "@/components/ui";
+import { useEffect, useRef, useState } from "react";
+import { ArrowCircle, ButtonLink, cx } from "@/components/ui";
 
 export type NavGroup = { label: string; href: string; blurb: string; items: { label: string; href: string }[] };
+export type NavPost = { title: string; href: string; date: string };
 
 const company = [
-  { label: "About us", href: "/about-us/" },
-  { label: "Our team", href: "/our-team/" },
-  { label: "Careers", href: "/careers/" },
-  { label: "Contact", href: "/contact-us/" },
+  { label: "About us", href: "/about-us/", blurb: "Who we are and the strategy we follow" },
+  { label: "Our team", href: "/our-team/", blurb: "The people who build, rank and run your work" },
+  { label: "Careers", href: "/careers/", blurb: "Build your career while building brands" },
+  { label: "Contact", href: "/contact-us/", blurb: "Get a proposal or book a call" },
 ];
 
-export function Header({ services }: { services: NavGroup[] }) {
+type MenuId = "services" | "company" | null;
+
+export function Header({ services, posts }: { services: NavGroup[]; posts: NavPost[] }) {
   const [open, setOpen] = useState(false);
+  const [menu, setMenu] = useState<MenuId>(null);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // close the mobile menu after navigating (adjust state during render, no effect needed)
+  // close menus after navigating (adjust state during render, no effect needed)
   const [lastPath, setLastPath] = useState(pathname);
   if (pathname !== lastPath) {
     setLastPath(pathname);
     setOpen(false);
+    setMenu(null);
   }
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -35,12 +41,29 @@ export function Header({ services }: { services: NavGroup[] }) {
   useEffect(() => {
     document.documentElement.style.overflow = open ? "hidden" : "";
   }, [open]);
+  useEffect(() => {
+    if (!menu) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setMenu(null);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [menu]);
+
+  // small delay on close so moving the pointer from trigger to panel doesn't flicker
+  const show = (id: MenuId) => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setMenu(id);
+  };
+  const hide = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    closeTimer.current = setTimeout(() => setMenu(null), 120);
+  };
 
   return (
     <header
+      onMouseLeave={hide}
       className={cx(
         "sticky top-0 z-50 text-white transition-[background-color,border-color] duration-300",
-        scrolled || open ? "border-b border-ink-line bg-ink/85 backdrop-blur-xl" : "border-b border-transparent bg-ink",
+        scrolled || open || menu ? "border-b border-ink-line bg-ink/95 backdrop-blur-xl" : "border-b border-transparent bg-ink",
       )}
     >
       <div className="container-x flex h-16 items-center gap-8 lg:h-[4.5rem]">
@@ -55,50 +78,21 @@ export function Header({ services }: { services: NavGroup[] }) {
           />
         </Link>
 
-        <nav aria-label="Main" className="hidden items-center gap-1 lg:flex">
-          <Dropdown label="Services" href="/services/">
-            <div className="grid w-[46rem] grid-cols-3 gap-px bg-ink-line">
-              {services.map((g) => (
-                <div key={g.href} className="bg-ink-2 p-5">
-                  <Link href={g.href} className="group block">
-                    <span className="font-serif text-xl text-white group-hover:text-brand">{g.label}</span>
-                    <span className="mt-1 block text-[0.8125rem] leading-snug text-ink-muted">{g.blurb}</span>
-                  </Link>
-                  <ul className="mt-4 space-y-0.5 border-t border-ink-line pt-3">
-                    {g.items.map((i) => (
-                      <li key={i.href}>
-                        <Link
-                          href={i.href}
-                          className="block rounded px-2 py-1.5 -mx-2 text-[0.875rem] text-white/80 hover:bg-white/6 hover:text-white"
-                        >
-                          {i.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </Dropdown>
-          <Dropdown label="Company" href="/about-us/">
-            <ul className="w-56 bg-ink-2 p-2">
-              {company.map((i) => (
-                <li key={i.href}>
-                  <Link href={i.href} className="block rounded px-3 py-2 text-[0.875rem] text-white/80 hover:bg-white/6 hover:text-white">
-                    {i.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </Dropdown>
-          <NavLink href="/tripeleven/">
+        <nav aria-label="Main" className="hidden h-full items-center gap-1 lg:flex">
+          <Trigger id="services" label="Services" href="/services/" menu={menu} show={show} />
+          <Trigger id="company" label="Company" href="/about-us/" menu={menu} show={show} />
+          <NavLink href="/tripeleven/" onEnter={() => show(null)}>
             TripEleven <span className="ml-1 hidden rounded bg-brand/15 px-1.5 py-0.5 text-[0.6875rem] text-brand xl:inline">Product</span>
           </NavLink>
-          <NavLink href="/blogs/">Blog</NavLink>
-          <NavLink href="/contact-us/">Contact</NavLink>
+          <NavLink href="/blogs/" onEnter={() => show(null)}>
+            Blog
+          </NavLink>
+          <NavLink href="/contact-us/" onEnter={() => show(null)}>
+            Contact
+          </NavLink>
         </nav>
 
-        <div className="ml-auto hidden items-center gap-3 lg:flex">
+        <div className="ml-auto hidden items-center gap-3 lg:flex" onMouseEnter={() => show(null)}>
           <ButtonLink href="tel:+9779856085151" variant="ghost-dark" size="sm" className="max-xl:hidden">
             Call +977 9856085151
           </ButtonLink>
@@ -120,6 +114,113 @@ export function Header({ services }: { services: NavGroup[] }) {
             <span className={cx("absolute left-0 h-px w-5 bg-white transition-transform", open ? "top-1.5 -rotate-45" : "top-3")} />
           </span>
         </button>
+      </div>
+
+      {/* ---------------------------------------------------------- full-width mega menus */}
+      <div className="hidden lg:block">
+        <div
+          aria-hidden
+          onMouseEnter={hide}
+          className={cx(
+            "absolute inset-x-0 top-full -z-10 h-dvh bg-black/45 transition-opacity duration-200",
+            menu ? "opacity-100" : "pointer-events-none opacity-0",
+          )}
+        />
+        <Panel id="services" menu={menu} show={show}>
+          <div className="grid grid-cols-[1.05fr_1fr_1fr_0.8fr_1.25fr] gap-10">
+            <div>
+              <p className="font-serif text-[1.75rem] leading-tight text-white">Services</p>
+              <p className="mt-3 max-w-[15rem] text-[0.875rem] leading-relaxed text-ink-muted">
+                Websites, search and ads from one team — everything you need to grow, under one roof.
+              </p>
+              <Link href="/services/" className="group mt-6 inline-flex items-center gap-2 text-[0.875rem] text-white">
+                All services <ArrowCircle dark />
+              </Link>
+            </div>
+            {services.map((g) => (
+              <div key={g.href}>
+                <Link href={g.href} className="group block border-b border-ink-line pb-3">
+                  <span className="text-[0.9375rem] font-medium text-white group-hover:text-brand">{g.label}</span>
+                </Link>
+                <ul className="mt-3 space-y-0.5">
+                  {g.items.map((i) => (
+                    <li key={i.href}>
+                      <Link href={i.href} className="-mx-2 block rounded px-2 py-1.5 text-[0.875rem] text-white/70 transition-colors hover:bg-white/6 hover:text-white">
+                        {i.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <Link href="/tripeleven/" className="group flex flex-col overflow-hidden rounded-md bg-ink-2 ring-1 ring-ink-line transition-colors hover:bg-ink-3">
+              <div className="relative aspect-[16/9] overflow-hidden">
+                <Image
+                  src="/products/tripeleven/sites/walkthrough-nepal.jpg"
+                  alt=""
+                  fill
+                  sizes="20rem"
+                  className="object-cover object-top opacity-80 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
+                />
+              </div>
+              <div className="p-4">
+                <p className="text-[0.75rem] text-brand">Our product</p>
+                <p className="mt-1 text-[0.9375rem] text-white">TripEleven</p>
+                <p className="mt-1 text-[0.8125rem] leading-snug text-ink-muted">Website & booking platform for trekking and tour operators.</p>
+              </div>
+            </Link>
+          </div>
+        </Panel>
+
+        <Panel id="company" menu={menu} show={show}>
+          <div className="grid grid-cols-[1.05fr_1.6fr_1.4fr_1.15fr] gap-10">
+            <div>
+              <p className="font-serif text-[1.75rem] leading-tight text-white">Company</p>
+              <p className="mt-3 max-w-[15rem] text-[0.875rem] leading-relaxed text-ink-muted">
+                A website design & SEO agency on New Rd, Pokhara — working with businesses everywhere.
+              </p>
+            </div>
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-1">
+              {company.map((c) => (
+                <li key={c.href}>
+                  <Link href={c.href} className="-mx-3 block rounded-md px-3 py-3 transition-colors hover:bg-white/6">
+                    <span className="block text-[0.9375rem] text-white">{c.label}</span>
+                    <span className="mt-0.5 block text-[0.8125rem] leading-snug text-ink-muted">{c.blurb}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div>
+              <Link href="/blogs/" className="group flex items-center justify-between border-b border-ink-line pb-3 text-[0.9375rem] font-medium text-white">
+                From the blog <ArrowCircle dark />
+              </Link>
+              <ul className="mt-2">
+                {posts.map((p) => (
+                  <li key={p.href}>
+                    <Link href={p.href} className="-mx-2 block rounded px-2 py-2 transition-colors hover:bg-white/6">
+                      <span className="line-clamp-1 text-[0.875rem] text-white/80">{p.title}</span>
+                      <span className="text-[0.75rem] text-ink-muted">{p.date}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col justify-between rounded-md bg-ink-2 p-5 ring-1 ring-ink-line">
+              <div>
+                <p className="text-[0.75rem] text-ink-muted">Talk to a strategist</p>
+                <a href="tel:+9779856085151" className="mt-2 block text-[0.9375rem] text-white hover:text-brand">
+                  +977 9856085151
+                </a>
+                <a href="mailto:info@growfore.com" className="mt-1 block text-[0.9375rem] text-white hover:text-brand">
+                  info@growfore.com
+                </a>
+              </div>
+              <ButtonLink href="/contact-us/" size="sm" className="mt-6 self-start">
+                Get a proposal
+              </ButtonLink>
+            </div>
+          </div>
+        </Panel>
       </div>
 
       {open && (
@@ -163,12 +264,14 @@ export function Header({ services }: { services: NavGroup[] }) {
   );
 }
 
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
+function NavLink({ href, children, onEnter }: { href: string; children: React.ReactNode; onEnter?: () => void }) {
   const pathname = usePathname();
   const active = pathname.startsWith(href);
   return (
     <Link
       href={href}
+      onMouseEnter={onEnter}
+      onFocus={onEnter}
       className={cx("rounded-full px-3.5 py-2 text-[0.9375rem] whitespace-nowrap transition-colors hover:text-white", active ? "text-white" : "text-white/80")}
     >
       {children}
@@ -176,22 +279,73 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
   );
 }
 
-function Dropdown({ label, href, children }: { label: string; href: string; children: React.ReactNode }) {
+function Trigger({
+  id,
+  label,
+  href,
+  menu,
+  show,
+}: {
+  id: Exclude<MenuId, null>;
+  label: string;
+  href: string;
+  menu: MenuId;
+  show: (id: MenuId) => void;
+}) {
+  const active = menu === id;
   return (
-    <div className="group relative">
+    // full header height so the pointer never crosses a gap between trigger and panel
+    <div className="flex h-full items-center" onMouseEnter={() => show(id)}>
       <Link
         href={href}
-        className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-[0.9375rem] text-white/80 transition-colors hover:text-white group-focus-within:text-white"
-        aria-haspopup="true"
+        onFocus={() => show(id)}
+        onKeyDown={(e) => {
+          if (e.key === "ArrowDown") {
+            e.preventDefault();
+            show(id);
+            document.querySelector<HTMLElement>(`#mega-${id} a`)?.focus();
+          }
+        }}
+        aria-expanded={active}
+        aria-controls={`mega-${id}`}
+        className={cx(
+          "inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-[0.9375rem] transition-colors hover:text-white",
+          active ? "text-white" : "text-white/80",
+        )}
       >
         {label}
-        <svg viewBox="0 0 10 6" className="size-2.5 opacity-60 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden>
+        <svg viewBox="0 0 10 6" className={cx("size-2.5 opacity-60 transition-transform", active && "rotate-180")} fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden>
           <path d="M1 1l4 4 4-4" />
         </svg>
       </Link>
-      <div className="invisible absolute top-full left-0 pt-3 opacity-0 transition-[opacity,visibility] duration-150 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-        <div className="overflow-hidden rounded-md shadow-2xl shadow-black/50 ring-1 ring-ink-line">{children}</div>
-      </div>
+    </div>
+  );
+}
+
+function Panel({
+  id,
+  menu,
+  show,
+  children,
+}: {
+  id: Exclude<MenuId, null>;
+  menu: MenuId;
+  show: (id: MenuId) => void;
+  children: React.ReactNode;
+}) {
+  const active = menu === id;
+  return (
+    <div
+      id={`mega-${id}`}
+      onMouseEnter={() => show(id)}
+      onFocus={() => show(id)}
+      inert={!active}
+      className={cx(
+        "absolute inset-x-0 top-full border-y border-ink-line bg-ink shadow-2xl shadow-black/40 transition-[opacity,transform,visibility] duration-200",
+        active ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0",
+      )}
+    >
+      <div className="container-x py-10">{children}</div>
     </div>
   );
 }
