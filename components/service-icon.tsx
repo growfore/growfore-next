@@ -1,0 +1,63 @@
+import {
+  BarChart3,
+  Blocks,
+  Code2,
+  FileSearch,
+  FileText,
+  Gauge,
+  Globe,
+  KeyRound,
+  Laptop,
+  LayoutTemplate,
+  Link2,
+  type LucideIcon,
+  MapPin,
+  Megaphone,
+  MonitorSmartphone,
+  Newspaper,
+  PenTool,
+  PieChart,
+  Search,
+  Server,
+  Settings2,
+  ShoppingCart,
+  Smartphone,
+  Sparkles,
+  Store,
+  Video,
+  Wrench,
+} from "lucide-react";
+
+// Font Awesome / Elementor icon names from the old site → lucide equivalents.
+const MAP: [RegExp, LucideIcon][] = [
+  [/google|map-marker|location/, MapPin],
+  [/keyboard|key/, KeyRound],
+  [/file-word|file-alt|file/, FileText],
+  [/newspaper/, Newspaper],
+  [/search-plus|binoculars|file-search/, FileSearch],
+  [/search/, Search],
+  [/link/, Link2],
+  [/tools|wrench/, Wrench],
+  [/chart-pie/, PieChart],
+  [/chart|analytics|poll/, BarChart3],
+  [/tachometer|gauge|bolt|rocket/, Gauge],
+  [/server|database|hdd/, Server],
+  [/store/, Store],
+  [/shopping|cart/, ShoppingCart],
+  [/laptop-code|code/, Code2],
+  [/laptop|desktop/, Laptop],
+  [/mobile/, Smartphone],
+  [/pencil|pen|paint|palette/, PenTool],
+  [/wordpress|audible/, LayoutTemplate],
+  [/video|youtube|play/, Video],
+  [/bullhorn|ad/, Megaphone],
+  [/globe|sitemap/, Globe],
+  [/cog|settings/, Settings2],
+  [/cubes|puzzle/, Blocks],
+  [/tablet|responsive/, MonitorSmartphone],
+];
+
+export function ServiceIcon({ name, className }: { name: string | null; className?: string }) {
+  const Icon = (name && MAP.find(([re]) => re.test(name))?.[1]) || Sparkles;
+  return <Icon className={className} strokeWidth={1.5} aria-hidden />;
+}

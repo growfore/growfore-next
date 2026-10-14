@@ -1,0 +1,2581 @@
+{
+  "seo-services": {
+    "slug": "seo-services",
+    "title": "SEO Services",
+    "deliverables": [
+      {
+        "id": "seo-audits",
+        "title": "SEO Audits",
+        "icon": "fab fa-audible",
+        "body": "Comprehensive analysis of your website to identify issues that prevent it from ranking higher in search engines. We help your business with the following actions:",
+        "included": [
+          "Improved Ranking",
+          "Competitive advantage",
+          "Cost-effective growth",
+          "Measurable Results"
+        ],
+        "outcome": "It helps spot what's holding you back in search rankings, from technical issues to content gaps. With the insights, you can fix what's broken, boost visibility, and drive more targeted traffic to your business."
+      },
+      {
+        "id": "local-seo",
+        "title": "Local SEO",
+        "icon": "icon icon-university",
+        "body": "Local SEO is all about getting your business seen by the people who are nearby and ready to make a purchase. The best local SEO services focus on ensuring you appear in Google Maps, \"near me\" searches, and city-specific keywords that bring real customers to your doorstep. Local SEO for small businesses makes them consistent across the web, and creates content that speaks directly to your community",
+        "included": [
+          "Google Business Profile Optimization",
+          "Local Keyword Research",
+          "On-Page SEO",
+          "Local Link Building",
+          "Content Writing",
+          "Technical SEO Fixes",
+          "Monthly Performance Reports"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "on-page-seo",
+        "title": "On-Page SEO",
+        "icon": "icon icon-page_search",
+        "body": "On-page SEO is the foundation of your website's visibility. It's all about optimizing everything users and search engines see. What we see:",
+        "included": [
+          "Title",
+          "Meta Description",
+          "Heading",
+          "Keywords",
+          "Internal Link",
+          "Site Structure"
+        ],
+        "outcome": "Expert on-page SEO services tune every page to speak Google's language so we can grab its attention to our site, which helps it rank higher and turn visitors into customers."
+      },
+      {
+        "id": "technical-seo",
+        "title": "Technical SEO",
+        "icon": "icon icon-settings",
+        "body": "Technical SEO services focus on optimizing the technical foundation of your website to improve its search engine visibility and performance. Our SEO experts exercise various sets of technical prospects to make your site easier for website visitors. Some technical configurations include:",
+        "included": [
+          "Page Elements",
+          "HTTP Header Response",
+          "XML Sitemaps",
+          "Redirects",
+          "Metadata",
+          "Crawling & Indexing",
+          "Security"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "content-optimization",
+        "title": "Content Optimization",
+        "icon": "icon icon-contract",
+        "body": "Content optimization is what makes your pages rank. It's never enough to just write content. If it's not optimized with the right keywords, structure, and intent, search engines won't know what it's about, and your audience won't find it. \n\n\n\nOptimized content interacts with both Google and real people, helping your website with:",
+        "included": [
+          "Higher Ranking",
+          "Drive Traffic",
+          "Convert Leads into Customers",
+          "Engage Readers"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "off-page-seo",
+        "title": "Off-Page SEO",
+        "icon": "icon icon-search11",
+        "body": "Off-page SEO service is all about what happens beyond your website. We boost your online credibility and trust through guest posts, PR, and link building. When other reputable sites link to yours, search engines see your brand as trustworthy and rank you higher.",
+        "included": [
+          "High-Quality Backlinks",
+          "Smart Outreach",
+          "Content Placement",
+          "Digital Pr Campaigns",
+          "Broken Link Recovery"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "keyword-research",
+        "title": "Keyword Research",
+        "icon": "icon icon-search11",
+        "body": "You can write all the content in the world, but if it's not built around the right keywords, it's invisible. Keyword research makes sure your content gets seen, ranks higher, and reaches the people searching for what you offer.",
+        "included": [
+          "Competitor Analysis",
+          "Long-tail Keyword Targeting",
+          "Search Intent Mapping",
+          "Local SEO Keywords"
+        ],
+        "outcome": "We research keywords using a mix of tools, trends, and real search behavior so your content speaks the language your audience types into Google."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is an SEO service?",
+        "a": "SEO (search engine optimization) service can be defined as a set of strategies that are used to improve a website's visibility and ranking in search engine results pages (SERPs)."
+      },
+      {
+        "q": "Does my business need SEO service?",
+        "a": "If you want more visibility and traffic on your website, the earlier, the better. SEO services can be a great plus to your business, especially if you are considering a site redesign or planning to launch a new site."
+      },
+      {
+        "q": "What is technical SEO?",
+        "a": "Technical SEO services focus on optimizing the technical foundation (Page Elements, HTTP Header Response, XML Sitemaps, Redirects) of your website to improve its search engine visibility and performance"
+      },
+      {
+        "q": "How does SEO work?",
+        "a": "SEO works by combining various techniques that target search engine algorithms. Google looks at over 200 factors when ranking websites. SEO is all about optimizing for as many of those as you can, giving your site a stronger shot at showing up for the keywords you're aiming for."
+      },
+      {
+        "q": "What is local SEO and do I need it?",
+        "a": "If you run a local business, then yes, 100%. Local SEO is all about boosting your visibility in area-based search results. It's a must if you serve a specific region or have a physical spot people can visit."
+      },
+      {
+        "q": "What is off-page SEO?",
+        "a": "Off-page SEO service is all about what happens beyond your website. We boost your online credibility and trust through guest posts, PR, and link building."
+      },
+      {
+        "q": "Who needs SEO?",
+        "a": "Any business selling a product or service can gain from SEO. Without it, your site might stay hidden, even when people are searching for exactly what you offer."
+      },
+      {
+        "q": "What is content optimization?",
+        "a": "Content optimization is the process of fine-tuning your content so it performs better on search engines and gives users what they're looking for.That means,Using the right keywords naturallyWriting clear, helpful, and engaging contentStructuring it with headings, bullet points, and an easy flow.It's all about making your content both search-friendly and user-friendly."
+      },
+      {
+        "q": "Is content important in SEO?",
+        "a": "Yes, content is the backbone of SEO. Without solid content, there's nothing for search engines to rank and nothing for users to engage with."
+      },
+      {
+        "q": "How long for SEO to start working?",
+        "a": "SEO isn't instant; it's a slow burn. You usually start seeing real results in 3 to 6 months, depending on your niche, competition, and how strong your current site is. It's like planting a seed; give it time, water it (with good content + backlinks), and it'll grow."
+      },
+      {
+        "q": "Which industry needs SEO services?",
+        "a": "Pretty much every industry can benefit, but it's a must-have for:E-commerce (needs traffic to sell)Local businesses (restaurants, salons, clinics)Travel & tourismReal estateEducation & online coursesTech & SaaS companiesIf people are Googling what you offer, SEO matters."
+      },
+      {
+        "q": "How effective is SEO marketing?",
+        "a": "When done right, SEO is one of the highest-ROI marketing strategies out there. It brings in organic, targeted traffic. SEO works 24/7 (unlike ads that stop when the budget runs out). It also builds long-term visibility and trust."
+      }
+    ],
+    "eyebrow": "SEO SERVICES THAT PUT YOUR BRAND ON TOP",
+    "headline": "Optimized for search, built for growth",
+    "intro": "Get more traffic and revenue from search with outstanding SEO services that actually work. We dig deep into strategy, optimize what matters, and help your brand climb the ranks so the right people find you, click in, and convert. Connect with our SEO agency today.",
+    "sectionTitle": "Boost Your Revenue with Complete Search Engine Optimization Solutions",
+    "sectionBody": "Growfore's full-service SEO solutions do more than just boost rankings; they attract the right audience, drive quality traffic, and turn visits into real revenue. It's everything you need to grow, all in one place.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR SEO?",
+      "title": "Don't Let Your Competitors Steal Your Customers",
+      "body": "75% of your potential clients never scroll past Google's first page, so if you're not showing up there, you're giving your rivals qualified leads. Compared to companies using outdated marketing techniques, our clients who invest in highly skilled SEO regularly achieve 14.6% greater revenue from conversions, transforming every search into a profitable opportunity you can't afford to pass up.",
+      "subtitle": "Your Growth isn't guess, its a strategy",
+      "points": [
+        "Tailored SEO Strategies",
+        "Content That Ranks & Converts",
+        "Local Expertise, Global Standards",
+        "Full Spectrum SEO Services",
+        "Results That Speak",
+        "User + Google-Friendly Optimization"
+      ],
+      "closing": "\"The best time to plant a tree was 20 years ago. The second best time is now.\" The same applies to SEO. Start building your organic presence today."
+    },
+    "seoTitle": "Best SEO Services in Nepal - Growfore Solution",
+    "seoDescription": "At a customized price, we can provide you with On, Off & Technical optimization SEO services to help your website rankings. Learn more!",
+    "kind": "hub",
+    "children": [
+      "local-seo",
+      "seo-audits",
+      "keyword-research",
+      "on-page-seo",
+      "off-page-seo",
+      "technical-seo",
+      "content-optimization",
+      "wordpress-seo"
+    ]
+  },
+  "local-seo": {
+    "slug": "local-seo",
+    "title": "Local SEO",
+    "deliverables": [
+      {
+        "id": "google-business-profile-optimization",
+        "title": "Google Business Profile Optimization",
+        "icon": "fab fa-google",
+        "body": "Your Google Business Profile is the first place local customers see when they search. Making sure your profile is fully optimized with accurate info, eye-catching photos, and regular updates can dramatically boost your visibility and attract more clicks and calls.",
+        "included": [
+          "Accurate Business Info",
+          "Engaging photos and posts",
+          "Review and QA replies"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "local-keyword-research",
+        "title": "Local Keyword Research",
+        "icon": "far fa-keyboard",
+        "body": "Targeting the right keywords is crucial to get found by local customers ready to buy. We dig into your market to find the exact phrases people in your area use, including \"near me\" searches and city-specific terms, so your business ranks where it matters most.",
+        "included": [
+          "High Intent Local Terms",
+          "Competitor Keyword Insight",
+          "\"Near me\" and city keywords"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "on-page-seo",
+        "title": "On-Page SEO",
+        "icon": "fas fa-search",
+        "body": "Your website needs to speak Google's language while offering a smooth user experience. We optimize your titles, headers, and metadata with local keywords, speed up your site, ensure it's mobile-friendly, and add schema markup that tells Google you're a local expert.",
+        "included": [
+          "Local keyword optimization",
+          "Mobile & speed improvements",
+          "Local business schema"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "local-link-building",
+        "title": "Local Link Building",
+        "icon": "fas fa-link",
+        "body": "Local backlinks build your site's authority and trustworthiness in your community. We connect with local blogs, directories, and businesses to get you genuine mentions and links that push you higher in local search results.",
+        "included": [
+          "Links from local sites",
+          "Partnerships & directories",
+          "Influencer mentions"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "content-writing",
+        "title": "Content Writing",
+        "icon": "far fa-newspaper",
+        "body": "Content is how you connect with your neighborhood. We craft blogs, guides, and pages that include local keywords and speak directly to your community's needs, helping you rank for more searches and build trust.",
+        "included": [
+          "Local blogs & guides",
+          "Neighborhood keywords",
+          "Community-focused content"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "technical-seo-fixes",
+        "title": "Technical SEO Fixes",
+        "icon": "fas fa-tools",
+        "body": "Technical issues can hold your site back. We fix broken links, improve your site's structure, enable SSL security, make sure your site works perfectly on mobile, and boost loading speeds so search engines love your site.",
+        "included": [
+          "Fix broken links",
+          "SSL & mobile-ready",
+          "Speed optimizations"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "monthly-performance-reports",
+        "title": "Monthly Performance Reports",
+        "icon": "fas fa-chart-pie",
+        "body": "We keep you in the loop with clear, easy-to-understand reports every month. Track your rankings, website traffic, and Google Business Profile stats, and see where to focus next to keep growing.",
+        "included": [
+          "Ranking & traffic updates",
+          "Google Profile insights",
+          "Strategy recommendations"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How long does local SEO take to show results?",
+        "a": "Local SEO usually starts showing improvements within 3 to 6 months, depending on your competition and current online presence. It's a steady climb, not an overnight jump."
+      },
+      {
+        "q": "Can small businesses afford local SEO services?",
+        "a": "Absolutely. Many local SEO providers, including Growfore, offer affordable plans designed specifically for small businesses and tight budgets. It's an investment that pays off with more local customers."
+      },
+      {
+        "q": "Do I need a website for local SEO?",
+        "a": "Not always, but having a website definitely helps. Your Google Business Profile is key, but a well-optimized website boosts your chances to rank higher and capture more leads."
+      },
+      {
+        "q": "What's the difference between local SEO and regular SEO?",
+        "a": "Local SEO targets searches tied to a specific location, like \"pizza near me\" focusing on Google Maps and local directories. Regular SEO targets broader keywords without a geographic focus."
+      },
+      {
+        "q": "How do reviews impact local SEO?",
+        "a": "Reviews are huge. They build trust with customers and signal to Google that your business is credible and active, both major ranking factors in local search."
+      },
+      {
+        "q": "What if my business moves or changes hours?",
+        "a": "Keeping your information up-to-date across all local listings and your Google Business Profile is critical. Inaccurate info can confuse customers and hurt your rankings."
+      }
+    ],
+    "eyebrow": "Be the first name locals see & the last one they need.",
+    "headline": "Your next customer is one search away. Will they find you?",
+    "intro": "When it comes to local SEO services for small businesses, showing up first in your community is everything. The best local SEO services make sure your business ranks high in Google Maps, \"near me\" searches, and city-specific results, turning local searchers into real customers.",
+    "sectionTitle": "Affordable local SEO services made for small businesses, big dreams, and tight budgets.",
+    "sectionBody": "Local SEO puts you right in front of the people who matter most: those ready to buy now, in your neighborhood. It's not just marketing; it's the lifeline that keeps your business alive in a world that moves fast and searches even faster. No matter how great your business is, if you're buried behind competitors online, you're losing customers every single day.",
+    "why": {
+      "eyebrow": "Why Choose Growfore for Local SEO Services?",
+      "title": "Affordable, effective, and built for your local crowd.",
+      "body": "Customers search \"near me\" or by city, but if your business isn't showing up, you're handing those customers straight to your competitors. That's where Growfore's local SEO services come in. We cut through the clutter, optimize your Google Business Profile, target the exact local keywords your customers use, and build your reputation with real reviews and local links.",
+      "subtitle": "Your growth, our local SEO hustle",
+      "points": [
+        "Strategies that fit your budget, not the other way around",
+        "Fast setup with results you actually measure",
+        "Local competitor analysis to keep you ahead",
+        "Hands-on guidance every step of the way",
+        "Flexible plans that grow with your business",
+        "Focus on bringing real customers, not just clicks"
+      ],
+      "closing": "At Growfore, we get what small businesses need - fast, clear, local SEO that works. We tailor every strategy to your neighborhood and your goals so you get noticed by the right people without wasting time or cash."
+    },
+    "seoTitle": "Local SEO Services in Pokhara 2026 - Growfore Solution",
+    "seoDescription": "Boost your business visibility in Pokhara with expert Local SEO services. Rank higher on Google Maps & local searches & attract more customers.",
+    "kind": "leaf",
+    "parent": "seo-services"
+  },
+  "seo-audits": {
+    "slug": "seo-audits",
+    "title": "SEO Audits",
+    "deliverables": [
+      {
+        "id": "improved-rankings",
+        "title": "Improved Rankings",
+        "icon": "icon icon-chart-bars",
+        "body": "We deeply analyze your website to uncover technical errors, optimize content, and build strong backlinks. This leads to higher visibility on search engines, pushing your site up the rankings and ensuring more people find your business. Our audit provides a clear roadmap to position your website for top performance.",
+        "included": [
+          "Identifies Ranking Barriers",
+          "Optimizes Key Elements",
+          "Enhances Discoverability"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "competitive-advantage",
+        "title": "Competitive Advantage",
+        "icon": "far fa-arrow-alt-circle-up",
+        "body": "Gain an edge over your rivals. We dive deep into your competitors' SEO strategies, identifying their strengths and weaknesses. This allows us to spot untapped opportunities for your website, enabling you to outrank them and capture their audience. Understand what makes them tick and how you can outperform them.",
+        "included": [
+          "Competitor Insights",
+          "Strategic Oppourtunities",
+          "Outperform Rivals"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "cost-effective-growth",
+        "title": "Cost Effective Growth",
+        "icon": "fas fa-money-bill",
+        "body": "Invest smarter, not harder. An SEO audit focuses on organic growth, which provides a higher return on investment compared to paid advertising in the long run. By optimizing your existing assets and targeting the right keywords, we help you attract qualified leads more efficiently, leading to sustainable and cost-effective business expansion.",
+        "included": [
+          "Higher ROI",
+          "Sustainable Traffic",
+          "Optimized Resource Allocation"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "measurable-results",
+        "title": "Measurable Results",
+        "icon": "fas fa-tape",
+        "body": "No more guesswork. Our comprehensive audit provides clear, data-backed insights into your website's performance. You'll receive a detailed report highlighting key metrics, progress areas, and the direct impact of our recommendations. We give you the tools to track your success and see the tangible improvements in your online presence and bottom line.",
+        "included": [
+          "Data Backed Insights",
+          "Actionable Reporting",
+          "Trackable Progress"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is an SEO audit, and why do I need one?",
+        "a": "An SEO audit is a comprehensive analysis of your website's search engine performance. You need one to identify issues holding back your rankings, uncover growth opportunities, and create a data-driven strategy to improve visibility and organic traffic."
+      },
+      {
+        "q": "How long does an SEO audit take?",
+        "a": "The duration varies based on your website's size and complexity. Typically, a thorough audit can take from 1-3 weeks to complete, followed by a detailed report and consultation."
+      },
+      {
+        "q": "Will an SEO audit guarantee first page rankings?",
+        "a": "An SEO audit provides the strategic insights and actionable steps needed to significantly improve your chances of ranking higher. While no one can guarantee specific rankings (due to dynamic search algorithms), an audit is the essential first step towards achieving top visibility."
+      },
+      {
+        "q": "What happens after the SEO audit?",
+        "a": "After the audit, we provide a detailed report and a consultation to walk you through our findings and recommendations. You can then choose to implement the changes yourself, or we can discuss ongoing SEO services to help you execute the strategy."
+      },
+      {
+        "q": "Is an SEO audit a one time thing?",
+        "a": "While a comprehensive audit provides a foundational blueprint, SEO is an ongoing process. We recommend periodic audits (e.g., annually or bi-annually) to adapt to algorithm changes, market shifts, and competitive landscape evolution."
+      }
+    ],
+    "eyebrow": "UNCOVER, OPTIMIZE, TRANSFORM.",
+    "headline": "Data driven insights to dominate search",
+    "intro": "An SEO audit is more than just checking for broken links or slow-loading pages. It's a comprehensive analysis of your website's health, visibility, and ranking potential. By conducting regular audits, you can identify technical issues, content gaps, and opportunities to enhance your presence on search engines.",
+    "sectionTitle": "Your Comprehensive SEO Audit Report",
+    "sectionBody": "From technical performance to content relevance, we leave no stone unturned. Our audit provides a detailed roadmap, ensuring your website is optimized for search engines, user experience, and sustained organic growth. You'll gain clear insights and actionable steps to improve your visibility and drive more business.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR SEO AUDITS?",
+      "title": "See your website climb Google's rankings and attract more customers",
+      "body": "Growfore delivers in-depth SEO audits that go beyond surface-level checks. With a focus on technical health, content quality, and keyword strategy, we help identify the exact issues affecting your online visibility. Our expert insights turn data into action, driving measurable growth for your business.",
+      "subtitle": "Audit turns complex data into clear, actionable strategies for your success",
+      "points": [
+        "In depth technical and content performance analysis",
+        "Actionable roadmap to improve search rankings",
+        "Insights into competitor strategies",
+        "Opportunities for increased organic traffic and conversions",
+        "Clear, jargon free recommendations for SEO experts"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "SEO Audits Service - Growfore Solution",
+    "seoDescription": "Get the Best SEO audit services to enhance your website performance and gain website traffic leads at a very reasonable price. Let's Get Started!",
+    "kind": "leaf",
+    "parent": "seo-services"
+  },
+  "keyword-research": {
+    "slug": "keyword-research",
+    "title": "Keyword Research",
+    "deliverables": [
+      {
+        "id": "competitor-analysis",
+        "title": "Competitor Analysis",
+        "icon": "fas fa-crown",
+        "body": "We study your top competitors to find out what keywords they rank for and where you can beat them. This helps you uncover keyword gaps, spot opportunities, and strengthen your SEO strategy.",
+        "included": [
+          "Identify high ranking keywords used by competitors",
+          "Analyze keyword difficulty and ranking potential",
+          "Uncover content gaps and missed opportunities",
+          "Track SEO performance side-by-side with competitors"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "long-tail-keyword-targeting",
+        "title": "Long-Tail Keyword Targeting",
+        "icon": "icon icon-text-align-justify",
+        "body": "Long-tail keywords are specific phrases with lower competition and higher conversion potential. We help you target these to attract more qualified traffic and increase ROI.",
+        "included": [
+          "Find highly targeted phrases with buyer intent",
+          "Reduce keyword competition and CPC costs",
+          "Boost the chance of ranking faster",
+          "Tailor content to niche queries that convert"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "search-intent-mapping",
+        "title": "Search Intent Mapping",
+        "icon": "fas fa-map-signs",
+        "body": "Understanding why someone searches is just as important as what they search. We map keywords to user intent, whether they're looking to buy, learn, or compare, so your content hits the mark every time.",
+        "included": [
+          "Categorize keywords by informational, navigational, or transactional intent",
+          "Align pages and content with user expectations",
+          "Improve click-through and engagement by matching intent",
+          "Reduce bounce rates with more relevant content delivery"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "local-seo-keywords",
+        "title": "Local SEO Keywords",
+        "icon": "icon icon-search21",
+        "body": "If you're targeting a specific location, we find the local keywords your audience is actually using. This improves your visibility in local search results, map packs, and voice searches.",
+        "included": [
+          "Target location-based phrases relevant to your business",
+          "Optimize for \"near me\" and local intent queries",
+          "Improve rankings in Google Maps and local packs",
+          "Drive more foot traffic calls from nearby customers"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is keyword research?",
+        "a": "Keyword research is the process of finding and analyzing search terms people use on search engines to help your content rank higher and attract the right audience."
+      },
+      {
+        "q": "Why is keyword research important for SEO?",
+        "a": "It helps you understand what your target audience is searching for so you can create content that matches their intent and drives relevant traffic."
+      },
+      {
+        "q": "How do I know which keywords are right for my business?",
+        "a": "The right keywords are those that match your services, align with user intent, and have a balance of search volume and competition."
+      },
+      {
+        "q": "What are long-tail keywords?",
+        "a": "Long-tail keywords are more specific search phrases that usually have lower competition and higher chances of conversion."
+      },
+      {
+        "q": "How often should I do keyword research?",
+        "a": "It's recommended to review and update your keyword strategy regularly, especially when launching new content, targeting new audiences, or analyzing performance."
+      },
+      {
+        "q": "What tools are used for keyword research?",
+        "a": "Tools like Google Keyword Planner, Semrush, Ahrefs, and Ubersuggest are commonly used to find, compare, and analyze keywords."
+      },
+      {
+        "q": "What is keyword difficulty?",
+        "a": "Keyword difficulty measures how hard it would be to rank for a specific keyword based on competition and existing search results."
+      },
+      {
+        "q": "Can I use the same keywords on every page?",
+        "a": "Using the same keywords across all pages can hurt your rankings. Each page should target unique, relevant keywords to avoid competition with your own content."
+      }
+    ],
+    "eyebrow": "REAL KEYWORDS, REAL RESULTS",
+    "headline": "Traffic Starts with the right keywords",
+    "intro": "Without the right keyword research, your content gets lost in the noise. We dig deep to find what your audience is actually searching for, not just high-volume words, but high-intent ones that drive real clicks, leads, and results.\n\nReady to dive into keywords?",
+    "sectionTitle": "Find the keywords your customers are searching for",
+    "sectionBody": "Effective SEO starts with knowing exactly what your audience is typing into search. We uncover high-intent, high-impact keywords that align with your services, goals, and customer behavior so you're not just visible, you're relevant.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR KEYWORD RESEARCH?",
+      "title": "The right keywords mean more clicks, more leads, more growth",
+      "body": "Growth starts right here with Growfore; we analyze, strategize, and offer the best services to increase your brand's value. We do SEO like no other; our experts know content is important, but without perfect keywords, it is just lost noise.",
+      "subtitle": "Keyword strategies that drive real traffic",
+      "points": [
+        "In-depth keyword research tailored to your niche and goals",
+        "Focus on high-intent, conversion driven search terms",
+        "Competitor and market gap analysis to uncover new opportunities",
+        "Long-tail keyword targeting for quicker wins and better ROI",
+        "Search intent mapping to align content with user behavior",
+        "Ongoing refinement based on performance and trends"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "Expert SEO Keyword Research Services - Growfore Solution",
+    "seoDescription": "We can help you gain the attention of the visitors and give you a conversion rate to increase potential leads with our keyword research service..",
+    "kind": "leaf",
+    "parent": "seo-services"
+  },
+  "on-page-seo": {
+    "slug": "on-page-seo",
+    "title": "On-Page SEO",
+    "deliverables": [
+      {
+        "id": "keyword-optimization",
+        "title": "Keyword Optimization",
+        "icon": "icon icon-search21",
+        "body": "We identify high-value keywords and naturally integrate them into your content to improve search engine relevance. This helps your pages rank for terms your audience is already searching for.",
+        "included": [
+          "Keyword placement in titles, headers, and body text",
+          "Optimization for primary and secondary keywords",
+          "Use of natural language and semantic variations",
+          "Avoiding keyword stuffing for clean, effective content"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "image-optimization",
+        "title": "Image Optimization",
+        "icon": "fas fa-image",
+        "body": "Images can enhance content, but they need to be optimized for SEO and speed. We ensure every image contributes to performance and discoverability.",
+        "included": [
+          "Descriptive, keyword based alt text",
+          "Compressed files for faster loading",
+          "SEO friendly file names",
+          "Responsive sizing for all devices"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "page-speed-optimization",
+        "title": "Page Speed Optimization",
+        "icon": "fas fa-pager",
+        "body": "Fast websites keep users engaged and rank higher on search engines. We fine-tune your site to load quickly across all devices.",
+        "included": [
+          "Minifying CSS, JS and HTML",
+          "Optimizing images and media",
+          "Enabling browser caching",
+          "Reducing server response times"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "content-quality-and-structure",
+        "title": "Content Quality and Structure",
+        "icon": "far fa-newspaper",
+        "body": "High-quality content builds trust and improves search rankings. We ensure your content is informative, well-organized, and keyword-optimized.",
+        "included": [
+          "Clear, engaging copy aligned with user input",
+          "Keyword-rich without overstuffing",
+          "Use of bullet points, short paragraphs, and visuals",
+          "Consistent tone and brand messaging"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is on-page SEO?",
+        "a": "On-page SEO refers to optimizing individual pages on your website to rank higher in search results and provide a better experience for users."
+      },
+      {
+        "q": "Why is on-page SEO important?",
+        "a": "It helps search engines understand your content and ensures your site is user-friendly, which can improve rankings, traffic, and engagement."
+      },
+      {
+        "q": "What elements are included in on-page SEO?",
+        "a": "Key elements include title tags, meta descriptions, header tags, keyword usage, internal linking, content quality, image optimization, and page speed."
+      },
+      {
+        "q": "How do title tags and meta description impact SEO?",
+        "a": "They tell search engines what the page is about and influence how your page appears in search results, affecting click-through rates."
+      },
+      {
+        "q": "How many keywords should I use on a page?",
+        "a": "Use one main keyword and a few related terms naturally throughout the content. Avoid keyword stuffing, which can hurt your rankings."
+      },
+      {
+        "q": "Does content length affect on-page SEO?",
+        "a": "Yes, longer content tends to perform better, but quality matters more than word count. The content should fully answer the user's query."
+      },
+      {
+        "q": "How does internal linking help with SEO?",
+        "a": "Internal links connect your pages, helping search engines crawl your site and guiding users to relevant content, improving both SEO and UX."
+      },
+      {
+        "q": "Is mobile responsiveness part of on-page SEO?",
+        "a": "Yes, mobile-friendly design is essential. Google prioritizes mobile-optimized sites, and users expect smooth performance on all devices."
+      },
+      {
+        "q": "How often should I update on-page SEO?",
+        "a": "Regular updates are important to keep content fresh, reflect changes in search behavior, and maintain competitive rankings."
+      },
+      {
+        "q": "What is the difference between on-page and off-page SEO?",
+        "a": "On-page SEO focuses on your website's internal elements, while off-page SEO involves external factors like backlinks and social signals."
+      }
+    ],
+    "eyebrow": "RANK WITH RESULTS",
+    "headline": "On-Page SEO that speaks Googles Language",
+    "intro": "On-page SEO is the foundation of your site's visibility. It helps search engines understand your content, boosts your rankings, and makes sure every page is built to perform for both users and algorithms.",
+    "sectionTitle": "Optimized to Rank, Designed to Convert",
+    "sectionBody": "Growfore offers strategic on-page SEO that boosts your page's visibility to your audience so that your business ranks. It's no longer just about stuffing keywords; it's about creating content that search engines understand and users love.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR SEO?",
+      "title": "Turn your content into a ranking machine",
+      "body": "At Growfore, we don't just tweak titles and add keywords; we build every page to rank, convert, and perform. Our approach is holistic, blending technical precision with human-centered design.",
+      "subtitle": "Better SEO, Better Experience",
+      "points": [
+        "We blend technical SEO with user-first design",
+        "Every page is optimized for speed, clarity, and intent",
+        "Structured content that ranks and reads well",
+        "Strategic keyword placement without overstuffing",
+        "Mobile-first, responsive design practices",
+        "Clean backend setup for long-term SEO health"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "On-Page SEO Expert - Growfore Solution",
+    "seoDescription": "Boost your site's rankings with expert on-page SEO. We optimize content, structure, and keywords for real results.",
+    "kind": "leaf",
+    "parent": "seo-services"
+  },
+  "off-page-seo": {
+    "slug": "off-page-seo",
+    "title": "Off-Page SEO",
+    "deliverables": [
+      {
+        "id": "high-quality-backlinks",
+        "title": "High Quality Backlinks",
+        "icon": "fas fa-external-link-alt",
+        "body": "We build backlinks from credible, relevant websites that improve your domain authority and rankings. These links are earned through trust, not shortcuts, giving your site lasting SEO value.",
+        "included": [
+          "Links from high-domain authority sites",
+          "Relevance-based link building, not random directories",
+          "Natural, white-hat techniques for long term results",
+          "Improves organic visibility and search trust"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "smart-outreach",
+        "title": "Smart Outreach",
+        "icon": "icon icon-light-bulb1",
+        "body": "We connect with bloggers, publishers, and niche platforms to promote your content and earn backlinks. Every pitch is personalized and built to create real partnerships, not spammy outreach.",
+        "included": [
+          "Targeted outreach based on industry relevance",
+          "Personalized messaging to increase response rates",
+          "Relationship building with trusted content networks",
+          "Focused on quality over quantity"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "content-placement",
+        "title": "Content Placement",
+        "icon": "fas fa-pager",
+        "body": "We create or repurpose valuable content and strategically place it on high-traffic sites. This not only earns you backlinks but also sends qualified visitors directly to your site.",
+        "included": [
+          "Guests posts on authority blogs and media platforms",
+          "Sponsored content with clear value and keywords",
+          "Contextual link placement within editorial content",
+          "Brand visibility to new, targeted audiences"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "digital-pr-campaigns",
+        "title": "Digital PR Campaigns",
+        "icon": "far fa-newspaper",
+        "body": "We craft data-driven PR stories and media angles to get your brand featured in top publications. Digital PR boosts your SEO while strengthening your reputation in the public eye.",
+        "included": [
+          "Press releases and media pitches with SEO goals",
+          "Campaigns that attract coverage from news and blogs",
+          "Brand storytelling that earns organic links",
+          "Increases mentions, traffic, and credibility"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "broken-link-recovery",
+        "title": "Broken Link Recovery",
+        "icon": "fas fa-link",
+        "body": "We find broken or outdated links pointing to similar content and pitch your site as a better replacement. It's a smart way to gain links while helping webmasters fix errors.",
+        "included": [
+          "Identify broken backlinks on authority sites",
+          "Replace them with your relevant, live content",
+          "White-hat approach that adds mutual value",
+          "Boosts link count without creating new content"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is off-page SEO?",
+        "a": "Off-page SEO refers to actions taken outside your website to improve its authority, relevance, and visibility in search engine results."
+      },
+      {
+        "q": "Why is off-page SEO important?",
+        "a": "It builds trust and authority for your site, helping search engines view your content as credible, which leads to higher rankings and more traffic."
+      },
+      {
+        "q": "What are backlinks and why do they matter?",
+        "a": "Backlinks are links from other websites to yours. High-quality backlinks act as endorsements, telling search engines your content is valuable."
+      },
+      {
+        "q": "How do you get quality backlinks?",
+        "a": "They're earned through strategic outreach, valuable content, guest posting, digital PR, and building relationships with trusted publishers."
+      },
+      {
+        "q": "Is more backlinks always better?",
+        "a": "No, quality matters more than quantity. A few authoritative backlinks can have more impact than dozens from low-quality sites."
+      },
+      {
+        "q": "How long does it take to see results from off-page SEO?",
+        "a": "Results vary, but typically take a few months. SEO is a long-term strategy, and consistent effort leads to sustainable growth."
+      },
+      {
+        "q": "What's the difference between white-hat and black-hat link building?",
+        "a": "White-hat follows search engine guidelines and focuses on ethical, sustainable methods. Black-hat uses shortcuts that may lead to penalties."
+      },
+      {
+        "q": "Can social media help with off-page SEO?",
+        "a": "Yes, while social links aren't direct ranking factors, they increase brand visibility and can drive traffic that leads to natural backlinks."
+      },
+      {
+        "q": "What is digital PR in SEO?",
+        "a": "Digital PR involves pitching your brand or content to media outlets to earn mentions and backlinks from high-authority sources."
+      },
+      {
+        "q": "How do I know if backlinks are helping?",
+        "a": "You can track link quality, referral traffic, domain authority, and improvements in search rankings to measure backlink impact."
+      }
+    ],
+    "eyebrow": "TURN MENTIONS INTO MOMENTUM",
+    "headline": "Connect your brand with web's strongest voices",
+    "intro": "Build your website's credibility and authority across the web. It's how search engines measure trust through backlinks, brand mentions, and signals from other sites.\n\nLink with us.",
+    "sectionTitle": "Backlinks that build more than authority, they build traffic",
+    "sectionBody": "Off-page SEO is more than just getting links; it's about earning the right ones. We focus on building high-quality backlinks from trusted, relevant sources that not only boost your authority but also drive real, targeted traffic to your site.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR SEO?",
+      "title": "Your reputation is your ranking. We help you own both",
+      "body": "SEO isn't just about what's on your site; it's about what the internet says about you. At Growfore, we blend on-page strategy with off-page authority to boost your visibility, earn trust, and drive long-term growth. We don't chase rankings, we build them through relevance, quality, and a deep understanding of how search works.",
+      "subtitle": "The Power of SEO doesn't stop your site",
+      "points": [
+        "We build strong backlinks from credible, high-authority domains",
+        "Our outreach strategies focus on relevance, not spam",
+        "We use content and PR to earn media mentions that matter",
+        "Every off-page move is backed by data and intent",
+        "We monitor, refine, and scale link-building for long-term results"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "Off-Page SEO Services - Growfore Solution",
+    "seoDescription": "Grow your authority with powerful off-page SEO. Link building, citations, and digital PR that push your site higher.",
+    "kind": "leaf",
+    "parent": "seo-services"
+  },
+  "technical-seo": {
+    "slug": "technical-seo",
+    "title": "Technical SEO",
+    "deliverables": [
+      {
+        "id": "page-elements",
+        "title": "Page Elements",
+        "icon": "fas fa-shapes",
+        "body": "We optimize critical on-page elements like headings, images, and structured content to improve how both users and search engines experience your site. Clean, organized elements make your pages easier to read, navigate, and rank.",
+        "included": [
+          "Proper use of heading tags (H1, H2, etc.)",
+          "Alt tex for all images",
+          "Structured content layout",
+          "Minimized inline scripts and heavy elements"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "http-header-response",
+        "title": "HTTPS Header Response",
+        "icon": "fas fa-share",
+        "body": "HTTP headers tell browsers and search engines how to handle your web pages. We configure these responses properly to avoid indexing issues, broken links, and duplicate content problems.",
+        "included": [
+          "Set correct status codes (200, 301, 404, etc.)",
+          "Manage cache-control for faster page loading",
+          "Prevent indexing of restricted or duplicate pages",
+          "Enable proper language and content-type headers"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "xml-sitemaps",
+        "title": "XML Sitemaps",
+        "icon": "icon icon-code",
+        "body": "An XML sitemap helps search engines discover and crawl your pages more efficiently. We generate and submit accurate sitemaps that update automatically as your content grows.",
+        "included": [
+          "Sitemap creation for all important pages",
+          "Regular updates as content changes",
+          "Submission to Google Search Console and Bing",
+          "Priority and frequency tags for crawl guidance"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "redirects",
+        "title": "Redirects",
+        "icon": "fas fa-share-square",
+        "body": "We set up smart redirects to ensure users and search engines are always taken to the right page. This preserves link equity, improves UX, and prevents ranking drops from broken URLs.",
+        "included": [
+          "301 redirects for moved or deleted pages",
+          "Avoidance of redirect chains and loops",
+          "URL normalization to prevent duplicate content",
+          "Monitoring and fixing broken links"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "metadata",
+        "title": "Metadata",
+        "icon": "fas fa-database",
+        "body": "Well-structured metadata improves how your site appears in search results and helps engines understand your content. We optimize all key tags to boost visibility and click-through rates.",
+        "included": [
+          "Custom title tags and meta descriptions for each page",
+          "Keyword-focused and user-friendly content",
+          "Open Graph tags for social sharing",
+          "Use of meta robots to control indexing"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "crawling-and-indexing",
+        "title": "Crawling and Indexing",
+        "icon": "fas fa-indent",
+        "body": "We ensure your site is easy for search engines to crawl and index, without wasting crawl budget on unimportant pages. This maximizes visibility for the pages that actually matter.",
+        "included": [
+          "Optimize robots.txt and crawl directives",
+          "Eliminate duplicate or thin content",
+          "Control indexation with meta tags and canonical URLs",
+          "Monitor crawl errors and fix index coverage issues"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "security",
+        "title": "Security",
+        "icon": "fas fa-user-lock",
+        "body": "Security impacts user trust and SEO rankings. We implement essential protocols to keep your site safe and search engine approved.",
+        "included": [
+          "SSL certificate installation (HTTPS)",
+          "Protection against malware and spam links",
+          "Secure headers and content delivery",
+          "Regular security audits and patching"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is technical SEO?",
+        "a": "Technical SEO involves optimizing the backend structure of a website to help search engines crawl, index, and rank it more effectively."
+      },
+      {
+        "q": "Why is technical SEO important?",
+        "a": "Without strong technical SEO, search engines may struggle to understand or access your site, no matter how good your content is."
+      },
+      {
+        "q": "What are key elements of technical SEO?",
+        "a": "Core elements include site speed, mobile-friendliness, crawlability, indexing, structured data, secure connections (HTTPS), and proper URL structures."
+      },
+      {
+        "q": "How does site speed affect SEO?",
+        "a": "A slow site leads to higher bounce rates and lower user engagement, both of which negatively affect search rankings."
+      },
+      {
+        "q": "What is crawl-ability, and why does it matter?",
+        "a": "Crawlability refers to how easily search engines can explore your website. If pages aren't crawlable, they won't show up in search results."
+      },
+      {
+        "q": "What's the role of XML sitemaps in technical SEO?",
+        "a": "An XML sitemap helps search engines find and understand your site's structure, ensuring all key pages are discovered and indexed."
+      },
+      {
+        "q": "How do broken links affect SEO?",
+        "a": "Broken links damage user experience and signal poor maintenance to search engines, which can hurt your rankings."
+      }
+    ],
+    "eyebrow": "CLEAN CODE, FAST LOAD. BETTER RANKINGS",
+    "headline": "Speed up your site, Scale up your results",
+    "intro": "Technical SEO focuses on optimizing the infrastructure, like site speed, crawlability, indexing, and security, to make sure search engines can easily find, understand, and rank your content. \n\nStep into the tech with us!",
+    "sectionTitle": "Technical SEO that sets the foundation for growth",
+    "sectionBody": "Great rankings start with a solid structure. Our technical SEO services ensure your website is fast, crawlable, secure, and built to scale, so search engines can properly index your content and users can navigate without friction.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR SEO?",
+      "title": "We optimize the parts users don't see, but Google does",
+      "body": "At Growfore, we go beyond surface-level SEO. Our technical experts dig deep into your site's structure, speed, security, and crawlability. The behind-the-scenes factors that make or break your rankings. We make sure everything under the hood is tuned, clean, and ready to perform, so your content gets seen, ranked, and trusted by search engines.",
+      "subtitle": "Better SEO, Better Experience",
+      "points": [
+        "Detailed audits uncover and resolve performance bottlenecks",
+        "Crawl errors, broken links, and redirects are cleaned up for smoother indexing",
+        "Site structure, code, and metadata are fully optimized for search engines",
+        "Mobile responsiveness and fast load times improve both UX and rankings",
+        "Security protocols are put in place to protect site integrity and SEO value",
+        "Ongoing monitoring ensures long term technical health and search visibility"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "",
+    "seoDescription": "",
+    "kind": "leaf",
+    "parent": "seo-services"
+  },
+  "content-optimization": {
+    "slug": "content-optimization",
+    "title": "Content Optimization",
+    "deliverables": [
+      {
+        "id": "higher-ranking",
+        "title": "Higher Ranking",
+        "icon": "icon icon-growth",
+        "body": "We optimize content so it aligns with how search engines evaluate relevance, authority, and structure. This helps your pages climb higher in search results for the terms your audience is actively searching.",
+        "included": [
+          "Use of target keywords and semantic variations",
+          "Proper header structure and internal linking",
+          "Optimized metadata (titles, descriptions)",
+          "Clean HTML and mobile-friendly formatting"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "drive-traffic",
+        "title": "Drive Traffic",
+        "icon": "fas fa-users",
+        "body": "By improving how your content performs in search and how it appears in results, we bring more qualified visitors to your site. It's about increasing visibility while attracting the right audience.",
+        "included": [
+          "Rich snippets with schema markup",
+          "Engaging, keyword-focused title and intros",
+          "Refreshing outdated content for relevance",
+          "Ranking for long-tail and high-intent keywords"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "convert-leads-into-customers",
+        "title": "Convert Leads into Customers",
+        "icon": "fas fa-exchange-alt",
+        "body": "Optimized content guides users toward action, not just views. We position CTAs, value propositions, and trust signals strategically to turn interest into conversions.",
+        "included": [
+          "Clear, compelling calls-to-action (CTAs)",
+          "Benefit-driven messaging throughout the content",
+          "Trust-building elements like testimonials or guarantees",
+          "Readable, scan-friendly content for quick decision-making"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "engage-readers",
+        "title": "Engage Readers",
+        "icon": "fas fa-ruler-combined",
+        "body": "Good content gets clicked; optimized content gets read and shared. We make sure your content holds attention with clarity, flow, and real value from top to bottom.",
+        "included": [
+          "Short paragraphs and strong visual hierarchy",
+          "Interactive elements like tables, FAQs, or media",
+          "Tone and language matched to your audience",
+          "Structured for mobile and accessibility best practices"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is content optimization?",
+        "a": "Content optimization is the process of improving existing content to make it more visible, relevant, and effective for both users and search engines."
+      },
+      {
+        "q": "Why is content optimization important for SEO?",
+        "a": "It ensures your content matches search intent, improves rankings, increases traffic, and helps convert visitors into customers."
+      },
+      {
+        "q": "How often should content be optimized?",
+        "a": "Content should be reviewed and optimized regularly, especially when performance drops or new keyword opportunities emerge."
+      },
+      {
+        "q": "What elements are optimized in a typical content audit?",
+        "a": "Key elements include titles, meta descriptions, headings, keyword usage, internal linking, content structure, and overall readability."
+      },
+      {
+        "q": "Can optimizing old content improve rankings?",
+        "a": "Yes, updating and refining older content can boost its relevance, search visibility, and click-through rate."
+      },
+      {
+        "q": "How do I know which content needs optimization?",
+        "a": "Analyze traffic, bounce rates, keyword rankings, and engagement metrics to identify underperforming or outdated pages."
+      },
+      {
+        "q": "What tools are used for content optimization?",
+        "a": "Tools like Google Search Console, SEMrush, Ahrefs, and content editors with SEO plugins are commonly used for analysis and improvements."
+      },
+      {
+        "q": "Does content optimization includes visual elements?",
+        "a": "Yes, it involves optimizing images, infographics, and formatting to improve load time, accessibility, and user engagement."
+      },
+      {
+        "q": "Is keyword stuffing part of a content optimization?",
+        "a": "No, keyword stuffing is outdated and harmful. Modern optimization focuses on natural keyword use and high-quality writing."
+      }
+    ],
+    "eyebrow": "CONTENT WITHOUT STRATEGY IS JUST NOISE",
+    "headline": "Content is king, BUT optimized content rules the rankings",
+    "intro": "Content optimization bridges what people search for with what your brand offers. When your content is clear, fast, keyword-aligned, and user-focused, it ranks better, holds attention longer, and drives real action.",
+    "sectionTitle": "Optimization is the upgrade your content deserves.",
+    "sectionBody": "Great content gets you noticed; optimized content keeps you ranked. We refine every word, tag, and structure to align with search intent, improve readability, and drive conversions. Whether it's old posts or fresh drafts, our content optimization process turns passive pages into powerful performers.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR CONTENT OPTIMIZATION?",
+      "title": "We refine - target - elevate",
+      "body": "At Growfore, we don't just create content; we transform it. Every word is sharpened with purpose, every page aligned with user intent, and every piece designed to perform. Our content optimization process blends strategy, structure, and search insight to make sure your content doesn't just exist online; it dominates.",
+      "subtitle": "Turn Good Content into High Ranking Content",
+      "points": [
+        "Deep keyword alignment based on real user search behavior",
+        "Strategic content structure that boosts engagement and time on page",
+        "On-Page SEO techniques that improve visibility and ranking",
+        "Clear CTAs and user-focused content to drive conversions",
+        "Consistent updates to keep your content fresh and relevant",
+        "Analytics backed decisions to track what's working and scale what wins"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "Content Optimization Services  - Growfore Solution",
+    "seoDescription": "Optimize your  content with our copywriting & content optimization expert.  We provide well-written engaging content to attract potential customers...",
+    "kind": "leaf",
+    "parent": "seo-services"
+  },
+  "wordpress-seo": {
+    "slug": "wordpress-seo",
+    "title": "Wordpress SEO",
+    "deliverables": [
+      {
+        "id": "keyword-research-and-onpage-seo",
+        "title": "Keyword Research and On-Page SEO",
+        "icon": "fas fa-file-word",
+        "body": "We identify the search terms your audience is using and strategically place them across your site to boost visibility and ranking.",
+        "included": [
+          "In-depth keyword research (short-tail & long-tail)",
+          "Competitor keyword gap analysis",
+          "Optimizated title tags, meta descriptions and headers",
+          "Strategic internal linking for actual crawl-ability",
+          "Image alt tags and URL structure optimization"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "service-and-landing-page-copywriting",
+        "title": "Service and Landing Page Copywriting",
+        "icon": "far fa-copy",
+        "body": "We write conversion-focused, SEO-optimized copy that speaks to your audience and drives action.",
+        "included": [
+          "Unique, keyword-rich content for each service",
+          "Engaging introductions and benefit-driven messaging",
+          "Local SEO integration (city, area, service terms)",
+          "Proper structure with proper heading hierarchy (H1-H3)",
+          "Consistent messaging across all key pages"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "brand-voice-and-tone-consistency",
+        "title": "Brand Voice and Tone Consistency",
+        "icon": "fas fa-file-invoice",
+        "body": "Your website should reflect your brand: professional, trustworthy, and aligned with your values",
+        "included": [
+          "Style guide alignment across all pages",
+          "Consistent voice across headlines, body copy, and CTAs",
+          "Tone adjustments for target audience (formal, casual, bold, etc.)",
+          "Seamless integration of values, mission, and brand personality"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "clear-calls-to-action",
+        "title": "Clear Calls-to-Actions (CTAs)",
+        "icon": "fas fa-magic",
+        "body": "We guid visitor toward action, whether it's booking, calling, or signing up.",
+        "included": [
+          "Conversion-optimized CTAs on all pages",
+          "Action verbs tied to real benefits (e.g., \"Get Instant Quote\")",
+          "CTA placement testing for higher engagement",
+          "Consistent design and wording across devices"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "technical-seo-setup",
+        "title": "Technical SEO Setup",
+        "icon": "fas fa-search",
+        "body": "Behind the scenes optimization to make your WordPress site fast, crawlable, and index-ready.",
+        "included": [
+          "XML sitemap creation and submission",
+          "Robots.txt configuration",
+          "Core Web Vitals and speed optimization",
+          "Mobile first indexing setup",
+          "SSL Setup and HTTPS enforcement"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "google-analytics-and-search-console-integration",
+        "title": "Google Analytics and Search Console Integration",
+        "icon": "far fa-chart-bar",
+        "body": "We set up the tools you need to track and improve performance.",
+        "included": [
+          "Google Analytics installation",
+          "Google Search Console Connection",
+          "Goal and conversion tracking",
+          "Keyword impression and click tracking",
+          "Performance reports with actionable insights"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How can I improve SEO on my Wordpress site?",
+        "a": "Using an SEO plugin, creating quality content, and optimizing your site's loading speed are key steps to improve SEO."
+      },
+      {
+        "q": "Do I need a SEO plugin?",
+        "a": "Yes, SEO plugins help manage meta tags, generate sitemaps, and simplify SEO tasks, making optimization easier."
+      },
+      {
+        "q": "Is Wordpress SEO friendly by default?",
+        "a": "WordPress offers a solid foundation, but effective SEO requires additional optimization efforts."
+      },
+      {
+        "q": "Which is the best SEO plugin for WordPress?",
+        "a": "Yoast SEO and Rank Math are among the most popular and reliable plugins, each with unique features suited to different needs."
+      },
+      {
+        "q": "How long does it take to see SEO results?",
+        "a": "Typically, SEO results become noticeable within 3 to 6 months, as it involves ongoing effort and strategy."
+      },
+      {
+        "q": "Can I do SEO myself, or do I need and expert?",
+        "a": "Basic SEO can be managed independently, but professional expertise often delivers more effective and faster results."
+      },
+      {
+        "q": "What factors slow down WordPress SEO?",
+        "a": "Using heavy themes, excessive plugins, slow hosting, and low-quality content can negatively impact SEO performance."
+      },
+      {
+        "q": "Is blogging important to SEO?",
+        "a": "Regularly publishing helpful, relevant blog content significantly enhances traffic and search rankings."
+      },
+      {
+        "q": "Do keywords still matter in 2025?",
+        "a": "Keywords remain important, but should focus on user intent and natural integration rather than keyword stuffing."
+      },
+      {
+        "q": "Can SEO increase sales?",
+        "a": "Effective SEO increases visibility, drives targeted traffic, and ultimately contributes to higher conversion rates and sales."
+      }
+    ],
+    "eyebrow": "BUILT ON WORDPRESS, WE'LL MAKE IT RANK",
+    "headline": "Turn your Wordpress \ntraffic into real leads",
+    "intro": "Optimize your site from the ground up: lightning-fast speed, clean code, keyword-rich content, and a smart structure that search engines love. With us you get more traffic, better visibility, and real business results.\n\nConnect with our agency today.",
+    "sectionTitle": "Complete WordPress SEO, Built for Rankings & Results",
+    "sectionBody": "Having a WordPress site isn't enough. Without proper SEO, it's invisible to the people searching for what you offer. WordPress is powerful, but it needs strategic optimization to perform. From site speed and mobile responsiveness to keyword targeting and content structure, WordPress SEO helps your site rank higher, attract more traffic, and convert more visitors into customers.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR WORDPRESS SEO?",
+      "title": "We turn WordPress sites into Google's favorites",
+      "body": "At Growfore, we don't just optimize, we transform. With WordPress SEO done right, brands have seen 900% more traffic, 1,100% more sales, and way more visibility just by doing SEO right. At Growfore, we make that happen. From fixing your site to ranking your pages, we help your brand show up, stand out, and grow fast.",
+      "subtitle": "Turning search engines into sales engines.",
+      "points": [
+        "Experts in Wordpress + SEO",
+        "Custom SEO Strategy",
+        "Data-backed decisions",
+        "Transparent, honest, and easy to work with",
+        "Proven track record of boosting traffic & sales",
+        "Full service, from audits to content to links"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "Wordpress SEO Service - Growfore Solution",
+    "seoDescription": "Boost your WordPress site with pro SEO. Improve rankings, site speed, and visibility, best SEO service in Nepal.",
+    "kind": "leaf",
+    "parent": "seo-services"
+  },
+  "web-services": {
+    "slug": "web-services",
+    "title": "Web Services",
+    "deliverables": [
+      {
+        "id": "wordpress-development",
+        "title": "Wordpress Development",
+        "icon": "fab fa-audible",
+        "body": "We specialize as a WordPress website agency tailored to your brand and business goals. Whether you are starting from scratch or looking to upgrade, we've got the tools and skills to bring your site to life.",
+        "included": [
+          "Custom Wordpress themes and plugins setup",
+          "Responsive Design",
+          "Performance Optimization",
+          "Effective Content Management"
+        ],
+        "outcome": "A well-built WordPress website gives you full control, better visibility on Google, and a strong foundation for content marketing and lead generation."
+      },
+      {
+        "id": "domain-registration-and-web-hosting",
+        "title": "Domain Registration and Web Hosting",
+        "icon": "fas fa-server",
+        "body": "Your web journey starts here. We handle domain registration and provide reliable, high-speed web hosting services to keep your site live, fast, and secure 24/7 and build trust with your visitors.",
+        "included": [
+          "Domain name selection and setup",
+          "High-speed, secure web hosting",
+          "Email Setup and best support"
+        ],
+        "outcome": "A great website starts with a solid foundation. Fast loading speeds and a secure connection are important for SEO and user experience."
+      },
+      {
+        "id": "ecommerce-website-development",
+        "title": "Ecommerce Website Development",
+        "icon": "fas fa-store",
+        "body": "We build you a site that does more than just look good; they are built to sell. Whether you are a startup, a local store, or scaling a full-on online brand, we create custom e-commerce sites that are fast, secure, and designed to turn your visitors into real customers.",
+        "included": [
+          "Product pages, shopping cart, and secure checkout",
+          "Payment gateway integration",
+          "Inventory, order tracking, and shipping setup",
+          "Mobile-ready"
+        ],
+        "outcome": "A seamless online shopping experience boosts your sales, builds customer trust, and gives you the tools to grow your brand online."
+      },
+      {
+        "id": "web-application-development",
+        "title": "Web Application Development",
+        "icon": "fas fa-laptop-code",
+        "body": "We build smart web applications that solve real business problems. Whether it's a booking engine, internal dashboard, or customer management tool. We design systems that work how you work.",
+        "included": [
+          "Fully custom features and users flows",
+          "Secure backend with database integration",
+          "Real-time data handling and API connections",
+          "Built for speed, scale, and simplicity"
+        ],
+        "outcome": "Web apps streamline your operations, save time, and offer users a smoother, more efficient experience, all custom-fit to your needs"
+      },
+      {
+        "id": "mobile-app-development",
+        "title": "Mobile App Development",
+        "icon": "fas fa-mobile-alt",
+        "body": "Get your brand in your customers' pockets with high-performing Android and iOS apps. We develop mobile apps that are user-friendly, fast, and synced with your website or backend systems.",
+        "included": [
+          "Native or cross-platform app development",
+          "Beautiful UI/UX tailored for mobile",
+          "App store & Google Play publishing",
+          "Maintenance, updates, and support"
+        ],
+        "outcome": "Mobile-first is no longer a trend; it's the standard. Apps build stronger engagement and make your services more accessible."
+      },
+      {
+        "id": "custom-cms-website",
+        "title": "Custom CMS Website",
+        "icon": "far fa-newspaper",
+        "body": "Our custom CMS solutions make content updates quick and easy, while giving you full control of your digital presence.",
+        "included": [
+          "User friendly admin panel",
+          "Scalable backend architecture",
+          "SEO Features and content flexibility",
+          "Training and Support"
+        ],
+        "outcome": "A CMS gives you the freedom to grow your content, update offers, and run your site without the tech overwhelm, saving time and money in the long run."
+      },
+      {
+        "id": "uiux-design",
+        "title": "UI/UX Design",
+        "icon": "fas fa-pencil-ruler",
+        "body": "We craft web and app interfaces that don't just look good; they feel right. Our design process is rooted in research and focused on guiding users toward the actions that matter most.",
+        "included": [
+          "Wireframes, mockups, and interactive prototypes",
+          "User behaviour research and UX strategy",
+          "Clean, modern, mobile-responsive design",
+          "Branding and visual storytelling"
+        ],
+        "outcome": "Great design keeps people engaged, improves conversions, and sets your brand apart in a crowded online world."
+      },
+      {
+        "id": "wordpress-with-seo",
+        "title": "Wordpress with SEO",
+        "icon": "fab fa-wordpress",
+        "body": "A website is nothing without high-quality, engaging content. We build you sites with empowering, SEO-friendly content that represents your brand. From your homepage to service pages, every word is crafted to connect with your audience and boost your rankings.",
+        "included": [
+          "Keyword research and on-page SEO",
+          "Service and landing page copywriting",
+          "Brand voice and tone consistency",
+          "Clear calls-to-action (CTAs)"
+        ],
+        "outcome": "Words sell. Strong content builds trust, ranks well on search engines, and guides visitors toward taking action, whether that's calling, booking, or buying."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What do your web services include?",
+        "a": "Our web services include WordPress development, domain registration with web hosting, e-commerce websites, web application development, and many more."
+      },
+      {
+        "q": "Will my website be mobile-friendly?",
+        "a": "Yes, 100%. All our websites are fully responsive, meaning they look and function great on all devices: phones, tablets, and desktops."
+      },
+      {
+        "q": "What is web marketing in digital marketing?",
+        "a": "Web marketing is the use of online tools like websites, SEO, social media, and ads to promote your business."
+      },
+      {
+        "q": "What is a website in digital marketing?",
+        "a": "A website is your digital home base. It's where customers learn, engage, and take action."
+      },
+      {
+        "q": "What are the 7 P's of web marketing?",
+        "a": "Product, price, place, promotion, people, process, and physical evidence are the 7 Ps of the marketing mix."
+      }
+    ],
+    "eyebrow": "WEBSTIES THAT BRINGS YOUR BRAND A DIGITAL LIFE",
+    "headline": "Website That Brings Your Brand a Digital Life",
+    "intro": "In today's digital world, having a website is not optional; it's your brand's home base. If your business isn't online, you are already behind. Our team provides web services that combine strategy and creativity to build websites that not only look good, but also attract, engage, and convert. \n\nConnect with us today.",
+    "sectionTitle": "Custom Websites That Turn Traffic Into Paying Customers",
+    "sectionBody": "Growfore's all-in-one web solutions go beyond just getting you seen; we bring the right people to your site, turn clicks into customers, and help you turn traffic into real revenue. Everything you need to grow is built right in.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR WEB SERVCIES?",
+      "title": "Your Websites isn't Just Online, It Should Be Working for You",
+      "body": "94% of consumers research businesses online before making a purchase decision. Outdated, clunky websites turn customers away. At Growfore, our web services are built to convert, not just look good. From strategy and structure to design and deployment, every element is engineered for performance, helping you rank higher, load faster, and turn more visitors into buyers.",
+      "subtitle": "Why Settle for Less When You Can Invest in Full-Powered Web Services That Grow Your Business",
+      "points": [
+        "Custom Web Design Aligned with your Brand",
+        "Responsive Web Development for All Devices",
+        "Speed, SEO & Conversion Optimization",
+        "Secure, Scalable, and Manageable Sites",
+        "UI/UX That Boosts Engagement",
+        "Ongoing Maintenance & Support"
+      ],
+      "closing": "We deliver web services that meet international standards, combining sleek design, smart development, and long-term strategy. Whether you're launching a startup or upgrading your digital presence, we turn your website into your strongest sales tool."
+    },
+    "seoTitle": "",
+    "seoDescription": "Get reliable and affordable web services in Nepal, including web design, development, hosting, and SEO tailored to your business needs.",
+    "kind": "hub",
+    "children": [
+      "wordpress-development",
+      "domain-registration-with-web-hosting",
+      "ecommerce-website-development",
+      "web-application-development",
+      "mobile-app-development",
+      "custom-cms-website",
+      "ui-ux-design"
+    ]
+  },
+  "wordpress-development": {
+    "slug": "wordpress-development",
+    "title": "Wordpress Development",
+    "deliverables": [
+      {
+        "id": "custom-wordpress-theme-and-plugin-setup",
+        "title": "Custom Wordpress themes and plugin setup",
+        "icon": "icon icon-paint-brushes",
+        "body": "Every plugin we use serves a real purpose: performance, function, and flexibility. We design and configure custom WordPress themes tailored to your brand.",
+        "included": [
+          "Unique, branded theme built from scratch or customized",
+          "Plugin selection focused on speed",
+          "Seamless integration with third-party tools and services",
+          "Clean, secure code that's easy to maintain"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "responsive",
+        "title": "Responsive",
+        "icon": "icon icon-smartphone2",
+        "body": "Your site will look and work great on every screen. From desktops to smartphones, we design with adaptability in mind.",
+        "included": [
+          "Fully responsive layout across all devices",
+          "Touch friendly navigation an fast mobile load times",
+          "Optimized UI/UX for better engagement and retention",
+          "Tested on multiple browsers an devices"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "easy-seo-integration",
+        "title": "Easy SEO Integration",
+        "icon": "icon icon-squares",
+        "body": "We lay groundwork for Google to love your site. No keyword stuffing, just smart structure and setup so you're easy to find.",
+        "included": [
+          "Clean page structure that search engines understand",
+          "Ready for SEO plugins like Yoast or Rank Math",
+          "Titles, tags, and all the important metadata",
+          "The right setup to start ranking faster"
+        ],
+        "outcome": "This service is broadly available at Wordpress with SEO"
+      },
+      {
+        "id": "fast-and-optimized-for-performance",
+        "title": "Fast and Optimized for Performance",
+        "icon": "icon icon-rocket",
+        "body": "Slow site lose people. We make yours website lightning fast so users stay, scroll, and take action.",
+        "included": [
+          "Compressed images and efficient loading",
+          "Less code clutter, more speed, more security",
+          "Caching and CDN setup for even faster delivery",
+          "Lightweight build that doesn't drag"
+        ],
+        "outcome": "This service is broadly available at Wordpress with SEO"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is Wordpress secure for a business website?",
+        "a": "Yes, with proper setup, regular updates, and security tools in place, WordPress is a safe and reliable platform for business websites."
+      },
+      {
+        "q": "Will my Wordpress website be mobile-friendly?",
+        "a": "Absolutely. Every WordPress site we build is fully responsive, meaning it looks and works great on all devices."
+      },
+      {
+        "q": "How long does it take to build a Wordpress site?",
+        "a": "Most business websites are completed within 4 to 7 weeks. But the time varies due to complexity and expertise."
+      },
+      {
+        "q": "Can I add features later on, like a shop or booking system?",
+        "a": "Yes, WordPress is scalable. You can add new features anytime without needing to rebuild the site."
+      },
+      {
+        "q": "Do you offer SEO for the website?",
+        "a": "Yes, full WordPress with SEO services are also available if you want to grow traffic and rankings."
+      },
+      {
+        "q": "What if I need help after the website is live?",
+        "a": "We offer ongoing support and maintenance to keep your site secure, updated, and running smoothly."
+      },
+      {
+        "q": "Will my site load fast?",
+        "a": "Yes. We optimize every site for speed by using clean code, caching, image compression, and performance plugins."
+      },
+      {
+        "q": "Do I need to pay monthly for Wordpress?",
+        "a": "No. WordPress itself is free. You only pay for hosting, your domain, and optional services like maintenance or SEO."
+      },
+      {
+        "q": "Can you redesign my existing Wordpress site?",
+        "a": "Yes. We can refresh your current site with a modern design, better performance, and improved functionality."
+      }
+    ],
+    "eyebrow": "TURNING IDEAS INTO DIGITAL REALITIES",
+    "headline": "Your Vision Powered by WordPress",
+    "intro": "Flexible, easy to use, and built to grow with your business. Whether you're starting simple or scaling big, WordPress development offers powerful tools that are reliable and secure and let you control your site without headaches.\n\nConnect with our agency today.",
+    "sectionTitle": "Complete WordPress Solutions, for every needs",
+    "sectionBody": "Growfore's specialized WordPress design and development is the key to launching your brand into the digital world. By providing Custom WordPress Development, we build a professional, accessible, and uniquely branded website that makes it easier and more convenient for clients to get to know your business.\n\nWhether you need a skilled wordpress developer for a tailored solution or local expertise in WordPress Development in Nepal, our services transform your online presence into a strategic asset for growth.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR WORDPRESS SEO?",
+      "title": "We turn WordPress sites into Google's favorites.",
+      "body": "At Growfore, WordPress is not just a platform; it's the backbone of the online success stories we help create. Whether you are launching something new or leveling up your current site, we bring the design, strategy, and tech skills to turn an idea into something powerful.",
+      "subtitle": "Where smart designs meet real business results",
+      "points": [
+        "Custom Wordpress websites",
+        "SEO ready structure",
+        "Ongoing support and monitoring",
+        "Expert WordPress Developer",
+        "Fully responsive designs",
+        "Speed optimized builds",
+        "Clean, secure development practices"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "Best WordPress Development Services in Nepal 2025 - Growfore",
+    "seoDescription": "Hire our expert WordPress Development agency in Nepal for custom themes, fast performance, & secure websites at affordable rates. Get a free consultation.",
+    "kind": "leaf",
+    "parent": "web-services"
+  },
+  "domain-registration-with-web-hosting": {
+    "slug": "domain-registration-with-web-hosting",
+    "title": "Domain Registration with Web Hosting",
+    "deliverables": [
+      {
+        "id": "domain-name-selection-and-setup",
+        "title": "Domain Name Selection and Setup",
+        "icon": "fas fa-globe",
+        "body": "We help you choose a domain name that reflects your brand and makes it easy for people to find you online. Then we register and connect it properly so your website is ready to go.",
+        "included": [
+          "Personalized domain name ideas based on your brand",
+          "Full domain registration under your ownership",
+          "Connection to hosting and website setup",
+          "Guidance on domain extensions (.com, .org, .np, etc.)"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "high-speed-secure-web-hosting",
+        "title": "High Speed Secure Web Hosting",
+        "icon": "fas fa-server",
+        "body": "Your website deserves to be fast, safe, and always online. We provide reliable hosting services that keeps your site running smoothly 24/7 with the right storage, speed, and security from day one.",
+        "included": [
+          "Fast load times for a better user experience and SEO",
+          "SSL Certificate include for secure browsing (HTTPS)",
+          "Daily backups and malware protection",
+          "Scalable Hosting"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "email-and-ongoing-support",
+        "title": "Email and Ongoing Support",
+        "icon": "icon icon-email",
+        "body": "Look more professional with custom email addresses linked to your domain. We'll handle the setup and make sure you know how to use it.",
+        "included": [
+          "Setup of domain-based email addresses (e.g. you@yourdomain.com)",
+          "Integration with Gmail, Outlook, or your preferred platform",
+          "Easy-to-use instructions for managing email",
+          "Friendly support if you ever need help"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I get a domain and hosting for free?",
+        "a": "Yes, it is possible to get a domain name and web hosting for free, but with limitations."
+      },
+      {
+        "q": "Can I connect my domain to a website for free?",
+        "a": "Yes, if you're using platforms like WordPress.com or other site builders, you can connect a domain to a basic site. But free versions often show ads and limit features. For full control, a paid hosting plan is recommended."
+      },
+      {
+        "q": "Can I own a domain without hosting?",
+        "a": "Yes, you can register and keep a domain without hosting."
+      },
+      {
+        "q": "Can I transfer a domain or hosting later?",
+        "a": "Yes, domains and hosting can be moved to another provider."
+      },
+      {
+        "q": "What features comes with good hosting?",
+        "a": "Look for fast performance, SSL, backups, 99.9% uptime, email integration, and scalable plans. These build a reliable, professional foundation."
+      }
+    ],
+    "eyebrow": "ONE CLICK, ONE NAME, ONE POWERFUL START",
+    "headline": "Secure your Domain, Power it with Hosting",
+    "intro": "Your online presence starts with the right name and a reliable place to host it. We help you on domain registration that reflects your brand and pair it with fast, secure hosting, all in one smooth setup.",
+    "sectionTitle": "Your Complete Domain and Hosting Setup",
+    "sectionBody": "From securing your domain name to setting up fast, reliable hosting services. Your site will have a professional web address, secure storage, and a smooth setup process, so you can focus on your business while we handle the tech.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR DOMAIN AND HOSTING?",
+      "title": "From name to Launch, \nWe make going live simple, fast, and stress-free",
+      "body": "Choosing Growfoe means you are not just getting a domain registration and hosting services; it means you are getting a smooth start to your online journey. We help you pick the right domain and set up secure, high-speed hosting. No confusion, no hidden fees, just a solid, reliable foundation you can count on.",
+      "subtitle": "Where smart designs meet real business results",
+      "points": [
+        "Personalized domain name guidance and full registration",
+        "Fast, secure web hosting",
+        "SSL, backups, and speed optimization included",
+        "Professional email setup linked to your domain",
+        "Friendly support"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "",
+    "seoDescription": "Secure your domain registration  and get fast, reliable hosting. Includes SEO-friendly WordPress hosting and agency-ready plans.",
+    "kind": "leaf",
+    "parent": "web-services"
+  },
+  "ecommerce-website-development": {
+    "slug": "ecommerce-website-development",
+    "title": "Ecommerce Website Development",
+    "deliverables": [
+      {
+        "id": "product-pages-cart-and-checkout",
+        "title": "Product pages, shopping cart, and secure checkout",
+        "icon": "far fa-credit-card",
+        "body": "We build sleek product pages, a smooth cart, and a secure checkout that customers trust. Everything flows easily from browsing to buying.",
+        "included": [
+          "Clear product info with options and photos",
+          "Easy add-to-cart with real-time updates",
+          "SSL-Secured checkout with payment options",
+          "Support coupesn, tax, and shipping rules"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "payment-gateway-integration",
+        "title": "Payment Gateway Integration",
+        "icon": "fab fa-cc-apple-pay",
+        "body": "We integrate trusted gateways like eSewa, Khalti, and global options to make payments easy and secure. Customers can pay however they prefer—locally or internationally.",
+        "included": [
+          "Supports wallets, cards, and bank transfers",
+          "Fast, encrypted, and fraud-protected transactions",
+          "Ideal for one-time, recurring, or COD Payments",
+          "Seamlessly fits your business flow"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "inventory-order-tracking-and-shipping",
+        "title": "Inventory Management, Order Tracking and Shipping Setup",
+        "icon": "fas fa-boxes",
+        "body": "Manage stock, track orders, and handle shipping, all from one place. Everything stays synced and in control, from checkout to delivery.",
+        "included": [
+          "Real-time inventory and order updates",
+          "Shipping setup with local and global carriers",
+          "Alerts for low stock and new orders",
+          "Custom delivery zones and rates"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "responsive-and-mobile-ready-design",
+        "title": "Responsive and Mobile-Ready Design",
+        "icon": "icon icon-laptop-phone",
+        "body": "Your site looks sharp and works fast on phones, tablets, and desktops. No matter the screen, the experience stays smooth.",
+        "included": [
+          "Auto adjusts to all devices",
+          "Fast loading and user friendly layout",
+          "Boosts engagement and sales on mobile",
+          "Clean, modern UI for all users"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the cost of developing an e-commerce website?",
+        "a": "The cost depends on the platform, features, design complexity, and integrations like payment and shipping systems."
+      },
+      {
+        "q": "How long does it take to build an e-commerce site?",
+        "a": "A basic site can take 4/6 weeks, while custom builds with advanced features may take a few months."
+      },
+      {
+        "q": "Can I manage products and orders myself?",
+        "a": "Yes, your site will include an admin panel where you can manage products, inventory, orders, and customers easily."
+      },
+      {
+        "q": "Will my ecommerce site be mobile friendly?",
+        "a": "Absolutely. All modern e-commerce sites are built to be fully responsive across mobile, tablet, and desktop."
+      },
+      {
+        "q": "Is SEO included in the development?",
+        "a": "Basic SEO setup is included, like clean URLs and meta tags. A full SEO strategy can be added if needed."
+      },
+      {
+        "q": "Can I accept online payments securely?",
+        "a": "Yes, we integrate secure payment gateways with encryption and SSL for safe transactions."
+      },
+      {
+        "q": "Will I be able to update my website after it's launched?",
+        "a": "Yes, you'll have full access to make updates, or we can provide ongoing support if preferred."
+      },
+      {
+        "q": "How do I handle shipping and delivery options?",
+        "a": "We set up custom shipping rules and connect with local or global carriers depending on your market."
+      },
+      {
+        "q": "Can the websites scale as my business grow?",
+        "a": "Yes, your site will be built to handle more products, traffic, and advanced features as you expand."
+      }
+    ],
+    "eyebrow": "FROM FIRST CLICK TO FINAL CHECKOUT",
+    "headline": "E-commerce Platform that helps to grow your business",
+    "intro": "Scalable, user-friendly, and built for growth, our e-commerce platforms are designed to support your business at every stage. Whether you're launching a small shop or expanding a large online store, we provide powerful, secure tools that give you full control without the stress.",
+    "sectionTitle": "Ecommerce websites for your sales",
+    "sectionBody": "Growfore Solution helps you build a powerful e-commerce website that's fast, user-friendly, and designed to boost your online sales. From secure payment integration to easy product management, we create custom online stores that fit your business needs. Whether you're starting small or scaling big, our SEO-optimized platforms help you reach more customers and grow your revenue.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR E-ECOMMERCE WEBSITE?",
+      "title": "Your success isn't feature. It's a foundation.",
+      "body": "Choosing Growfore for your e-commerce website means opting for a partner dedicated to your complete online success. We don't just build sites; we craft comprehensive digital solutions that combine expert web development, stunning design, and robust SEO strategies.",
+      "subtitle": "Built for clicks, designed for growth, made to sell.",
+      "points": [
+        "Custom-built e-commerce sites tailored to your brand",
+        "Mobile friendly, fast, and fully responsive design",
+        "SEO optimized structure to boost visibility on Google",
+        "Smooth shopping experience with secure checkout",
+        "Integrated payment, shipping, and inventory systems",
+        "Ongoing support to scale and grow your store"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "E-commerce Website Development Service - Growfore Solution",
+    "seoDescription": "Create a beautiful, secure e-commerce website built to sell. Custom design, fast checkout, and full mobile support.",
+    "kind": "leaf",
+    "parent": "web-services"
+  },
+  "web-application-development": {
+    "slug": "web-application-development",
+    "title": "Web Application Development",
+    "deliverables": [
+      {
+        "id": "fully-customized-features-and-user-flows",
+        "title": "Fully Customized Features and User Flows",
+        "icon": "icon icon-flower",
+        "body": "Your business isn't one-size-fits-all, and your app shouldn't be either. We design features and user journeys tailored to how your team works and how your users behave.",
+        "included": [
+          "Custom dashboards, forms, and workflows",
+          "Role based access and permission control",
+          "Personalized user experiences based on behavior"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "secure-backend-with-database-integration",
+        "title": "Secure Backend with Database Integration",
+        "icon": "icon icon-lock",
+        "body": "Behind every great app is a secure, stable backend. We build with data security in mind and integrate with databases that store, organize, and protect your information.",
+        "included": [
+          "Encrypted user data and login security",
+          "Admin control panels for data management",
+          "Regular backups and access control protocols"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "real-time-data-handling-and-api-connections",
+        "title": "Real-Time Data Handling and API Connections",
+        "icon": "icon icon-countdown-timer",
+        "body": "Modern apps need to move fast and stay connected. We implement real-time systems and APIs that keep your data flowing live across platforms and devices.",
+        "included": [
+          "Encrypted user data and login security",
+          "Admin control panels for data management",
+          "Push notifications and instant alerts"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "built-for-speed-scale-and-simplicity",
+        "title": "Built for Speed, Scale, and Simplicity",
+        "icon": "icon icon-speed",
+        "body": "Speed keeps users engaged. Scalability keeps your app growing. We build with performance in mind, clean code, fast load times, and future-ready architecture.",
+        "included": [
+          "Optimized for fast load and quick response",
+          "Modular builds for easier future upgrades",
+          "Build to handle high traffic without lag"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is a web application?",
+        "a": "A web application is a software program that runs in a browser and allows users to interact with content or perform tasks online."
+      },
+      {
+        "q": "How is a web app different from a website?",
+        "a": "Web apps are interactive and dynamic, allowing users to log in, input data, or complete actions, while websites are mostly static and informational."
+      },
+      {
+        "q": "How long does it take to develop a web application?",
+        "a": "Development time depends on the features, complexity, and tech stack, but can range from a few weeks to several months."
+      },
+      {
+        "q": "What technologies are used to build web apps?",
+        "a": "Common technologies include HTML, CSS, JavaScript frameworks like React or Vue, and backend tools like Node.js, Django, or Laravel."
+      },
+      {
+        "q": "Is my web app secure?",
+        "a": "Yes, we use modern security practices like SSL, encryption, and secure authentication to protect data and users."
+      },
+      {
+        "q": "Can a web app be used on mobile devices?",
+        "a": "Absolutely. Web apps are built to be responsive and work smoothly on phones, tablets, and desktops."
+      },
+      {
+        "q": "Can I integrate third party services into my app?",
+        "a": "Yes, APIs can connect your web app with other tools like payment gateways, CRMs, or analytics platforms."
+      },
+      {
+        "q": "What is the cost of developing a web app?",
+        "a": "Cost varies based on the scope, features, design needs, and tech used. We offer custom quotes after understanding your goals."
+      },
+      {
+        "q": "Will my app be scalable as my business grows?",
+        "a": "Yes, we build with scalability in mind so your app can handle more users, data, and new features as you grow."
+      }
+    ],
+    "eyebrow": "CODE THAT WORKS, LOGIC THAT LASTS",
+    "headline": "Powering Businesses with Smarter Web Solutions",
+    "intro": "A custom web application that is fast, secure, and built to scale your business. Whether you need a booking system, dashboard, or something completely unique, we turn your idea into powerful, user-friendly digital tools. \n\nConnect with us.",
+    "sectionTitle": "Modern Web Applications for Modern Businesses",
+    "sectionBody": "Web apps power platforms across industries from e-commerce to e-learning to healthcare and finance. Their rapid growth reflects how important they have become in powering scalable, secure, and user-friendly digital services.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR WEB APPLICATIONS?",
+      "title": "From Concept to Code, \nWe build with purpose and precision.",
+      "body": "At Growfore, every app starts with strategy and ends with seamless functionality. We don't just develop features; we craft smooth user flows, secure systems, and scalable solutions built to last.",
+      "subtitle": "Turning search engines into sales engines.",
+      "points": [
+        "Custom built platforms tailored to your brand and goals",
+        "Fast, responsive, and mobile optimized performance",
+        "Secure architecture with reliable backend systems",
+        "SEO ready structure for maximum online visibility",
+        "Real time integrations with third party tools and APIs",
+        "Ongoing support and updates to keep you ahead of the curve"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "",
+    "seoDescription": "Build high-performance web application development that scale. From UI design to backend development, we create seamless user journeys.",
+    "kind": "leaf",
+    "parent": "web-services"
+  },
+  "mobile-app-development": {
+    "slug": "mobile-app-development",
+    "title": "Mobile App Development",
+    "deliverables": [
+      {
+        "id": "native-or-cross-platform-app-development",
+        "title": "Native or Cross Platform App Development",
+        "icon": "icon icon-apps",
+        "body": "We develop apps either native to each platform or using cross-platform tools to balance speed and performance. This ensures your app reaches the widest audience without compromising on quality or user experience.",
+        "included": [
+          "Native apps for optimized speed and device features",
+          "Cross platform apps for faster development and cost efficiency",
+          "Support for both IOS and Android platforms",
+          "Flexible approach tailored to your business needs"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "beautiful-ui-ux-tailored-for-mobile",
+        "title": "Beautiful UI/UX Tailored for Mobile",
+        "icon": "fas fa-paint-brush",
+        "body": "Our design team crafts intuitive interfaces that look stunning and feel natural on any device. We focus on user experience to keep your audience engaged and coming back.",
+        "included": [
+          "Custom designs that reflect your brand identity",
+          "Simple navigation for seamless user journeys",
+          "Responsive layouts for all screen sizes",
+          "User testing to refine and improve usability"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "app-store-and-google-play-publishing",
+        "title": "App Store and Google Play Publishing",
+        "icon": "fab fa-app-store",
+        "body": "We handle the entire publishing process to get your app live and visible on major platforms. Our team ensures your app meets all guidelines for smooth approval.",
+        "included": [
+          "Preparation of app store assets and descriptions",
+          "Compliance with Apple and Google policies",
+          "Submission and follow up during the review process",
+          "Assistance with app updates and version control"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "maintenance-updates-and-support",
+        "title": "Maintenance, Updates and Support",
+        "icon": "fas fa-tools",
+        "body": "Launching your app is just the beginning. We provide ongoing maintenance and updates to keep your app secure, up-to-date, and performing at its best.",
+        "included": [
+          "Regular bug fixes and performance improvements",
+          "Feature enhancements based on user feedback",
+          "Security updates to protect your data",
+          "Dedicated support to resole issues quickly"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between a native and cross-platform app?",
+        "a": "Native apps are built specifically for one platform like iOS or Android, while cross-platform apps run on both using a single codebase."
+      },
+      {
+        "q": "How much does it cost to develop a mobile app?",
+        "a": "The cost depends on features, design complexity, platforms, and integrations. Basic apps are more affordable, while complex apps cost more."
+      },
+      {
+        "q": "How long does it take to develop a mobile app?",
+        "a": "It can take anywhere from a few weeks to several months based on the app's scope, features, and revisions during development."
+      },
+      {
+        "q": "Which platform should I build my app for?",
+        "a": "This depends on your target audience. Many businesses choose to launch on both iOS and Android for wider reach."
+      },
+      {
+        "q": "Can I update my app after it's launched?",
+        "a": "Yes, apps can be updated with new features, improvements, or fixes as needed through regular version releases."
+      },
+      {
+        "q": "Will my app be published on the App Store and Google Play?",
+        "a": "Yes, we help with the full submission process, making sure your app meets all platform guidelines for approval."
+      },
+      {
+        "q": "How do I make sure my app is secure?",
+        "a": "We use secure coding practices, encrypted data storage, and user authentication systems to protect your app and its users."
+      },
+      {
+        "q": "Can the app integrate with third-party services?",
+        "a": "Yes, your app can connect with APIs, payment gateways, analytics tools, or any external services you need."
+      },
+      {
+        "q": "What happens after the app is launched?",
+        "a": "We offer support, maintenance, and updates to ensure your app stays functional, secure, and competitive."
+      },
+      {
+        "q": "Will I own the code and app rights after development?",
+        "a": "Yes, once the project is completed, full ownership and rights to the app and its code are transferred to you."
+      }
+    ],
+    "eyebrow": "APPS THAT RUNS SMOOTHLY AND SCALE FAST",
+    "headline": "Fuel your growth with mobile first innovation",
+    "intro": "Your audience is already on their phones. A mobile app gives your business direct access to customers, increases engagement, and boosts loyalty. It's faster than a website, more personal than email, and always just one tap away.\n\nConnect with us.",
+    "sectionTitle": "Delivering mobile apps that deliver results",
+    "sectionBody": "Web apps power platforms across industries from e-commerce to e-learning to healthcare and finance. Their rapid growth reflects how important they have become in powering scalable, secure, and user-friendly digital services.We create mobile apps designed to boost your business growth and engage your users. Every app we build focuses on performance, usability, and real-world impact to help you reach your goals faster.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR MOBILE APP DEVELOPMENT?",
+      "title": "Custom Mobile Apps that bring your boldest ideas to life.",
+      "body": "With Growfore, your app is more than just a product; it's a growth engine. Your brand, one touch away from your audience. We build apps that connect, engage, and grow your business with smart technology and seamless design.",
+      "subtitle": "Your brand, one touch away from your audience.",
+      "points": [
+        "Tailored solutions that match your unique business goals",
+        "Smooth, fast apps optimized for both iOS and Android",
+        "Intutive user experiences that keep customers coming back",
+        "Secure architecture protecting your data and users",
+        "Integration with key tools like payment gateways and analytics",
+        "Ongoing support to update and scale your app as you grow"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "",
+    "seoDescription": "Launch stunning mobile app for  Android and iOS. Fast, responsive, and designed for real users with real needs.",
+    "kind": "leaf",
+    "parent": "web-services"
+  },
+  "custom-cms-website": {
+    "slug": "custom-cms-website",
+    "title": "Custom CMS Website",
+    "deliverables": [
+      {
+        "id": "user-friendly-admin-panel",
+        "title": "User Friendly Admin Panel",
+        "icon": "fas fa-chalkboard",
+        "body": "We design admin dashboards that are simple to use, even for non-tech users. You can manage your website's content, media, and settings with just a few clicks.",
+        "included": [
+          "Clean, intuitive interface with no clutter",
+          "Easy editing of pages, posts, images and menus",
+          "Role based access for team collaboration",
+          "Real-time content updates without developer help"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "scalable-backend-architecture",
+        "title": "Scalable Backend Architecture",
+        "icon": "fas fa-code",
+        "body": "Your CMS backend is built to grow with your business. Whether you're adding users, content, or features, the system stays fast and stable.",
+        "included": [
+          "Modular code structure for easy expansion",
+          "Optimized database design for performance",
+          "Handles high traffic without slowing down",
+          "Supports integration with third party tools"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "seo-features-and-content-flexibility",
+        "title": "SEO Features and Content Flexibility",
+        "icon": "icon icon-search11",
+        "body": "We include essential SEO tools and flexible content options so your site ranks well and adapts to future content needs. No need for extra plugins or workarounds.",
+        "included": [
+          "Editable meta tags, URLs, and image alt texts",
+          "Built in sitemap generation and schema markup",
+          "Support for custom page templates and sections",
+          "Fast page loads and mobile optimized structure"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "training-and-support",
+        "title": "Training and Support",
+        "icon": "fas fa-chalkboard-teacher",
+        "body": "We don't just hand over your CMS; we make sure you know how to use it confidently. Our team offers full training and reliable support when you need it.",
+        "included": [
+          "Onboarding sessions for you and your team",
+          "User guides and video tutorials included",
+          "Ongoing technical support post-launch",
+          "Help with future updates or troubleshooting"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is Custom CMS?",
+        "a": "A custom CMS is a content management system built specifically for your business needs, unlike off-the-shelf platforms like WordPress."
+      },
+      {
+        "q": "Why choose a custom CMS over a pre built one?",
+        "a": "A custom CMS offers more flexibility, better security, and full control over features, design, and functionality without unnecessary bloat."
+      },
+      {
+        "q": "Is a custom CMS user friendly?",
+        "a": "Yes, it's designed with your workflow in mind, allowing easy content updates without needing technical skills."
+      },
+      {
+        "q": "How long does it take to build a custom CMS?",
+        "a": "Development time depends on the complexity and features required, typically ranging from a few weeks to a few months."
+      },
+      {
+        "q": "Can I scale my custom CMS in the future?",
+        "a": "Absolutely, a custom CMS is built with scalability in mind so it can grow as your content, users, or features expand."
+      },
+      {
+        "q": "Will my CMS be mobile-friendly?",
+        "a": "Yes, both the front-end and admin panel can be optimized for mobile responsiveness to ensure smooth use on any device."
+      },
+      {
+        "q": "Is SEO included in a custom CMS?",
+        "a": "Yes, SEO features like clean URLs, meta tags, and sitemap support can be built directly into the CMS architecture."
+      },
+      {
+        "q": "Can it integrate with third-party tools or APIs?",
+        "a": "Yes, a custom CMS can be integrated with CRM systems, payment gateways, marketing tools, and other platforms your business uses."
+      },
+      {
+        "q": "Will I get training on how to use the CMS?",
+        "a": "Yes, we provide full training and documentation so your team can manage the system confidently."
+      },
+      {
+        "q": "Who owns the CMS once it's built?",
+        "a": "You have full ownership of the CMS and its source code once the project is completed."
+      }
+    ],
+    "eyebrow": "YOUR CONTENT, YOUR CONTROL",
+    "headline": "CMS that adapts fast as your ideas do",
+    "intro": "Your content moves fast; your system should too. We build custom CMS platforms that give you full control, letting you update, scale, and evolve your site without limits. Whether you're managing pages, products, or posts, your backend works exactly how you need it to.",
+    "sectionTitle": "Tailored CMS Development for Scalable Content Management",
+    "sectionBody": "A well-built CMS isn't just a tool; it's the backbone of a successful digital presence. Studies show that over 70% of websites today are powered by some form of CMS, proving how essential it is for businesses to manage content quickly and efficiently.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR CMS?",
+      "title": "Custom CMS solutions that simplify your backend and sharpen your brand",
+      "body": "At Growfore, we build CMS platforms that look just as good on the inside as they do on the outside. We focus on clean structure, ease of use, and scalability, so your team can work faster and your brand can shine brighter.",
+      "subtitle": "Smarter content management starts with a system that's built for you",
+      "points": [
+        "CMS tailored to your content, workflow, and goals",
+        "Tailored backend tools made for your exact needs",
+        "Easy-to-use dashboards for quick updates",
+        "Built-in SEO features and structured content control",
+        "Scalable system ready for future growth",
+        "Ongoing support and training to keep your site running strong"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "Custom CMS Platforms Services - Growfore Solution",
+    "seoDescription": "Get a custom CMS platforms tailored to your workflow. Easy to manage, fully secure, and built for scale.",
+    "kind": "leaf",
+    "parent": "web-services"
+  },
+  "ui-ux-design": {
+    "slug": "ui-ux-design",
+    "title": "UI/UX Design",
+    "deliverables": [
+      {
+        "id": "wireframes-mockups-and-interactive-prototypes",
+        "title": "Wireframes, Mockups, and Interactive Prototypes",
+        "icon": "fas fa-network-wired",
+        "body": "We begin with wireframes to map out the structure, then move into detailed mockups and clickable prototypes. This helps you visualize the user journey before a single line of code is written.",
+        "included": [
+          "Low fidelity wireframes for layout and flow planning",
+          "Hight fidelity mockups showing the final design and flow planning",
+          "Interactive prototypes for real time feedback and testing",
+          "Streamlined collaboration between designers and developers"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "user-behavior-research-and-ux-strategy",
+        "title": "User Behavior Research and UX Strategy",
+        "icon": "fas fa-people-arrows",
+        "body": "Understanding how users think is key to creating products that perform. We use real data and research to shape a strategy that meets user needs and business goals.",
+        "included": [
+          "User personas and journey mapping",
+          "Strict evaluation and UX audits",
+          "Data driven decisions backed by user feedback",
+          "UX Flows optimized for engagement"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "clean-modern-mobile-responsive-design",
+        "title": "Clean, Modern, Mobile Responsive Design",
+        "icon": "icon icon-laptop-phone",
+        "body": "Your design needs to look sharp and work smoothly on every screen. We craft responsive interfaces that adapt to phones, tablets, and desktops without losing their edge.",
+        "included": [
+          "Mobile first design approach",
+          "Scalable layouts that fit all screen sizes",
+          "Optimized UI Elements for touch interactions",
+          "Consistent design across all platforms"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "branding-and-visual-storytelling",
+        "title": "Branding and Visual Storytelling",
+        "icon": "icon icon-brands",
+        "body": "Design isn't just about function; it's about identity. We build visual systems that communicate your brand clearly and create an emotional connection with your users.",
+        "included": [
+          "Custom color palettes, typography, and icon sets",
+          "Brand consistent UI design elements",
+          "Visual hierarchy that guides user attention",
+          "Style guides for consistency across platforms"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between UI and UX design?",
+        "a": "UI is how the product looks, including buttons, colors, and layouts. UX is how it feels user flow, interaction, and experience across the journey."
+      },
+      {
+        "q": "Why is UI/UX important for my business?",
+        "a": "It shapes how users see and interact with your brand. Strong UI/UX builds trust, boosts conversions, and keeps users coming back."
+      },
+      {
+        "q": "How does UI/UX impact my sales or leads?",
+        "a": "Clear, intuitive design removes friction and guides users to take action, whether that's buying, signing up, or booking a service."
+      },
+      {
+        "q": "How long does a UI/UX design project take?",
+        "a": "It depends on the project scope, but most full UI/UX design cycles take anywhere from two to eight weeks, including research and revisions."
+      },
+      {
+        "q": "Do I need both UI and UX for my project?",
+        "a": "Yes. UI without UX can look good but fail to perform, and UX without UI may work well but feel unpolished. You need both to succeed."
+      },
+      {
+        "q": "Can UI/UX design improve my existing website or app?",
+        "a": "Absolutely. A redesign focused on better usability and user flow can instantly improve engagement, retention, and overall performance."
+      },
+      {
+        "q": "What tools do you use for UI/UX design?",
+        "a": "We commonly use tools like Figma, Adobe XD, and Sketch for design, along with research platforms like Hotjar and Google Analytics for user behavior insights."
+      },
+      {
+        "q": "Will I be involved in the design process?",
+        "a": "Yes. We collaborate closely with you during every phase, from research and wireframes to final prototypes, so your feedback shapes the outcome."
+      },
+      {
+        "q": "Is UI/UX one time process?",
+        "a": "It can be, but the best products evolve. Continuous improvement based on user feedback keeps your design fresh, relevant, and competitive."
+      },
+      {
+        "q": "Can UI/UX design help with SEO or marketing?",
+        "a": "Yes. Better design means lower bounce rates, faster load times, and clearer content, all of which support SEO and conversion-focused marketing."
+      }
+    ],
+    "eyebrow": "DESIGN THAT DO MORE THAT LOOK GOOD",
+    "headline": "UI/UX that fuels engagement, loyalty, and conversions.",
+    "intro": "Get premium UI/Ux design service tailored to how real users think and act. We design every screen with intention, blending beauty and usability to create seamless experiences your users will trust and enjoy.\n\nDesign with us today!",
+    "sectionTitle": "UI/UX Services Built for Impact and Growth",
+    "sectionBody": "Your product deserves more than a generic design. We craft high-end, user-focused experiences that make your brand stand out and your users stick around. From wireframes to final visuals, every step is focused on making your product easier to use, more engaging, and ready to scale",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR UI/UX?",
+      "title": "Crafting seamless experiences that keep users coming back",
+      "body": "We craft design that suits your brand and its identity digitally. Design is what keeps users engaged and comfortable when they are on your site. So, make sure your site is not only aesthetic but also user-friendly and has a slick user flow.",
+      "subtitle": "Where smart designs meets real user behavior",
+      "points": [
+        "Designs driven by data, not just trends",
+        "Clean, intuitive layouts that reduce bounce and boost interactions",
+        "Fully responsive design for mobile, tablet, and desktop",
+        "Smooth user journeys optimized for conversion",
+        "On brand visuals that strengthen recognition and trust",
+        "Collaborative process with feedback built into every step"
+      ],
+      "closing": ""
+    },
+    "seoTitle": "UI/UX Design Service - Growfore Solution",
+    "seoDescription": "Design that speaks to users. UI/UX  design service focused on intuitive experiences, user flow, and visual impact.",
+    "kind": "leaf",
+    "parent": "web-services"
+  },
+  "ads-services": {
+    "slug": "ads-services",
+    "title": "Ads Services",
+    "deliverables": [
+      {
+        "id": "local-ads",
+        "title": "Google Local Service Ads(LSAs)",
+        "icon": "fab fa-simplybuilt",
+        "body": "Perfect for service-based businesses that rely on foot traffic, phone calls, or local bookings, we help you dominate your area with a hyper-targeted campaign that reaches the right people near you.",
+        "included": [
+          "Local audience targeting by city, pin code, or radius",
+          "Google Maps & Search visibility boost",
+          "Call and message extensions for direct leads",
+          "Conversion tracking for calls, bookings, and visits",
+          "Continuous performance optimization"
+        ],
+        "outcome": "With Growfore's local ad strategies, your business becomes the go-to name in your area. We build growth engines for local businesses. Let's turn your clicks into clients."
+      },
+      {
+        "id": "google-ads-management",
+        "title": "Google Ads Manangement",
+        "icon": "fab fa-google",
+        "body": "Google Ads gives your business instant visibility to the targeted audience. It lets your business appear at the top of Google search results, on YouTube, Google Maps, and across thousands of websites, exactly when potential customers are looking for what you offer.",
+        "included": [
+          "Search Ads: Show up when customers search for what you offer.",
+          "Shopping Ads: For product-based add-ons or e-commerce extensions",
+          "Video Ads: YouTube pre-rolls that build local brand trust fast",
+          "Keywords Research: Deep targeting based on buyer intent",
+          "Ads Testing: Find what works, cut what doesn't"
+        ],
+        "outcome": "If your business goal is fast, targeted visibility, especially when people are actively searching for what you offer, then Google Ads is the push your brand needs."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is an ad?",
+        "a": "An ad (advertisement) is a paid message used to promote a product, service, or brand to a target audience online or offline."
+      },
+      {
+        "q": "What is Google Ads?",
+        "a": "Google Ads is Google's online advertising platform that lets businesses show ads on Google Search, YouTube, and across the web to attract potential customers."
+      },
+      {
+        "q": "How do Google Ad works?",
+        "a": "Google Ads works on a pay-per-click (PPC) model where businesses bid on keywords to show their ads to users searching for related terms. You only pay when someone clicks."
+      },
+      {
+        "q": "What is PPC?",
+        "a": "PPC (Pay-Per-Click) is a digital advertising model where you pay only when someone clicks your ad. It's used in platforms like Google Ads and Facebook Ads."
+      },
+      {
+        "q": "What are local service ads?",
+        "a": "Local service ads are location-based Google ads that appear at the top of search results, helping local businesses get leads from nearby customers."
+      },
+      {
+        "q": "How effective are ad campaigns?",
+        "a": "Ad campaigns are highly effective when targeted correctly. Businesses see an average return of $2 for every $1 spent on Google Ads."
+      },
+      {
+        "q": "Does a small business need ad campaigns?",
+        "a": "Yes. Ad campaigns help small businesses compete online, reach local customers, generate leads, and grow faster with measurable results."
+      },
+      {
+        "q": "Why are ads good?",
+        "a": "Ads are good because they drive traffic, build brand awareness, attract ready-to-buy customers, and deliver fast, trackable results."
+      },
+      {
+        "q": "How do ads help?",
+        "a": "Ads help by increasing visibility, generating leads, boosting sales, and connecting businesses with the right audience at the right time."
+      }
+    ],
+    "eyebrow": "Smart Strategy. Clean Execution. Real Results",
+    "headline": "Results-Driven Ads Management, Built for Growth-Obsessed Brands",
+    "intro": "Advertise your brand to your target audience with our expertise in ads management tools. We develop comprehensive market research and plan strategies to get your brand the hype it deserves. From Google Ads to different social media platforms, we've got your back.",
+    "sectionTitle": "Every Click Tracked. Every Dollar Accounted For.",
+    "sectionBody": "Every campaign we run is backed by smart analytics, performance audits, and constant optimization, so you always know what's working, what's not, and where to scale next. No hidden fees, no vague reports, no wasted spending. Just full control, clear results, and ROI you can see.",
+    "why": {
+      "eyebrow": "WHY GROWFORE FOR ADS MANAGEMENT?",
+      "title": "Don't Wait to Be Found — Show Up First",
+      "body": "Businesses that run paid ad campaigns see 200% ROI on average, according to Google. 75% of users say ads help them discover new businesses. With Growfore's smart targeting and constant optimization, ads don't just bring traffic; they bring buyers.",
+      "subtitle": "Ads Aren't an Expense; They're a Growth Tool",
+      "points": [
+        "Instant visibility",
+        "Scalable Results",
+        "Data-Driven Growth",
+        "Hight-Intent Traffic",
+        "Full Control",
+        "Beat the competition"
+      ],
+      "closing": "Let's discuss how we can help your business grow. Contact us today for a free consultation and discover what's possible when you partner with the right team."
+    },
+    "seoTitle": "Ads Management Services - Growfore Solution",
+    "seoDescription": "Boost ROI with expert ads management. We optimize your ad spend for better reach, clicks, and conversions across all major platforms.",
+    "kind": "hub",
+    "children": [
+      "google-ads",
+      "google-local-service-ads"
+    ]
+  },
+  "google-ads": {
+    "slug": "google-ads",
+    "title": "Google Ads",
+    "deliverables": [
+      {
+        "id": "search-ads",
+        "title": "Search Ads",
+        "icon": "fas fa-search",
+        "body": "Your business appears at the top of Google when potential customers actively search for your products or services. Ideal for driving high-intent leads.",
+        "included": [
+          "Target high-intent keywords in your niche",
+          "Capture traffic from people actively looking to buy",
+          "Show compelling headlines, offers, and callouts",
+          "Boost call volume, form submissions, and site visits"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "shopping-ads",
+        "title": "Shopping Ads",
+        "icon": "fas fa-shopping-cart",
+        "body": "Perfect for e-commerce or product-focused businesses. Show product images, prices, and reviews directly in Google search results, increasing clicks and purchases.",
+        "included": [
+          "Display product images, prices, and reviews",
+          "Drive clicks from ready-to-buy customers",
+          "Sync with your product feed for real-time updates",
+          "Perfect for e-commerce or physical retailers"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "video-ads",
+        "title": "Video Ads",
+        "icon": "fas fa-video",
+        "body": "Reach your audience on YouTube with engaging video ads. Great for building brand trust and awareness through skippable or non-skippable pre-roll formats.",
+        "included": [
+          "Skippable and non-skippable pre-roll formats",
+          "Ideal for brand awareness and local trust building",
+          "Target by interest, demographics, or video topics",
+          "Use short, compelling creatives to boost recall"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "keyword-research",
+        "title": "Keyword Research",
+        "icon": "far fa-file-word",
+        "body": "We find and target the exact search terms your ideal customers are using, ensuring your ads reach the right people with high purchase intent.",
+        "included": [
+          "Discover high-converting, low-competition terms",
+          "Focus on keywords with strong local or commercial intent",
+          "Avoid irrelevant traffic that wastes your budget",
+          "Update keyword lists based on performance data"
+        ],
+        "outcome": ""
+      },
+      {
+        "id": "ad-testing",
+        "title": "Ads Testing",
+        "icon": "icon icon-settings1",
+        "body": "We run multiple versions of your ads to see what performs best, then double down on what works and eliminate what doesn't to maximize ROI.",
+        "included": [
+          "Compare headlines, descriptions, and calls to action",
+          "Test landing pages for better conversions",
+          "Use data to decide which ads perform best",
+          "Continuously refine for maximum ROI"
+        ],
+        "outcome": ""
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is Google Ads?",
+        "a": "Google Ads is an online platform that lets businesses advertise on Google Search, YouTube, Maps, and partner websites."
+      },
+      {
+        "q": "How does Google Ads work?",
+        "a": "It runs on a pay-per-click (PPC) model. You bid on keywords, and your ads show when people search for those terms. You only pay when someone clicks."
+      },
+      {
+        "q": "What is Ad Rank and Quality Score?",
+        "a": "Ad Rank decides your ad position. It's based on your bid, ad quality, and extensions. Quality Score reflects relevance, click rate, and landing page experience."
+      },
+      {
+        "q": "What types of campaigns can I run?",
+        "a": "Google Ads supports Search, Display, Video, Shopping, App, Local, Smart, and Performance Max campaigns."
+      },
+      {
+        "q": "What's the difference between PPC, CPM, and CPV?",
+        "a": "PPC: Pay-per-click\n\nCPM: Pay per 1,000 views\n\nCPV: Pay per video view"
+      },
+      {
+        "q": "What are match types and negative keywords?",
+        "a": "Match types control how closely a search must match your keyword. Negative keywords block irrelevant searches from triggering your ad."
+      },
+      {
+        "q": "What bidding strategies can I use?",
+        "a": "You can use manual bidding or smart bidding like Target CPA, Maximize Clicks, or Target ROAS based on your goals."
+      },
+      {
+        "q": "What are ad extensions?",
+        "a": "They add extra info to your ads like call buttons, locations, or extra links, making your ads more useful and visible."
+      },
+      {
+        "q": "How do I track conversions?",
+        "a": "By setting up conversion tracking on your website or connecting Google Analytics, you can measure leads, sales, and actions from your ads."
+      },
+      {
+        "q": "What is Performance Max?",
+        "a": "It's a campaign type that uses AI to run ads across all of Google's platforms, optimized automatically for better conversions."
+      }
+    ],
+    "eyebrow": "FROM SEARCH TO SALE, WE RUN THE ENTIRE FUNNEL",
+    "headline": "Show Up First on Google - Right When It Matters",
+    "intro": "Google Ads Management gets your business in front of high-intent customers. Best known tool for instant reach and effective targeting, these ads appear when people are actively searching for your products.",
+    "sectionTitle": "Your Google Ads, Handled by Experts Who Get Results",
+    "sectionBody": "If you want fast, trackable, and scalable growth, Google Ads is one of the most effective tools available. And when managed by Growfore, it doesn't just drive traffic; it drives real business results.",
+    "why": {
+      "eyebrow": "WHY CHOOSE GROWFORE FOR AD MANAGEMENT?",
+      "title": "Your Ads Budget Deserves Better than Guesswork.",
+      "body": "Most businesses waste money on ads that don't convert. At Growfore, we manage your Google Ads with precision using data, not assumptions. From keyword targeting to ad copy, every element is tested, tracked, and optimized for performance. We don't just get you clicks; we bring you qualified leads, real results, and full transparency every step of the way.",
+      "subtitle": "We Build Google Ads that Work and Prove it.",
+      "points": [
+        "Laser-focused Targeting",
+        "Conversion Tracking Setup",
+        "A/B Testing for Performance",
+        "Custom Ad Copywriting",
+        "Ongoing Optimization",
+        "Clear, Actionable Reporting"
+      ],
+      "closing": "Growfore Solution offers comprehensive Google Ads Management solutions. Our Google Ads campaigns are built to deliver measurable results that grow your business, not just your click count"
+    },
+    "seoTitle": "Google Ads Management - Growfore Solution",
+    "seoDescription": "Maximize your ROI with precise Google Ads management. From keyword research to real-time optimization, we handle it all.",
+    "kind": "leaf",
+    "parent": "ads-services"
+  },
+  "google-local-service-ads": {
+    "slug": "google-local-service-ads",
+    "title": "Google Local Service Ads (LSAs)",
+    "deliverables": [
+      {
+        "id": "precise-local-targeting",
+        "title": "Precise Local Targeting",
+        "icon": "icon icon-target-2",
+        "body": "We target your ads based on your exact service area, whether it's by:",
+        "included": [
+          "City",
+          "Pin Code",
+          "Custom Radius"
+        ],
+        "outcome": "So your ads only show to people near your business who are ready to act. It eliminates wasted impressions and clicks from out-of-reach users."
+      },
+      {
+        "id": "google-maps-and-local-search-visibility",
+        "title": "Google Maps and Local Search Visibility",
+        "icon": "fas fa-map-marked",
+        "body": "Google Maps can be the best place that can help your brand shine, as it helps you reach the right audience who is ready to spend their money on the spot.",
+        "included": [
+          "Show up in the top local spots.",
+          "Reach nearby buyers fast.",
+          "Build Local Trust Instantly"
+        ],
+        "outcome": "Your business appears in high-visibility spots like Google Maps listings, local 3-packs, and location-based searches."
+      },
+      {
+        "id": "call-and-message-extension",
+        "title": "Call and Message Extension",
+        "icon": "fas fa-mail-bulk",
+        "body": "Add instant action buttons like click-to-call and click-to-message to your ads, allowing potential customers to call or message you directly without needing to visit your website.",
+        "included": [
+          "One-tap calls or messages.",
+          "Mobile-friendly and fast.",
+          "Cuts out extra steps."
+        ],
+        "outcome": "This is especially powerful for mobile users, as there is no form filling, just an easier and faster way to engage and fulfill their needs."
+      },
+      {
+        "id": "conversion-tracking",
+        "title": "Conversion Tracking",
+        "icon": "fas fa-project-diagram",
+        "body": "Track every call, booking that comes from your ads so you know exactly what's working and what's bringing in leads. This helps measure ROI clearly and fine-tune performance over time.",
+        "included": [
+          "See which ads bring leads.",
+          "Measure ROI clearly.",
+          "Optimize based on real data."
+        ],
+        "outcome": "This leads to full transparency and makes your business flourish."
+      },
+      {
+        "id": "continuous-performance-optimization",
+        "title": "Continuous Performance Optimization",
+        "icon": "fab fa-optin-monster",
+        "body": "We don't just set it and forget it. We continually review, test, and refine your campaigns to enhance ROI and minimize wasted spending.",
+        "included": [
+          "Test and adjust constantly.",
+          "Improve targeting and bids.",
+          "Lower cost per lead."
+        ],
+        "outcome": "We help adjust bids, targeting, keywords, and ad copy to improve results, reduce cost per lead, and ensure your budget is always working at its best."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What are Google Local Service Ads (LSAs)?",
+        "a": "Google Local Service Ads (LSAs) are location-targeted ads that help businesses show up for nearby customers searching for their services."
+      },
+      {
+        "q": "Where do local ads appear?",
+        "a": "They show up on Google Search, Google Maps, and across Google's local listings, often above organic results."
+      },
+      {
+        "q": "How are Google Local Service Ads (LSAs) different from Google Search Ads?",
+        "a": "Google Local Service Ads focus on physical proximity and lead generation (calls, visits), while Search Ads target keywords more broadly across regions or niches."
+      },
+      {
+        "q": "Who should use Local Ads?",
+        "a": "Service-based businesses like salons, clinics, plumbers, and local retailers that rely on nearby customers benefit the most from Local Ads."
+      },
+      {
+        "q": "Do I need a physical location to run local ads?",
+        "a": "Yes, you typically need a verified business location through Google Business Profile to appear in local ad placements."
+      },
+      {
+        "q": "How much do local ads cost?",
+        "a": "You pay per lead, such as a call or message, instead of per click. Costs vary by industry and location."
+      },
+      {
+        "q": "What's needed to set up Local Ads?",
+        "a": "A Google Business Profile, clear service areas, business details, and a budget. Optional: reviews, photos, and service descriptions."
+      },
+      {
+        "q": "How do local ads help generate leads?",
+        "a": "They show up to users searching nearby, with call and message buttons built in, making it easy for customers to take action immediately."
+      },
+      {
+        "q": "Can I track results from Local Ads?",
+        "a": "Yes. You can track phone calls, messages, bookings, and other leads generated from your ads using built-in reporting tools."
+      },
+      {
+        "q": "Are Local Ads better than SEO for local reach?",
+        "a": "They work faster than SEO and guarantee top visibility, but combining both Local Ads and Local SEO gives the best long-term results."
+      }
+    ],
+    "eyebrow": "More Calls. More Walk-ins. More Local Leads",
+    "headline": "Dominate Local Search. Own Your Area",
+    "intro": "With Google Local Service Ads (LSAs), your business appears right when nearby customers are searching for your service. We put you at the top of Google, Maps, and mobile, so you're not just seen, you're chosen.",
+    "sectionTitle": "Get Found By Local Customers Ready to Book",
+    "sectionBody": "We target people in your area who are actively looking for services like yours. Google Local Service ads drive real leads, phone calls, messages, and bookings from customers just minutes away. Every campaign we run is backed by smart analytics, performance audits, and constant optimization.",
+    "why": {
+      "eyebrow": "Why Choose Growfore for Google Local Service Ads?",
+      "title": "Because we don't run local ads, \nwe turn them into local results",
+      "body": "At Growfore, we specialize in helping service-based and location-driven businesses dominate their local markets. We combine precise targeting, proven strategy, and continuous optimization to put your business in front of the right people, right when they're ready to act.",
+      "subtitle": "From \"Near Me' to 'Call Now' - We Make it Happen",
+      "points": [
+        "Hyper Local Targeting",
+        "Conversion Focused Campaigns",
+        "Ongoing Optimization",
+        "Top Placement on Google & Maps",
+        "Full Transparency",
+        "Expert Led Strategy"
+      ],
+      "closing": "We combine local market insight with expert strategy to deliver ad campaigns that perform. Every click, call, and conversion is tracked and optimized, so you're not just spending, you're growing. With us, your local ads are built to win."
+    },
+    "seoTitle": "",
+    "seoDescription": "Attract nearby customers with high-impact local ads. Perfect for small businesses looking to grow their community reach.",
+    "kind": "leaf",
+    "parent": "ads-services"
+  }
+}

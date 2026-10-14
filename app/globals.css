@@ -1,26 +1,264 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+ * Growfore design tokens.
+ * Two surfaces: warm charcoal "ink" for statement sections, warm off-white "paper" for content.
+ * One accent: the sky blue from the Growfore mark. Used sparingly — results, highlights, focus.
+ */
+@theme {
+  --color-ink: #161616;
+  --color-ink-2: #1e1e1e;
+  --color-ink-3: #2a2a2a;
+  --color-ink-line: rgb(255 255 255 / 0.09);
+  --color-ink-text: #f4f3f1;
+  --color-ink-muted: #9b9893;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-paper: #f6f5f3;
+  --color-card: #ffffff;
+  --color-line: #e7e4e0;
+  --color-text: #161616;
+  --color-muted: #6c6964;
+  --color-faint: #a29f9a;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-brand: #1ab2f5;
+  --color-brand-ink: #0874ad;
+  --color-brand-soft: #e6f6fe;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+
+  --text-display: clamp(2.5rem, 2rem + 1.6vw, 3.375rem);
+  --text-display--line-height: 1.06;
+  --text-display--letter-spacing: -0.025em;
+  --text-h1: clamp(2.125rem, 1.75rem + 1.3vw, 3rem);
+  --text-h1--line-height: 1.08;
+  --text-h1--letter-spacing: -0.022em;
+  --text-h2: clamp(1.75rem, 1.5rem + 1.4vw, 2.75rem);
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.02em;
+  --text-h3: clamp(1.1875rem, 1.1rem + 0.35vw, 1.4375rem);
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.015em;
+
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-serif {
+    font-weight: 300;
+  }
+
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* Page gutter + max width shared by every section */
+  .container-x {
+    width: 100%;
+    max-width: 84rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-x {
+      padding-inline: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-x {
+      padding-inline: 3.25rem;
+    }
+  }
+
+  /* Hairline grid: cards separated by a 4px gutter of the line colour, like a ledger */
+  .ledger {
+    display: grid;
+    gap: 4px;
+    padding: 4px;
+    background: var(--color-line);
+    border-radius: 2px;
+  }
+  .ledger-dark {
+    display: grid;
+    gap: 1px;
+    background: var(--color-ink-line);
+    border: 1px solid var(--color-ink-line);
+  }
+
+  /* Long-form article typography (migrated WordPress posts) */
+  .prose-gf {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #2b2926;
+  }
+  .prose-gf > * + * {
+    margin-top: 1.15em;
+  }
+  .prose-gf h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(1.5rem, 1.3rem + 0.6vw, 1.75rem);
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    margin-top: 2.2em;
+  }
+  .prose-gf h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+    margin-top: 1.8em;
+  }
+  .prose-gf h4 {
+    font-weight: 600;
+    margin-top: 1.5em;
+  }
+  .prose-gf a {
+    color: var(--color-brand-ink);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .prose-gf a:hover {
+    text-decoration-thickness: 2px;
+  }
+  .prose-gf strong,
+  .prose-gf b {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+  .prose-gf ul,
+  .prose-gf ol {
+    padding-left: 1.25rem;
+  }
+  .prose-gf ul {
+    list-style: disc;
+  }
+  .prose-gf ol {
+    list-style: decimal;
+  }
+  .prose-gf li + li {
+    margin-top: 0.4em;
+  }
+  .prose-gf li::marker {
+    color: var(--color-faint);
+  }
+  .prose-gf img {
+    border-radius: 6px;
+    border: 1px solid var(--color-line);
+    width: 100%;
+    height: auto;
+  }
+  .prose-gf figure {
+    margin-block: 2em;
+  }
+  .prose-gf blockquote {
+    border-left: 2px solid var(--color-brand);
+    padding-left: 1.25rem;
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    line-height: 1.45;
+  }
+  .prose-gf .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--color-line);
+    border-radius: 6px;
+    background: var(--color-card);
+    margin-block: 2em;
+  }
+  .prose-gf table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.925rem;
+    line-height: 1.5;
+  }
+  .prose-gf th,
+  .prose-gf td {
+    text-align: left;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--color-line);
+    vertical-align: top;
+    min-width: 9rem;
+  }
+  .prose-gf th {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    background: var(--color-paper);
+  }
+  .prose-gf tr:last-child td {
+    border-bottom: 0;
+  }
+}
+
+@layer utilities {
+  /* Scroll-linked reveal. Progressive: browsers without view timelines just show content. */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal {
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 40%;
+      }
+    }
+  }
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+  }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
 }

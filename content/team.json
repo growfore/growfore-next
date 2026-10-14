@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Sudip Gautam",
+    "role": "CEO & Founder",
+    "photo": "/wp-content/uploads/2025/07/sudip-gautam.webp"
+  },
+  {
+    "name": "Sabina Bhandari",
+    "role": "Finance Officer",
+    "photo": "/wp-content/uploads/2025/07/sabina-bhandari.webp"
+  },
+  {
+    "name": "Sushil Gautam",
+    "role": "Business Analyst",
+    "photo": "/wp-content/uploads/2025/12/sudip-gautam.webp"
+  },
+  {
+    "name": "Pawan Bhandari",
+    "role": "Sales Executive",
+    "photo": "/wp-content/uploads/2026/09/pawan-bhandari.jpeg"
+  },
+  {
+    "name": "Asmita Karki",
+    "role": "SEO Analyst",
+    "photo": "/wp-content/uploads/2025/10/asmita-karki-scaled-e1760872430532.webp"
+  },
+  {
+    "name": "Nishal Gurung",
+    "role": "Senior Fullstack Engineer",
+    "photo": "/wp-content/uploads/2026/04/nisal-gurung.webp"
+  },
+  {
+    "name": "Tej Kshetri",
+    "role": "Fullstack Engineer",
+    "photo": "/wp-content/uploads/2025/07/tej-gharti-kshetri.webp"
+  },
+  {
+    "name": "Rojan Basnet",
+    "role": "SEO Specialist",
+    "photo": "/wp-content/uploads/2026/08/rojan-basnet.webp"
+  }
+]
