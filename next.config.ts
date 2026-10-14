@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
       { source: "/author/:path*", destination: "/our-team/", permanent: true },
     ];
   },
+  experimental: {
+    // Vercel restores .next/cache between deploys, and the Tailwind loader's inputs (globals.css
+    // and the scanned sources) aren't tracked by the Turbopack build cache, so it shipped stale CSS.
+    turbopackFileSystemCacheForBuild: false,
+  },
   turbopack: {
     rules: {
       "*.css": {
