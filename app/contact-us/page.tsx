@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { PageHero, Stars } from "@/components/sections";
+import { Reveal } from "@/components/motion";
+import { GoogleRating, PageHero } from "@/components/sections";
+import { SocialLinks } from "@/components/site/footer";
 import { ArrowCircle } from "@/components/ui";
-import { reviews } from "@/lib/content";
 import { site } from "@/lib/site";
 import { ProposalForm } from "./proposal-form";
 
@@ -49,25 +50,12 @@ export default function ContactPage() {
                 </li>
               ))}
             </ul>
-            <div className="mt-8 flex items-center gap-3 text-[0.875rem] text-muted">
-              <Stars />
-              <a href={reviews.url} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
-                Rated {reviews.rating.toFixed(1)} on Google by {reviews.count} clients
-              </a>
-            </div>
-            <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[0.875rem] text-muted">
-              {site.social.map((s) => (
-                <li key={s.label}>
-                  <a href={s.href} target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:text-ink hover:underline">
-                    {s.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <GoogleRating className="mt-8 text-[0.875rem]" />
+            <SocialLinks className="mt-6" />
           </div>
-          <div className="ledger self-start">
+          <Reveal delay={0.2} className="ledger self-start rounded-md shadow-[0_24px_60px_-30px_rgba(22,22,22,0.25)]">
             <ProposalForm />
-          </div>
+          </Reveal>
         </div>
       </section>
     </>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HeroGlow } from "@/components/hero-glow";
+import { MediaReveal, Reveal, RevealText, Stagger, StaggerItem } from "@/components/motion";
 import { CtaBand, PostCard } from "@/components/sections";
 import { ButtonLink } from "@/components/ui";
 import { formatDate, posts, type Post } from "@/lib/content";
@@ -22,28 +24,31 @@ export function PostPage({ post }: { post: Post }) {
 
   return (
     <>
-      <header className="bg-ink text-ink-text">
+      <header className="relative isolate overflow-hidden">
+        <HeroGlow compact className="-z-10" />
         <div className="container-x pt-14 pb-16 lg:pt-20 lg:pb-20">
-          <nav aria-label="Breadcrumb" className="text-[0.8125rem] text-ink-muted">
-            <Link href="/blogs/" className="hover:text-white">
+          <nav aria-label="Breadcrumb" className="text-[0.8125rem] text-muted">
+            <Link href="/blogs/" className="hover:text-ink">
               Blog
             </Link>
           </nav>
-          <h1 className="mt-6 max-w-4xl font-serif text-h1 text-balance text-white">{post.title}</h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-muted">{post.description}</p>
-          <p className="mt-8 flex flex-wrap gap-x-4 gap-y-1 text-[0.8125rem] text-ink-muted">
-            <span>Growfore Team</span>
-            <time dateTime={post.date}>{formatDate(post.date)}</time>
-            <span>{post.readingMinutes} min read</span>
-          </p>
+          <RevealText as="h1" onLoad text={post.title} className="mt-6 max-w-4xl font-serif text-h1 text-balance text-ink" />
+          <Reveal delay={0.3}>
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted">{post.description}</p>
+            <p className="mt-8 flex flex-wrap gap-x-4 gap-y-1 text-[0.8125rem] text-muted">
+              <span>Growfore Team</span>
+              <time dateTime={post.date}>{formatDate(post.date)}</time>
+              <span>{post.readingMinutes} min read</span>
+            </p>
+          </Reveal>
         </div>
       </header>
 
       <div className="container-x">
         {post.cover && (
-          <div className="relative -mt-px aspect-[2/1] max-h-[34rem] w-full overflow-hidden rounded-b-sm bg-ink-2 lg:aspect-[21/9]">
+          <MediaReveal className="relative aspect-[2/1] max-h-[34rem] w-full overflow-hidden rounded-md bg-paper lg:aspect-[21/9]">
             <Image src={post.cover} alt="" fill priority sizes="(min-width: 1344px) 1240px, 100vw" className="object-cover" />
-          </div>
+          </MediaReveal>
         )}
 
         <div className="grid gap-12 py-16 lg:grid-cols-[15rem_minmax(0,44rem)] lg:justify-center lg:gap-16 lg:py-20">
@@ -60,9 +65,9 @@ export function PostPage({ post }: { post: Post }) {
                     </li>
                   ))}
                 </ol>
-                <div className="mt-10 rounded-sm bg-ink p-5 text-ink-text">
-                  <p className="font-serif text-[1.25rem] leading-snug text-white">Want this done for you?</p>
-                  <p className="mt-2 text-[0.8125rem] leading-relaxed text-ink-muted">Our team handles SEO, websites and ads end to end.</p>
+                <div className="mt-10 rounded-md bg-brand-soft p-5">
+                  <p className="font-serif text-[1.25rem] leading-snug text-ink">Want this done for you?</p>
+                  <p className="mt-2 text-[0.8125rem] leading-relaxed text-muted">Our team handles SEO, websites and ads end to end.</p>
                   <ButtonLink href="/contact-us/" size="sm" className="mt-4">
                     Get a proposal
                   </ButtonLink>
@@ -77,11 +82,13 @@ export function PostPage({ post }: { post: Post }) {
       <section className="border-t border-line py-20">
         <div className="container-x">
           <h2 className="font-serif text-h3 text-ink">Keep reading</h2>
-          <div className="ledger mt-8 md:grid-cols-3">
+          <Stagger className="ledger mt-8 rounded-md md:grid-cols-3">
             {related.map((p) => (
-              <PostCard key={p.slug} post={p} />
+              <StaggerItem key={p.slug}>
+                <PostCard post={p} />
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 

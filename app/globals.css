@@ -1,17 +1,14 @@
 @import "tailwindcss";
 
 /*
- * Growfore design tokens.
- * Two surfaces: warm charcoal "ink" for statement sections, warm off-white "paper" for content.
+ * Growfore design tokens. Light site: warm off-white "paper" with white cards and ink text.
  * One accent: the sky blue from the Growfore mark. Used sparingly — results, highlights, focus.
+ * The "ink" colours are kept for text, the primary button and the rare dark detail.
  */
 @theme {
   --color-ink: #161616;
   --color-ink-2: #1e1e1e;
   --color-ink-3: #2a2a2a;
-  --color-ink-line: rgb(255 255 255 / 0.09);
-  --color-ink-text: #f4f3f1;
-  --color-ink-muted: #9b9893;
 
   --color-paper: #f6f5f3;
   --color-card: #ffffff;
@@ -24,8 +21,9 @@
   --color-brand-ink: #0874ad;
   --color-brand-soft: #e6f6fe;
 
-  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+  /* One family everywhere: Google Sans. `font-serif` is kept as the name of the display/heading style. */
+  --font-sans: var(--font-google-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-google-sans), ui-sans-serif, system-ui, sans-serif;
 
   --text-display: clamp(2.5rem, 2rem + 1.6vw, 3.375rem);
   --text-display--line-height: 1.06;
@@ -46,6 +44,18 @@
     to {
       transform: translateX(-50%);
     }
+  }
+  @keyframes drift-a {
+    0%, 100% { translate: 0 0; scale: 1; }
+    50% { translate: 6% 5%; scale: 1.08; }
+  }
+  @keyframes drift-b {
+    0%, 100% { translate: 0 0; scale: 1; }
+    50% { translate: 8% -6%; scale: 0.94; }
+  }
+  @keyframes drift-c {
+    0%, 100% { translate: 0 0; scale: 1; }
+    50% { translate: -7% 6%; scale: 1.1; }
   }
 }
 
@@ -70,7 +80,8 @@
   }
 
   .font-serif {
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: -0.03em;
   }
 
   ::selection {
@@ -104,19 +115,21 @@
     }
   }
 
-  /* Hairline grid: cards separated by a 4px gutter of the line colour, like a ledger */
+  /* Hairline grid: cards separated by 1px rules of the line colour, like a ledger */
   .ledger {
     display: grid;
-    gap: 4px;
-    padding: 4px;
-    background: var(--color-line);
-    border-radius: 2px;
-  }
-  .ledger-dark {
-    display: grid;
     gap: 1px;
-    background: var(--color-ink-line);
-    border: 1px solid var(--color-ink-line);
+    background: var(--color-line);
+    border: 1px solid var(--color-line);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  /* Hero colour field: a big blurred disc. Position/size/colour come from utilities. */
+  .glow-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(90px);
+    will-change: transform;
   }
 
   /* Long-form article typography (migrated WordPress posts) */
@@ -131,8 +144,8 @@
   .prose-gf h2 {
     font-family: var(--font-serif);
     font-size: clamp(1.5rem, 1.3rem + 0.6vw, 1.75rem);
-    font-weight: 300;
-    line-height: 1.15;
+    font-weight: 500;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--color-text);
     margin-top: 2.2em;
@@ -227,23 +240,6 @@
 }
 
 @layer utilities {
-  /* Scroll-linked reveal. Progressive: browsers without view timelines just show content. */
-  @supports (animation-timeline: view()) {
-    @media (prefers-reduced-motion: no-preference) {
-      .reveal {
-        animation: reveal linear both;
-        animation-timeline: view();
-        animation-range: entry 0% entry 40%;
-      }
-    }
-  }
-  @keyframes reveal {
-    from {
-      opacity: 0;
-      transform: translateY(24px);
-    }
-  }
-
   .mask-fade-x {
     mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
   }
@@ -257,7 +253,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-marquee {
-    animation: none;
+  .animate-marquee,
+  .glow-blob {
+    animation: none !important;
   }
 }

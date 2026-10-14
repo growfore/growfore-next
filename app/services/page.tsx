@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CtaBand, PageHero } from "@/components/sections";
 import { ArrowLink, ButtonLink } from "@/components/ui";
 import { getService, HUB_META, HUBS, hubChildren } from "@/lib/content";
+import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Services — Web, SEO & Ads",
@@ -40,9 +41,7 @@ export default function ServicesPage() {
                     <Link href={`/${c.slug}/`} className="group flex w-full flex-col bg-card p-5 transition-colors hover:bg-[#fdfdfc] lg:p-6">
                       <span className="flex items-center justify-between gap-4 text-[1.125rem] text-ink">
                         {c.title}
-                        <span aria-hidden className="text-faint transition-transform group-hover:translate-x-0.5 group-hover:text-ink">
-                          →
-                        </span>
+                        <ArrowRight aria-hidden className="size-4 shrink-0 text-faint transition-transform group-hover:translate-x-0.5 group-hover:text-ink" strokeWidth={1.75} />
                       </span>
                       <span className="mt-2 line-clamp-2 text-[0.875rem] leading-relaxed text-muted">{c.headline}</span>
                     </Link>

@@ -54,7 +54,7 @@ export default function CareersPage() {
                   and we&apos;ll keep you in mind.
                 </p>
               </div>
-              <ButtonLink href={`mailto:${site.careersEmail}?subject=Application`} variant="dark">
+              <ButtonLink href={`mailto:${site.careersEmail}?subject=Application`} variant="primary">
                 Apply now
               </ButtonLink>
             </div>

@@ -22,7 +22,7 @@ export default function BlogIndex() {
           <div className="ledger">
             <PostCard post={featured} large />
           </div>
-          <div className="ledger mt-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="ledger -mt-px sm:grid-cols-2 lg:grid-cols-3">
             {rest.map((p) => (
               <PostCard key={p.slug} post={p} />
             ))}

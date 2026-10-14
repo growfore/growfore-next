@@ -1,30 +1,26 @@
 import Image from "next/image";
 import { cacheLife } from "next/cache";
 import Link from "next/link";
-import { HUB_META, HUBS, hubChildren, posts } from "@/lib/content";
+import { BrandIcon } from "@/components/brand-icons";
+import { HUB_META, HUBS, hubChildren } from "@/lib/content";
 import { site } from "@/lib/site";
 import { ButtonLink } from "@/components/ui";
 
 export function Footer() {
   return (
-    <footer className="bg-ink text-ink-text">
+    <footer className="border-t border-line bg-card">
       <div className="container-x grid gap-14 pt-20 pb-12 lg:grid-cols-[1fr_2fr] lg:gap-10 lg:pt-28">
         <div>
-          <Image
-            src="/wp-content/uploads/2025/06/growfore-logo-full.webp"
-            alt="Growfore Solution"
-            width={500}
-            height={135}
-            className="h-9 w-auto"
-          />
-          <p className="mt-10 max-w-sm font-serif text-[1.625rem] leading-[1.15] tracking-[-0.015em] text-white/45">
+          <Image src="/wp-content/uploads/2025/04/growforelogo.webp" alt="Growfore Solution" width={923} height={270} className="h-9 w-auto" />
+          <p className="mt-10 max-w-sm font-serif text-[1.625rem] leading-[1.15] tracking-[-0.015em] text-ink/40">
             Websites that sell.
             <br />
-            <span className="text-white">Search that ranks.</span>
+            <span className="text-ink">Search that ranks.</span>
           </p>
           <ButtonLink href="/contact-us/" className="mt-8" size="sm">
             Work with us
           </ButtonLink>
+          <SocialLinks className="mt-10" />
         </div>
 
         <div className="grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
@@ -58,35 +54,47 @@ export function Footer() {
       </div>
 
       <div className="container-x">
-        <div className="flex flex-col gap-4 border-t border-ink-line py-6 text-[0.8125rem] text-ink-muted md:flex-row md:items-center md:justify-between">
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
-            <span>© <CopyrightYear /> {site.name}</span>
-            <Link href="/privacy-policy/" className="hover:text-white">
-              Privacy Policy
-            </Link>
-            <span>{posts.length} guides on the blog</span>
-          </div>
-          <ul className="flex flex-wrap gap-x-6 gap-y-2">
-            {site.social.map((s) => (
-              <li key={s.label}>
-                <a href={s.href} target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="flex flex-wrap gap-x-6 gap-y-2 border-t border-line py-6 text-[0.8125rem] text-muted">
+          <span>
+            © <CopyrightYear /> {site.name}
+          </span>
+          <Link href="/privacy-policy/" className="hover:text-ink">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
   );
 }
 
+/** Brand-coloured social icons; label is for screen readers and the hover tooltip. */
+export function SocialLinks({ className }: { className?: string }) {
+  return (
+    <ul className={`flex flex-wrap gap-2 ${className ?? ""}`}>
+      {site.social.map((s) => (
+        <li key={s.label}>
+          <a
+            href={s.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Growfore on ${s.label}`}
+            title={s.label}
+            className="grid size-10 place-items-center rounded-full border border-line bg-card transition-[border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-ink/30"
+          >
+            <BrandIcon name={s.label} className="size-[18px]" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function FooterCol({ title, href, children }: { title: string; href?: string; children: React.ReactNode }) {
   return (
     <div>
-      <h3 className="text-[0.8125rem] font-medium text-white">
+      <h3 className="text-[0.8125rem] font-medium text-ink">
         {href ? (
-          <Link href={href} className="hover:text-brand">
+          <Link href={href} className="hover:text-brand-ink">
             {title}
           </Link>
         ) : (
@@ -100,7 +108,7 @@ function FooterCol({ title, href, children }: { title: string; href?: string; ch
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
   const external = /^(https?:|mailto:|tel:)/.test(href);
-  const cls = "text-[0.875rem] text-ink-muted transition-colors hover:text-white";
+  const cls = "text-[0.875rem] text-muted transition-colors hover:text-ink";
   return (
     <li>
       {external ? (

@@ -2,9 +2,11 @@ import Link from "next/link";
 import { Faq } from "@/components/faq";
 import { CtaBand, PageHero, ReviewsMarquee } from "@/components/sections";
 import { ServiceIcon } from "@/components/service-icon";
+import { Reveal, RevealText, Stagger, StaggerItem } from "@/components/motion";
 import { ArrowCircle, ButtonLink, Eyebrow, SectionHead } from "@/components/ui";
 import { deliverableHref, getService, HUB_META, hubChildren, type Service } from "@/lib/content";
 import { site } from "@/lib/site";
+import { Check } from "lucide-react";
 
 const ACRONYMS = /\b(seo|ui\/ux|ui|ux|cms|google|wordpress|nepal|pokhara|growfore)\b/gi;
 const PROPER: Record<string, string> = { "ui/ux": "UI/UX", google: "Google", wordpress: "WordPress", nepal: "Nepal", pokhara: "Pokhara", growfore: "Growfore" };
@@ -39,15 +41,15 @@ export function ServicePage({ service }: { service: Service }) {
           { label: service.title, href: `/${service.slug}/` },
         ]}
         eyebrow={norm(service.eyebrow) === norm(service.headline) ? service.title : sentenceCase(service.eyebrow)}
-        title={service.headline}
+        title={service.headline ?? service.title}
         lede={firstPara(service.intro)}
         aside={
-          <div className="ledger-dark rounded-sm">
-            <p className="bg-ink-2 px-5 py-3 text-[0.75rem] text-ink-muted">What&apos;s included</p>
+          <div className="ledger rounded-md shadow-[0_24px_60px_-30px_rgba(22,22,22,0.25)]">
+            <p className="bg-card px-5 py-3 text-[0.75rem] text-muted">What&apos;s included</p>
             {service.deliverables.map((d, i) => (
-              <a key={d.id + d.title} href={`#${d.id}`} className="flex items-center gap-4 bg-ink-2 px-5 py-3.5 text-[0.9375rem] text-white/85 transition-colors hover:bg-ink-3 hover:text-white">
-                <span className="w-5 text-[0.75rem] text-ink-muted tabular-nums">{String(i + 1).padStart(2, "0")}</span>
-                <ServiceIcon name={d.icon} className="size-4 text-brand" />
+              <a key={d.id + d.title} href={`#${d.id}`} className="flex items-center gap-4 bg-card px-5 py-3.5 text-[0.9375rem] text-ink/85 transition-colors hover:bg-paper hover:text-ink">
+                <span className="w-5 text-[0.75rem] text-faint tabular-nums">{String(i + 1).padStart(2, "0")}</span>
+                <ServiceIcon name={d.icon} className="size-4 text-brand-ink" />
                 {d.title}
               </a>
             ))}
@@ -56,14 +58,14 @@ export function ServicePage({ service }: { service: Service }) {
       >
         <div className="flex flex-wrap gap-3">
           <ButtonLink href="/contact-us/">Book a call</ButtonLink>
-          <ButtonLink href="#deliverables" variant="ghost-dark">
+          <ButtonLink href="#deliverables" variant="outline">
             What&apos;s included
           </ButtonLink>
         </div>
       </PageHero>
 
       {/* in-page nav */}
-      <nav aria-label="On this page" className="sticky top-16 z-30 border-b border-line bg-paper/90 backdrop-blur lg:top-[4.5rem]">
+      <nav aria-label="On this page" className="sticky top-16 z-30 border-b border-line bg-paper lg:top-[4.5rem]">
         <ul className="container-x flex gap-6 overflow-x-auto text-[0.875rem] text-muted [scrollbar-width:none]">
           {[
             ["deliverables", "Deliverables"],
@@ -83,8 +85,8 @@ export function ServicePage({ service }: { service: Service }) {
       {/* deliverables */}
       <section id="deliverables" className="py-24 lg:py-32">
         <div className="container-x">
-          <SectionHead title={service.sectionTitle} lede={service.sectionBody} />
-          <div className="ledger mt-14 md:grid-cols-2 xl:grid-cols-3">
+          <SectionHead title={service.sectionTitle ?? service.title} lede={service.sectionBody} />
+          <Stagger className="ledger mt-14 rounded-md md:grid-cols-2 xl:grid-cols-3">
             {service.deliverables.map((d) => {
               const href = service.kind === "hub" ? deliverableHref(d.id) : null;
               const Card = (
@@ -100,9 +102,7 @@ export function ServicePage({ service }: { service: Service }) {
                     <ul className="mt-6 space-y-2 border-t border-line pt-5">
                       {d.included.map((i) => (
                         <li key={i} className="flex gap-2.5 text-[0.9375rem] text-ink">
-                          <svg viewBox="0 0 16 16" className="mt-1 size-3.5 shrink-0 text-brand" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
-                            <path d="M3 8.5l3 3 7-7" />
-                          </svg>
+                          <Check className="mt-1 size-3.5 shrink-0 text-brand" strokeWidth={2.25} aria-hidden />
                           {i}
                         </li>
                       ))}
@@ -116,25 +116,31 @@ export function ServicePage({ service }: { service: Service }) {
                   )}
                 </>
               );
-              return href ? (
-                <Link key={d.id + d.title} id={d.id} href={href} className="group reveal flex flex-col bg-card p-6 transition-colors hover:bg-[#fdfdfc] lg:p-8">
-                  {Card}
-                </Link>
-              ) : (
-                <article key={d.id + d.title} id={d.id} className="reveal flex flex-col bg-card p-6 lg:p-8">
-                  {Card}
-                </article>
+              return (
+                <StaggerItem key={d.id + d.title} className="flex">
+                  {href ? (
+                    <Link id={d.id} href={href} className="group flex w-full flex-col bg-card p-6 transition-colors hover:bg-[#fdfdfc] lg:p-8">
+                      {Card}
+                    </Link>
+                  ) : (
+                    <article id={d.id} className="flex w-full flex-col bg-card p-6 lg:p-8">
+                      {Card}
+                    </article>
+                  )}
+                </StaggerItem>
               );
             })}
             {service.deliverables.length % 3 !== 0 && (
-              <Link href="/contact-us/" className={`group hidden flex-col justify-between bg-ink p-6 text-white xl:flex lg:p-8 ${service.deliverables.length % 3 === 1 ? "xl:col-span-2" : ""}`}>
-                <p className="font-serif text-h3 text-balance">Not sure which you need? Talk to a strategist.</p>
-                <span className="flex items-center gap-2 pt-8 text-[0.875rem] font-medium">
-                  Get a free consultation <ArrowCircle dark />
-                </span>
-              </Link>
+              <StaggerItem className={`hidden xl:flex ${service.deliverables.length % 3 === 1 ? "xl:col-span-2" : ""}`}>
+                <Link href="/contact-us/" className="group flex w-full flex-col justify-between bg-brand-soft p-6 text-ink lg:p-8">
+                  <p className="font-serif text-h3 text-balance">Not sure which you need? Talk to a strategist.</p>
+                  <span className="flex items-center gap-2 pt-8 text-[0.875rem] font-medium">
+                    Get a free consultation <ArrowCircle />
+                  </span>
+                </Link>
+              </StaggerItem>
             )}
-          </div>
+          </Stagger>
         </div>
       </section>
 
@@ -144,19 +150,21 @@ export function ServicePage({ service }: { service: Service }) {
           <div className="container-x grid gap-14 lg:grid-cols-2 lg:gap-20">
             <div>
               {service.why.eyebrow && <Eyebrow className="mb-5">{sentenceCase(service.why.eyebrow)}</Eyebrow>}
-              <h2 className="font-serif text-h2 text-balance text-ink">{service.why.title}</h2>
-              <p className="mt-6 max-w-xl text-base leading-relaxed text-muted">{service.why.body}</p>
+              <RevealText text={service.why.title} className="font-serif text-h2 text-balance text-ink" />
+              <Reveal delay={0.15}>
+                <p className="mt-6 max-w-xl text-base leading-relaxed text-muted">{service.why.body}</p>
+              </Reveal>
             </div>
             <div>
               {service.why.subtitle && <h3 className="text-[1.125rem] leading-snug tracking-[-0.01em] text-ink">{service.why.subtitle}</h3>}
-              <ul className="mt-6 border-t border-line">
+              <Stagger as="ul" className="mt-6 border-t border-line" stagger={0.07}>
                 {service.why.points.map((p, i) => (
-                  <li key={p} className="flex items-baseline gap-5 border-b border-line py-4">
+                  <StaggerItem as="li" key={p} className="flex items-baseline gap-5 border-b border-line py-4">
                     <span className="w-6 shrink-0 text-[0.8125rem] text-faint tabular-nums">{String(i + 1).padStart(2, "0")}</span>
                     <span className="text-base text-ink">{p}</span>
-                  </li>
+                  </StaggerItem>
                 ))}
-              </ul>
+              </Stagger>
               {service.why.closing && <p className="mt-6 leading-relaxed text-muted">{service.why.closing}</p>}
             </div>
           </div>
@@ -172,7 +180,9 @@ export function ServicePage({ service }: { service: Service }) {
         <section id="faqs" className="py-24 lg:py-32">
           <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.4fr]">
             <SectionHead title="Frequently asked questions" lede={`Everything clients usually ask us about ${service.title.toLowerCase()}.`} />
-            <Faq items={service.faqs} />
+            <Reveal delay={0.1}>
+              <Faq items={service.faqs} />
+            </Reveal>
           </div>
         </section>
       )}

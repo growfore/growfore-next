@@ -1,19 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { Hanken_Grotesk, Newsreader } from "next/font/google";
+import { Google_Sans } from "next/font/google";
 import Link from "next/link";
+import { MotionProvider } from "@/components/motion";
 import { Footer } from "@/components/site/footer";
 import { Header, type NavGroup, type NavPost } from "@/components/site/header";
 import { formatDate, HUB_META, HUBS, hubChildren, posts, reviews } from "@/lib/content";
 import { site } from "@/lib/site";
 import "./globals.css";
+import { ArrowRight } from "lucide-react";
 
-const body = Hanken_Grotesk({ variable: "--font-body", subsets: ["latin"], display: "swap" });
-const newsreader = Newsreader({
-  variable: "--font-newsreader",
-  subsets: ["latin"],
-  display: "swap",
-  axes: ["opsz"],
-});
+const googleSans = Google_Sans({ variable: "--font-google-sans", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -27,7 +23,7 @@ export const metadata: Metadata = {
   icons: { icon: "/icon.png" },
 };
 
-export const viewport: Viewport = { themeColor: "#161616" };
+export const viewport: Viewport = { themeColor: "#f7f5f2" };
 
 const nav: NavGroup[] = HUBS.map((hub) => ({
   label: HUB_META[hub].label,
@@ -60,20 +56,24 @@ const orgJsonLd = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   const latest = posts[0];
   return (
-    <html lang="en" className={`${body.variable} ${newsreader.variable}`}>
+    <html lang="en" className={googleSans.variable}>
       <body className="min-h-dvh">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-ink">
           Skip to content
         </a>
-        <div className="bg-[#0f0f0f] text-center text-[0.8125rem] text-white">
+        <div className="border-b border-line bg-card text-center text-[0.8125rem] text-ink">
           <Link href={`/${latest.slug}/`} className="container-x flex h-9 items-center justify-center gap-2 truncate">
             <span className="truncate">{latest.title}</span>
-            <span className="hidden text-ink-muted sm:inline">Read the guide →</span>
+            <span className="hidden items-center gap-1 text-muted sm:inline-flex">
+              Read the guide <ArrowRight className="size-3.5" strokeWidth={1.75} aria-hidden />
+            </span>
           </Link>
         </div>
-        <Header services={nav} posts={navPosts} />
-        <main id="main">{children}</main>
-        <Footer />
+        <MotionProvider>
+          <Header services={nav} posts={navPosts} />
+          <main id="main">{children}</main>
+          <Footer />
+        </MotionProvider>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd).replace(/</g, "\\u003c") }} />
       </body>
     </html>

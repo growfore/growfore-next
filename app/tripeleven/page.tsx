@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { CtaBand } from "@/components/sections";
 import { EditorShot, SiteCard, TripElevenWordmark } from "@/components/tripeleven";
-import { ArrowLink, ButtonLink, Eyebrow, SectionHead, Tag } from "@/components/ui";
+import { HeroGlow } from "@/components/hero-glow";
+import { Reveal, RevealText, Stagger, StaggerItem } from "@/components/motion";
+import { ArrowLink, ButtonLink, SectionHead, Tag } from "@/components/ui";
 import { tripeleven as t11 } from "@/lib/products";
 import { site } from "@/lib/site";
+import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "TripEleven — Website & Booking Platform for Trekking and Tour Operators",
@@ -27,26 +30,26 @@ export default function TripElevenPage() {
   return (
     <>
       {/* hero */}
-      <section className="relative overflow-hidden bg-ink text-ink-text">
-        <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(60rem_30rem_at_80%_10%,rgba(26,178,245,0.14),transparent_70%)]" />
+      <section className="relative isolate overflow-hidden border-b border-line">
+        <HeroGlow compact className="-z-10" />
         <div className="container-x relative grid gap-14 pt-16 pb-20 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16 lg:pt-24 lg:pb-28">
           <div>
-            <div className="flex items-center gap-3">
-              <Eyebrow dark>A Growfore product</Eyebrow>
-              <span className="h-px w-8 bg-ink-line" />
-              <TripElevenWordmark className="h-5" />
-            </div>
-            <h1 className="mt-8 font-serif text-h1 text-balance text-white">More trips sold. Less admin.</h1>
-            <p className="mt-7 max-w-xl text-[1.0625rem] leading-relaxed text-pretty text-ink-muted">{t11.summary}</p>
-            <div className="mt-10 flex flex-wrap gap-3">
+            <Reveal y={12}>
+              <TripElevenWordmark className="h-6" />
+            </Reveal>
+            <RevealText as="h1" onLoad text="More trips sold. Less admin." className="mt-8 font-serif text-h1 text-balance text-ink" />
+            <Reveal delay={0.3}>
+              <p className="mt-7 max-w-xl text-[1.0625rem] leading-relaxed text-pretty text-muted">{t11.summary}</p>
+            </Reveal>
+            <Reveal delay={0.45} className="mt-10 flex flex-wrap gap-3">
               <ButtonLink href={t11.signup} target="_blank" rel="noopener noreferrer">
                 Start 7-day free trial
               </ButtonLink>
-              <ButtonLink href={t11.url} variant="ghost-dark" target="_blank" rel="noopener noreferrer">
+              <ButtonLink href={t11.url} variant="outline" target="_blank" rel="noopener noreferrer">
                 Visit tripeleven.com
               </ButtonLink>
-            </div>
-            <p className="mt-6 text-[0.8125rem] text-ink-muted">Built for tour & trekking operators · Live on {t11.sites.length} agency websites</p>
+            </Reveal>
+            <p className="mt-6 text-[0.8125rem] text-muted">Built for tour & trekking operators · Live on {t11.sites.length} agency websites</p>
           </div>
           <EditorShot priority />
         </div>
@@ -59,15 +62,15 @@ export default function TripElevenPage() {
             title="One workspace for your whole travel business."
             lede="Build your catalog, publish your website and take bookings — without stitching tools together."
           />
-          <div className="ledger mt-14 sm:grid-cols-2 lg:grid-cols-4">
+          <Stagger className="ledger mt-14 rounded-md sm:grid-cols-2 lg:grid-cols-4">
             {t11.pillars.map((p, i) => (
-              <div key={p.title} className="flex min-h-56 flex-col bg-card p-6 lg:p-7">
+              <StaggerItem key={p.title} className="flex min-h-56 flex-col bg-card p-6 lg:p-7">
                 <span className="text-[0.8125rem] text-faint tabular-nums">0{i + 1}</span>
                 <h3 className="mt-10 text-[1.125rem] leading-snug tracking-[-0.01em] text-ink">{p.title}</h3>
                 <p className="mt-2 leading-relaxed text-muted">{p.body}</p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
@@ -75,7 +78,7 @@ export default function TripElevenPage() {
       <section className="border-t border-line py-24 lg:py-32">
         <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
           <div>
-            <h2 className="font-serif text-h2 text-balance text-ink">Built for real operators, not generic listings.</h2>
+            <RevealText text="Built for real operators, not generic listings." className="font-serif text-h2 text-balance text-ink" />
             <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
               A structured trip builder with everything a trekking or adventure operator actually needs — and AI that drafts
               day-by-day itineraries for your team to finish.
@@ -88,18 +91,18 @@ export default function TripElevenPage() {
               ))}
             </ul>
           </div>
-          <ul className="border-t border-line">
+          <Stagger as="ul" className="border-t border-line" stagger={0.06}>
             {t11.workspace.map((f, i) => (
-              <li key={f.title} className="grid gap-1 border-b border-line py-5 sm:grid-cols-[2.5rem_14rem_1fr] sm:gap-6">
+              <StaggerItem as="li" key={f.title} className="grid gap-1 border-b border-line py-5 sm:grid-cols-[2.5rem_14rem_1fr] sm:gap-6">
                 <span className="hidden text-[0.8125rem] text-faint tabular-nums sm:block">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="text-base text-ink">{f.title}</h3>
                 <p className="leading-relaxed text-muted">{f.body}</p>
-              </li>
+              </StaggerItem>
             ))}
-            <li className="flex flex-wrap items-center gap-2 py-5 text-[0.875rem] text-muted">
+            <StaggerItem as="li" className="flex flex-wrap items-center gap-2 py-5 text-[0.875rem] text-muted">
               Plus: {t11.extras.join(" · ")}
-            </li>
-          </ul>
+            </StaggerItem>
+          </Stagger>
         </div>
       </section>
 
@@ -115,20 +118,26 @@ export default function TripElevenPage() {
               More on tripeleven.com
             </ArrowLink>
           </div>
-          <div className="ledger mt-12 sm:grid-cols-2 lg:grid-cols-3">
+          <Stagger className="ledger mt-12 rounded-md sm:grid-cols-2 lg:grid-cols-3">
             {t11.sites.map((s) => (
-              <SiteCard key={s.shot} site={s} />
+              <StaggerItem key={s.shot}>
+                <SiteCard site={s} />
+              </StaggerItem>
             ))}
-            <a
-              href={t11.signup}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex min-h-64 flex-col justify-between bg-ink p-6 text-white lg:col-span-2 lg:p-8"
-            >
-              <p className="max-w-md font-serif text-h3 text-balance">Your agency could be next. Launch on your own domain.</p>
-              <span className="text-[0.9375rem] text-ink-muted group-hover:text-white">Start a 7-day free trial →</span>
-            </a>
-          </div>
+            <StaggerItem className="flex lg:col-span-2">
+              <a
+                href={t11.signup}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex min-h-64 w-full flex-col justify-between bg-brand-soft p-6 text-ink lg:p-8"
+              >
+                <p className="max-w-md font-serif text-h3 text-balance">Your agency could be next. Launch on your own domain.</p>
+                <span className="inline-flex items-center gap-1.5 text-[0.9375rem] text-ink/70 group-hover:text-ink">
+                  Start a 7-day free trial <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" strokeWidth={1.75} aria-hidden />
+                </span>
+              </a>
+            </StaggerItem>
+          </Stagger>
         </div>
       </section>
 
@@ -143,7 +152,7 @@ export default function TripElevenPage() {
                   Launch and Business plans with monthly or yearly billing, plus Enterprise with white-label and dedicated onboarding.
                 </p>
               </div>
-              <ButtonLink href={t11.pricing} variant="dark" target="_blank" rel="noopener noreferrer">
+              <ButtonLink href={t11.pricing} variant="primary" target="_blank" rel="noopener noreferrer">
                 See pricing
               </ButtonLink>
             </div>

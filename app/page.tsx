@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Faq } from "@/components/faq";
-import SideRays from "@/components/side-rays/side-rays";
+import { HeroGlow } from "@/components/hero-glow";
+import { CountUp, MediaReveal, Reveal, RevealText, Stagger, StaggerItem } from "@/components/motion";
 import { TripElevenFeature } from "@/components/tripeleven";
 import { CampaignBoard, KeywordCloud, LocalPack, ScoreRings } from "@/components/illustrations";
-import { ClientLogos, CtaBand, PostCard, ReviewsMarquee, Stars } from "@/components/sections";
+import { ClientLogos, CtaBand, GoogleRating, PostCard, ReviewsMarquee } from "@/components/sections";
 import { ArrowLink, ButtonLink, SectionHead, Tag } from "@/components/ui";
 import { HUB_META, HUBS, hubChildren, posts, reviews, team } from "@/lib/content";
 import { site } from "@/lib/site";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 export const metadata: Metadata = {
   title: { absolute: "Best Website Design & SEO Agency in Nepal | Growfore" },
@@ -98,72 +100,72 @@ export default function Home() {
   return (
     <>
       {/* ------------------------------------------------------------ hero */}
-      <section className="relative isolate overflow-hidden bg-ink text-ink-text">
-        <div aria-hidden className="absolute inset-0 -z-10">
-          <SideRays speed={2.5} rayColor1="#1ab2f5" rayColor2="#96c8ff" intensity={2} spread={2} origin="top-right" saturation={1.5} blend={0.75} falloff={1.6} />
-        </div>
-        <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(38rem_22rem_at_50%_48%,var(--color-ink)_30%,transparent_100%)]" />
-        <div className="container-x flex min-h-[min(46rem,calc(100dvh-6.75rem))] flex-col items-center justify-center py-24 text-center">
-          <p className="mb-7 inline-flex items-center gap-2 rounded-full bg-white/6 px-3 py-1.5 text-[0.8125rem] text-ink-muted ring-1 ring-ink-line ring-inset">
-            <Stars /> <span className="text-white">{reviews.rating.toFixed(1)}</span> on Google<span className="hidden sm:inline"> · Website design & SEO agency in Nepal</span>
-          </p>
-          <h1 className="font-serif text-display text-balance text-white">
-            Websites that sell.
-            <br />
-            Search that ranks.
-          </h1>
-          <p className="mt-8 max-w-[34rem] text-[1.125rem] leading-[1.55] text-pretty text-ink-muted">
-            Growfore <span className="text-white">builds websites</span>, runs <span className="text-white">SEO</span> and manages{" "}
-            <span className="text-white">ads</span> for growing businesses — one team turning visibility into{" "}
-            <span className="text-white">real customers</span>, from Pokhara to anywhere.
-          </p>
-          <div className="mt-10 flex flex-wrap justify-center gap-3">
+      <section className="relative isolate overflow-hidden">
+        <HeroGlow className="-z-10" />
+        <div className="container-x flex min-h-[min(48rem,calc(100dvh-6.75rem))] flex-col items-center justify-center py-24 text-center">
+          <RevealText as="h1" onLoad text={["Websites that sell.", "Search that ranks."]} className="font-serif text-display text-balance text-ink" />
+          <Reveal delay={0.45}>
+            <p className="mx-auto mt-8 max-w-[34rem] text-[1.125rem] leading-[1.55] text-pretty text-muted">
+              Growfore <span className="text-ink">builds websites</span>, runs <span className="text-ink">SEO</span> and manages{" "}
+              <span className="text-ink">ads</span> for growing businesses — one team turning visibility into{" "}
+              <span className="text-ink">real customers</span>, from Pokhara to anywhere.
+            </p>
+          </Reveal>
+          <Reveal delay={0.6} className="mt-10 flex flex-wrap justify-center gap-3">
             <ButtonLink href="/contact-us/">Talk to a strategist</ButtonLink>
-            <ButtonLink href="/services/" variant="ghost-dark">
+            <ButtonLink href="/services/" variant="outline">
               Explore services
             </ButtonLink>
-          </div>
+          </Reveal>
+          <Reveal delay={1} y={0} className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 sm:block">
+            <a href="#clients" className="flex flex-col items-center gap-1 text-[0.8125rem] text-muted hover:text-ink">
+              <ChevronDown className="size-4 animate-bounce motion-reduce:animate-none" strokeWidth={1.75} aria-hidden />
+              Scroll
+            </a>
+          </Reveal>
         </div>
       </section>
 
       {/* ------------------------------------------------------------ logos */}
-      <section aria-label="Clients" className="border-b border-line bg-paper py-10">
-        <p className="container-x mb-6 text-center text-[0.9375rem] text-muted">
-          Trusted by hotels, clinics, stores and schools across <span className="font-serif text-base text-ink italic">Nepal</span>
-        </p>
-        <ClientLogos />
+      <section id="clients" aria-label="Clients" className="py-10">
+        <Reveal>
+          <p className="container-x mb-6 text-center text-[0.9375rem] text-muted">
+            Trusted by hotels, clinics, stores and schools across <span className="font-serif text-base text-ink italic">Nepal</span>
+          </p>
+          <ClientLogos />
+        </Reveal>
       </section>
 
       {/* ------------------------------------------------------------ pick a service */}
-      <section className="bg-ink text-ink-text">
+      <section className="border-t border-line">
         <div className="container-x py-24 lg:py-32">
-          <SectionHead dark title="Pick what you need. See Growfore at work." />
-          <div className="mt-14 grid gap-px overflow-hidden rounded-sm bg-[linear-gradient(180deg,rgba(255,255,255,0.1),rgba(26,178,245,0.35))] p-px md:grid-cols-3">
+          <SectionHead title="Pick what you need. See Growfore at work." />
+          <Stagger className="ledger mt-14 rounded-md md:grid-cols-3" stagger={0.12}>
             {HUBS.map((hub) => {
               const children = hubChildren(hub);
               return (
-                <article key={hub} className="relative flex flex-col bg-ink-2 p-6 lg:p-8">
-                  <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-[radial-gradient(60%_100%_at_50%_100%,rgba(26,178,245,0.14),transparent)]" />
-                  <h3 className="font-serif text-[1.5rem] leading-tight text-white">{HUB_META[hub].label}</h3>
-                  <p className="mt-3 max-w-xs leading-relaxed text-ink-muted">{HUB_META[hub].blurb}</p>
+                <StaggerItem as="article" key={hub} className="flex flex-col bg-card p-6 lg:p-8">
+                  <h3 className="font-serif text-[1.5rem] leading-tight text-ink">{HUB_META[hub].label}</h3>
+                  <p className="mt-3 max-w-xs leading-relaxed text-muted">{HUB_META[hub].blurb}</p>
                   <ul className="mt-8 flex flex-wrap gap-1.5">
                     {children.map((c) => (
                       <li key={c.slug}>
-                        <Link href={`/${c.slug}/`} className="inline-flex rounded-md bg-white/6 px-2.5 py-1.5 text-[0.8125rem] text-white/80 ring-1 ring-white/8 ring-inset transition-colors hover:bg-white/12 hover:text-white">
+                        <Link
+                          href={`/${c.slug}/`}
+                          className="inline-flex rounded-md bg-paper px-2.5 py-1.5 text-[0.8125rem] text-ink/80 ring-1 ring-line ring-inset transition-colors hover:text-ink hover:ring-ink/30"
+                        >
                           {c.title}
                         </Link>
                       </li>
                     ))}
                   </ul>
-                  <div className="relative mt-auto pt-14">
-                    <ArrowLink dark href={`/${hub}/`}>
-                      Explore {HUB_META[hub].label}
-                    </ArrowLink>
+                  <div className="mt-auto pt-14">
+                    <ArrowLink href={`/${hub}/`}>Explore {HUB_META[hub].label}</ArrowLink>
                   </div>
-                </article>
+                </StaggerItem>
               );
             })}
-          </div>
+          </Stagger>
         </div>
       </section>
 
@@ -176,76 +178,81 @@ export default function Home() {
             title="Everything your business needs to grow, under one roof."
             lede="Design, development, search and ads built by one team that talks to each other — so your website, rankings and campaigns pull in the same direction."
           />
-          <div className="ledger mt-14 md:grid-cols-2">
+          <Stagger className="ledger mt-14 rounded-md md:grid-cols-2" stagger={0.1}>
             {capabilities.map((c) => (
-              <Link key={c.title} href={c.href} className="group reveal flex min-h-[28rem] flex-col bg-card p-6 transition-colors hover:bg-[#fdfdfc] lg:min-h-[32rem] lg:p-8">
-                <div>
-                  <Tag>{c.tag}</Tag>
-                  <h3 className="mt-4 max-w-sm text-[1.125rem] leading-snug tracking-[-0.01em] text-ink">{c.title}</h3>
-                </div>
-                <div className="flex flex-1 items-center justify-center py-10">{c.art}</div>
-                <span className="text-[0.875rem] text-muted transition-colors group-hover:text-ink">Learn more →</span>
-              </Link>
+              <StaggerItem key={c.title}>
+                <Link href={c.href} className="group flex h-full min-h-[28rem] flex-col bg-card p-6 transition-colors hover:bg-[#fdfdfc] lg:min-h-[32rem] lg:p-8">
+                  <div>
+                    <Tag>{c.tag}</Tag>
+                    <h3 className="mt-4 max-w-sm text-[1.125rem] leading-snug tracking-[-0.01em] text-ink">{c.title}</h3>
+                  </div>
+                  <div className="flex flex-1 items-center justify-center py-10 transition-transform duration-700 ease-out group-hover:-translate-y-1">{c.art}</div>
+                  <span className="inline-flex items-center gap-1.5 text-[0.875rem] text-muted transition-colors group-hover:text-ink">
+                    Learn more <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" strokeWidth={1.75} aria-hidden />
+                  </span>
+                </Link>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
       <TripElevenFeature />
 
       {/* ------------------------------------------------------------ method + proof */}
-
       <section className="py-24 lg:py-32">
         <div className="container-x">
-          <div className="ledger">
+          <div className="ledger rounded-md">
             <div className="bg-card px-6 py-8 lg:px-8">
               <div className="flex flex-wrap items-end justify-between gap-6 pb-8">
                 <SectionHead title="The strategy we follow for every business." className="max-w-xl" />
-                <p className="max-w-sm leading-relaxed text-muted">
-                  Four questions, answered before a single page is designed or a single rupee is spent on ads.
-                </p>
+                <Reveal delay={0.2}>
+                  <p className="max-w-sm leading-relaxed text-muted">
+                    Four questions, answered before a single page is designed or a single rupee is spent on ads.
+                  </p>
+                </Reveal>
               </div>
-              <ol className="border-t border-line md:hidden">
+              <Stagger as="ol" className="border-t border-line md:hidden">
                 {method.map((m, i) => (
-                  <li key={m.step} className="border-b border-line py-5 last:border-0">
+                  <StaggerItem as="li" key={m.step} className="border-b border-line py-5 last:border-0">
                     <p className="font-serif text-[1.25rem] text-ink">
                       <span className="mr-2 text-[0.875rem] text-faint tabular-nums">0{i + 1}</span>
                       {m.step}
                     </p>
                     <p className="mt-2 text-[0.9375rem] text-ink">{m.ask}</p>
                     <p className="mt-1 text-[0.9375rem] leading-relaxed text-muted">{m.do}</p>
-                    <p className="mt-2 text-[0.9375rem] font-medium text-brand-ink">→ {m.get}</p>
-                  </li>
+                    <p className="mt-2 flex items-center gap-1.5 text-[0.9375rem] font-medium text-brand-ink">
+                      <ArrowRight className="size-3.5" strokeWidth={2} aria-hidden /> {m.get}
+                    </p>
+                  </StaggerItem>
                 ))}
-              </ol>
-              <table className="hidden w-full text-left md:table">
-                <thead>
-                  <tr className="border-b border-line text-[0.75rem] text-faint">
-                    <th className="w-36 py-3 font-normal">Step</th>
-                    <th className="py-3 font-normal">The question</th>
-                    <th className="py-3 font-normal">What we do</th>
-                    <th className="w-48 py-3 font-normal">You get</th>
-                  </tr>
-                </thead>
-                <tbody>
+              </Stagger>
+              <div className="hidden md:block" role="table" aria-label="The strategy we follow">
+                <div role="row" className="grid grid-cols-[9rem_1fr_1.3fr_12rem] gap-6 border-b border-line py-3 text-[0.75rem] text-faint">
+                  <span role="columnheader">Step</span>
+                  <span role="columnheader">The question</span>
+                  <span role="columnheader">What we do</span>
+                  <span role="columnheader">You get</span>
+                </div>
+                <Stagger stagger={0.1}>
                   {method.map((m, i) => (
-                    <tr key={m.step} className="border-b border-line last:border-0">
-                      <td className="py-5 pr-4 align-top">
-                        <span className="font-serif text-[1.25rem] text-ink">
+                    <StaggerItem key={m.step}>
+                      <div role="row" className="grid grid-cols-[9rem_1fr_1.3fr_12rem] gap-6 border-b border-line py-5 last:border-0">
+                        <span role="cell" className="font-serif text-[1.25rem] text-ink">
                           <span className="mr-2 text-[0.875rem] text-faint tabular-nums">0{i + 1}</span>
                           {m.step}
                         </span>
-                      </td>
-                      <td className="py-5 pr-6 align-top text-[0.9375rem] text-ink">{m.ask}</td>
-                      <td className="max-w-sm py-5 pr-6 align-top text-[0.9375rem] leading-relaxed text-muted">{m.do}</td>
-                      <td className="py-5 align-top text-[0.9375rem] font-medium text-brand-ink">{m.get}</td>
-                    </tr>
+                        <span role="cell" className="text-[0.9375rem] text-ink">{m.ask}</span>
+                        <span role="cell" className="text-[0.9375rem] leading-relaxed text-muted">{m.do}</span>
+                        <span role="cell" className="text-[0.9375rem] font-medium text-brand-ink">{m.get}</span>
+                      </div>
+                    </StaggerItem>
                   ))}
-                </tbody>
-              </table>
+                </Stagger>
+              </div>
             </div>
 
-            <div className="grid gap-1 md:grid-cols-3">
+            <Stagger className="grid gap-px md:grid-cols-3" stagger={0.12}>
               {[
                 {
                   title: "Expert guidance from people who do the work",
@@ -255,7 +262,7 @@ export default function Home() {
                 {
                   title: "A personalised approach for every business",
                   stat: reviews.rating.toFixed(1),
-                  label: `Google rating from ${reviews.count} client reviews`,
+                  label: "google",
                 },
                 {
                   title: "Vision and analysis — we don't guess",
@@ -263,15 +270,19 @@ export default function Home() {
                   label: "services under one roof, from domains to Google Ads",
                 },
               ].map((c) => (
-                <div key={c.title} className="flex min-h-64 flex-col justify-between bg-card p-6 lg:p-8">
+                <StaggerItem key={c.title} className="flex min-h-64 flex-col justify-between bg-card p-6 lg:p-8">
                   <h3 className="max-w-xs text-[1.1875rem] leading-snug tracking-[-0.01em] text-ink">{c.title}</h3>
                   <div className="mt-10">
-                    <p className="font-serif text-[2.375rem] leading-none tracking-[-0.03em] text-ink">{c.stat}</p>
-                    <p className="mt-2 text-[0.9375rem] text-muted">{c.label}</p>
+                    <CountUp value={c.stat} className="block font-serif text-[2.375rem] leading-none tracking-[-0.03em] text-ink tabular-nums" />
+                    {c.label === "google" ? (
+                      <GoogleRating className="mt-3 text-[0.9375rem]" />
+                    ) : (
+                      <p className="mt-2 text-[0.9375rem] text-muted">{c.label}</p>
+                    )}
                   </div>
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </Stagger>
 
             <div className="flex flex-col gap-6 bg-card px-6 py-8 md:flex-row md:items-center md:justify-between lg:px-8">
               <div>
@@ -293,13 +304,17 @@ export default function Home() {
             <SectionHead title="From the Growfore blog" lede="Practical guides on SEO, websites and digital marketing in Nepal — written by the team doing the work." />
             <ArrowLink href="/blogs/">All {posts.length} articles</ArrowLink>
           </div>
-          <div className="ledger mt-12 lg:grid-cols-2">
-            <PostCard post={featured} large />
-            <div className="grid gap-1 sm:grid-cols-2">
+          <div className="ledger mt-12 rounded-md lg:grid-cols-2">
+            <MediaReveal className="bg-card">
+              <PostCard post={featured} large />
+            </MediaReveal>
+            <Stagger className="grid gap-px sm:grid-cols-2" stagger={0.1}>
               {rest.slice(0, 4).map((p) => (
-                <PostCard key={p.slug} post={p} />
+                <StaggerItem key={p.slug}>
+                  <PostCard post={p} />
+                </StaggerItem>
               ))}
-            </div>
+            </Stagger>
           </div>
         </div>
       </section>
@@ -308,7 +323,9 @@ export default function Home() {
       <section className="border-t border-line py-24 lg:py-32">
         <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.4fr]">
           <SectionHead title="Frequently asked questions" lede="Can't find what you need? Call us — a real strategist picks up." />
-          <Faq items={faqs} />
+          <Reveal delay={0.1}>
+            <Faq items={faqs} />
+          </Reveal>
         </div>
       </section>
 

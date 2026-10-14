@@ -44,7 +44,7 @@ export function ProposalForm() {
         <button
           type="submit"
           disabled={pending}
-          className="inline-flex h-11 items-center justify-center rounded-full bg-ink px-6 text-[0.9375rem] font-medium text-white transition-colors hover:bg-ink-3 disabled:opacity-60"
+          className="inline-flex h-11 items-center justify-center rounded-full bg-ink px-6 text-[0.9375rem] font-medium text-white transition-colors hover:bg-[#333] disabled:opacity-60"
         >
           {pending ? "Sending…" : "Submit proposal"}
         </button>
