@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Faq } from "@/components/faq";
+import { FaqSection } from "@/components/faq";
 import { HeroGlow } from "@/components/hero-glow";
 import { CountUp, MediaReveal, Reveal, RevealText, Stagger, StaggerItem } from "@/components/motion";
 import { TripElevenFeature } from "@/components/tripeleven";
@@ -320,14 +320,7 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------------ faq */}
-      <section className="border-t border-line py-24 lg:py-32">
-        <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.4fr]">
-          <SectionHead title="Frequently asked questions" lede="Can't find what you need? Call us — a real strategist picks up." />
-          <Reveal delay={0.1}>
-            <Faq items={faqs} />
-          </Reveal>
-        </div>
-      </section>
+      <FaqSection items={faqs} className="border-t border-line" lede="The questions we hear most before a project starts." />
 
       <CtaBand />
     </>

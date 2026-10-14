@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Faq } from "@/components/faq";
+import { FaqSection } from "@/components/faq";
 import { CtaBand, PageHero, ReviewsMarquee } from "@/components/sections";
 import { ServiceIcon } from "@/components/service-icon";
 import { Reveal, RevealText, Stagger, StaggerItem } from "@/components/motion";
@@ -177,14 +177,7 @@ export function ServicePage({ service }: { service: Service }) {
 
       {/* faqs */}
       {service.faqs.length > 0 && (
-        <section id="faqs" className="py-24 lg:py-32">
-          <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.4fr]">
-            <SectionHead title="Frequently asked questions" lede={`Everything clients usually ask us about ${service.title.toLowerCase()}.`} />
-            <Reveal delay={0.1}>
-              <Faq items={service.faqs} />
-            </Reveal>
-          </div>
-        </section>
+        <FaqSection id="faqs" items={service.faqs} lede={`Everything clients usually ask us about ${service.title.toLowerCase()}.`} />
       )}
 
       {/* related */}
